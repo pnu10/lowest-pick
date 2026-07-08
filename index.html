@@ -253,11 +253,14 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;letter-spacin
   background:#E7E9EE;
 }
 .hrow.low .ic{background:var(--accent);color:#fff;font-size:12px;font-weight:800}
-.hrow .lbl{flex:1;color:var(--ink2)}
+.hrow .lbl{flex:1;color:var(--ink2);white-space:nowrap}
 .hrow.low .lbl{color:var(--ink);font-weight:800}
 .hrow .p{font-weight:700;font-variant-numeric:tabular-nums;color:var(--ink2)}
 .hrow .p.strike{text-decoration:line-through;color:var(--ink3)}
 .hrow.low .p{color:var(--accent);font-weight:800;font-size:16px}
+.saverow{display:flex;align-items:center;gap:8px;margin-top:6px;padding:9px 12px;background:var(--accent-soft);border-radius:10px;font-size:13px;font-weight:600;color:var(--ink2)}
+.saverow .dcpct{background:var(--accent);color:#fff;font-size:12px;font-weight:800;padding:2px 8px;border-radius:7px;flex:none}
+.saverow b{color:var(--accent);font-weight:800}
 .hbar{margin-top:10px;display:flex;height:34px;border-radius:10px;overflow:hidden}
 .hbar div{display:grid;place-items:center;font-size:10.5px;font-weight:800;color:#fff}
 .hbar .b1{background:#C6CBD4}
@@ -568,7 +571,8 @@ function openSheet(id){
       <div class="histbox">
         <h4>💰 가격 정보</h4>
         <div class="hrow"><span class="ic">🏬</span><span class="lbl">정가</span><span class="p strike">${won(d.orig)}원</span></div>
-        <div class="hrow low"><span class="ic">✓</span><span class="lbl">현재 딜가</span><span class="p">${won(d.price)}원 · ${dcAmt}원 할인</span></div>
+        <div class="hrow low"><span class="ic">✓</span><span class="lbl">현재 딜가</span><span class="p">${won(d.price)}원</span></div>
+        <div class="saverow"><span class="dcpct">${d.dc}%</span>정가보다 <b>${dcAmt}원</b> 저렴해요</div>
         ${priceTrackHtml(d)}
       </div>
     </div>
