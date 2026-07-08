@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-은하수-특대형-패밀리침대모기장-대형-캠핑-사",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250512_235/17470256182747eoBO_JPEG/11748042070849057_787399280.jpg?type=o1000",
+    "brand": "뉴테크캠쿡",
+    "name": "은하수 특대형 패밀리침대모기장 대형 캠핑 사각모기장 6인용",
+    "orig": 16900,
+    "price": 9900,
+    "dc": 41,
+    "stock": 50,
+    "sold": 45,
+    "endH": 10,
+    "reviews": 124,
+    "badge": "real",
+    "url": "https://naver.me/5LQdBjWd"
+  },
+  {
     "id": "real-애니클리어-송풍구-차량용선풍기-자동회전-써큘",
     "real": true,
     "cat": "생활리빙",
