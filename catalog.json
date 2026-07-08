@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-온가족-엄마손맛-배추김치-10Kg",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260114_238/1768388120788Xn9Mz_JPEG/102520981014998161_421023636.jpg?type=o1000",
+    "brand": "프레쉬하임",
+    "name": "온가족 엄마손맛 배추김치 10Kg",
+    "orig": 68000,
+    "price": 38900,
+    "dc": 43,
+    "stock": 150,
+    "sold": 116,
+    "endH": 23,
+    "reviews": 176511,
+    "badge": "real",
+    "url": "https://naver.me/FsoO0YYD"
+  },
+  {
     "id": "real-맥심모카골드-180T-식당-사무실-탕비실커피",
     "real": true,
     "cat": "식품",
