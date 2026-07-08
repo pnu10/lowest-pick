@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+# 로컬 자동화 도구 (공개 안 함)
+add-deal.js
+connect-link.jxa
+trends.js
+overnight-run.sh
+overnight.log
+keywords.txt
+keywords.backup.txt
+auto-progress.json

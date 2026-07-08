@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<title>최저가픽 — 오늘의 최저가만 픽</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --bg:#F4F5F7;
+  --card:#FFFFFF;
+  --ink:#17181D;
+  --ink2:#4E5560;
+  --ink3:#9AA1AC;
+  --line:#EDEEF1;
+  --accent:#FF4D2E;
+  --accent2:#FF7A3D;
+  --accent-soft:#FFF0EB;
+  --blue:#3182F6;
+  --blue-soft:#EBF3FE;
+  --green:#00C471;
+  --green-soft:#E7F9F1;
+  --violet:#7C5CFF;
+  --violet-soft:#F1EDFF;
+  --r-lg:24px;
+  --r-md:18px;
+  --r-sm:12px;
+  --shadow:0 2px 14px rgba(23,24,29,.06);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{
+  font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+  background:var(--bg);color:var(--ink);
+  max-width:480px;margin:0 auto;
+  padding-bottom:calc(88px + env(safe-area-inset-bottom));
+  letter-spacing:-.01em;
+  overscroll-behavior-y:none;
+}
+button{font-family:inherit;border:0;background:none;cursor:pointer;letter-spacing:inherit}
+
+/* ───── header ───── */
+.hdr{
+  position:sticky;top:0;z-index:50;
+  background:rgba(244,245,247,.86);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  padding:14px 20px 10px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.logo{display:flex;align-items:center;gap:8px;font-size:20px;font-weight:800}
+.logo .mark{
+  width:30px;height:30px;border-radius:10px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  display:grid;place-items:center;font-size:16px;
+  box-shadow:0 4px 10px rgba(255,77,46,.3);
+}
+.hdr-live{
+  display:flex;align-items:center;gap:5px;
+  font-size:12px;font-weight:700;color:var(--accent);
+  background:var(--accent-soft);padding:6px 10px;border-radius:999px;
+}
+.hdr-live .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:blink 1.2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+
+/* ───── hero banner ───── */
+.hero{margin:6px 20px 0;position:relative;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow)}
+.hero-track{display:flex;transition:transform .45s cubic-bezier(.22,.9,.3,1)}
+.hero-slide{
+  min-width:100%;padding:22px 22px 20px;color:#fff;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.hero-slide .txt .cap{font-size:12px;font-weight:700;opacity:.85;margin-bottom:6px}
+.hero-slide .txt h2{font-size:19px;font-weight:800;line-height:1.3;margin-bottom:8px;word-break:keep-all}
+.hero-slide .txt .sub{font-size:13px;font-weight:600;opacity:.9}
+.hero-slide .big{font-size:52px;filter:drop-shadow(0 6px 12px rgba(0,0,0,.18))}
+.hero-dots{position:absolute;bottom:12px;left:22px;display:flex;gap:5px}
+.hero-dots i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.45);transition:.3s}
+.hero-dots i.on{width:16px;border-radius:99px;background:#fff}
+
+/* ───── section common ───── */
+.sec{margin-top:26px}
+.sec-hd{display:flex;align-items:baseline;justify-content:space-between;padding:0 20px;margin-bottom:12px}
+.sec-hd h3{font-size:18px;font-weight:800}
+.sec-hd .more{font-size:13px;font-weight:600;color:var(--ink3)}
+
+/* ───── deadline horizontal scroll ───── */
+.rush-wrap{display:flex;gap:12px;overflow-x:auto;padding:2px 20px 8px;scrollbar-width:none}
+.rush-wrap::-webkit-scrollbar{display:none}
+.rush{
+  min-width:150px;max-width:150px;background:var(--card);border-radius:var(--r-md);
+  padding:14px;box-shadow:var(--shadow);position:relative;
+}
+.rush .thumb{
+  width:100%;aspect-ratio:1;border-radius:14px;display:grid;place-items:center;
+  font-size:44px;margin-bottom:10px;overflow:hidden;
+}
+.rush .thumb img{width:100%;height:100%;object-fit:cover}
+.rush .timer{
+  position:absolute;top:20px;left:20px;
+  background:rgba(23,24,29,.78);color:#fff;font-size:11px;font-weight:700;
+  padding:4px 8px;border-radius:8px;font-variant-numeric:tabular-nums;
+  backdrop-filter:blur(4px);
+}
+.rush .name{font-size:13px;font-weight:600;line-height:1.35;height:35px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:keep-all}
+.rush .price{margin-top:6px;display:flex;align-items:baseline;gap:4px}
+.rush .price .dc{color:var(--accent);font-weight:800;font-size:15px}
+.rush .price .won{font-weight:800;font-size:15px}
+.rush .left{margin-top:6px;font-size:11px;font-weight:700;color:var(--accent)}
+
+/* ───── search bar ───── */
+.searchbar{
+  display:flex;align-items:center;gap:8px;margin:12px 20px 4px;
+  background:var(--card);border-radius:14px;padding:12px 14px;box-shadow:var(--shadow);
+}
+.searchbar .si{font-size:16px;opacity:.6;flex:none}
+.searchbar input{
+  flex:1;border:0;background:none;font-size:15px;font-weight:500;color:var(--ink);
+  outline:none;min-width:0;
+}
+.searchbar input::placeholder{color:var(--ink3);font-weight:500}
+.searchbar input::-webkit-search-cancel-button{display:none}
+.qclear{flex:none;width:22px;height:22px;border-radius:50%;background:var(--line);color:var(--ink2);font-size:11px;font-weight:800;display:grid;place-items:center}
+.no-result{grid-column:1/-1;text-align:center;padding:48px 20px;color:var(--ink3);font-size:14px;font-weight:600;line-height:1.6}
+.foot-note{padding:22px 24px calc(90px + env(safe-area-inset-bottom));text-align:center;font-size:11.5px;color:var(--ink3);font-weight:500;line-height:1.6}
+
+/* ───── category chips ───── */
+.chips{
+  position:sticky;top:54px;z-index:40;
+  display:flex;gap:8px;overflow-x:auto;padding:10px 20px;
+  background:rgba(244,245,247,.86);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  scrollbar-width:none;
+  -webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);
+  mask-image:linear-gradient(90deg,#000 92%,transparent);
+}
+.chips::-webkit-scrollbar{display:none}
+.chip{
+  flex:none;display:flex;align-items:center;gap:6px;
+  padding:9px 15px;border-radius:999px;font-size:14px;font-weight:600;
+  background:var(--card);color:var(--ink2);box-shadow:var(--shadow);
+  transition:.18s;white-space:nowrap;
+}
+.chip .ci{font-size:16px;line-height:1}
+.chip.on{background:var(--ink);color:#fff;font-weight:700}
+
+/* ───── sort row ───── */
+.sortrow{display:flex;align-items:center;justify-content:space-between;padding:6px 20px 2px}
+.sortrow .cnt{font-size:13px;color:var(--ink3);font-weight:600}
+.sortrow .cnt b{color:var(--ink)}
+.sortsel{display:flex;gap:14px}
+.sortsel button{font-size:13px;font-weight:600;color:var(--ink3)}
+.sortsel button.on{color:var(--ink);font-weight:800}
+
+/* ───── deal grid ───── */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:10px 20px 0}
+.deal{
+  background:var(--card);border-radius:var(--r-md);overflow:hidden;
+  box-shadow:var(--shadow);position:relative;
+  animation:pop .35s cubic-bezier(.22,.9,.3,1) both;
+}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.deal .thumb{
+  width:100%;aspect-ratio:1;display:grid;place-items:center;font-size:56px;position:relative;overflow:hidden;
+}
+.deal .thumb img{width:100%;height:100%;object-fit:cover}
+.deal .badge{
+  position:absolute;top:10px;left:10px;
+  font-size:11px;font-weight:800;color:#fff;padding:4px 9px;border-radius:8px;
+}
+.badge.hot{background:linear-gradient(135deg,#FF4D2E,#FF7A3D)}
+.badge.almost{background:#17181D}
+.badge.best{background:var(--blue)}
+.badge.new{background:var(--green)}
+.badge.real{background:var(--violet)}
+.deal .like{
+  position:absolute;top:8px;right:8px;width:32px;height:32px;border-radius:50%;
+  background:rgba(255,255,255,.85);backdrop-filter:blur(4px);
+  display:grid;place-items:center;font-size:15px;transition:transform .15s;
+}
+.deal .like:active{transform:scale(1.25)}
+.deal .body{padding:12px 13px 13px}
+.deal .brand{font-size:11px;font-weight:700;color:var(--ink3);margin-bottom:3px}
+.deal .name{
+  font-size:13.5px;font-weight:600;line-height:1.35;height:36px;
+  overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:keep-all;
+}
+.deal .pricebox{margin-top:8px}
+.deal .orig{font-size:11.5px;color:var(--ink3);text-decoration:line-through;font-weight:500}
+.deal .now{display:flex;align-items:baseline;gap:5px;margin-top:1px}
+.deal .now .dc{font-size:16px;font-weight:800;color:var(--accent)}
+.deal .now .won{font-size:16px;font-weight:800}
+.deal .now .unit{font-size:12px;font-weight:700}
+.gauge{margin-top:10px}
+.gauge .bar{height:6px;border-radius:99px;background:#F0F1F4;overflow:hidden}
+.gauge .fill{
+  height:100%;border-radius:99px;
+  background:linear-gradient(90deg,var(--accent2),var(--accent));
+  transition:width .6s cubic-bezier(.22,.9,.3,1);
+}
+.gauge .meta{display:flex;justify-content:space-between;margin-top:5px;font-size:11px;font-weight:700}
+.gauge .meta .pplcnt{color:var(--accent)}
+.gauge .meta .goal{color:var(--ink3)}
+.deal .alerted{
+  position:absolute;inset:auto 0 0 0;background:var(--green);color:#fff;
+  font-size:12px;font-weight:800;text-align:center;padding:7px 0;
+}
+
+/* ───── bottom sheet ───── */
+.dim{
+  position:fixed;inset:0;background:rgba(23,24,29,.5);z-index:90;
+  opacity:0;pointer-events:none;transition:opacity .25s;
+}
+.dim.on{opacity:1;pointer-events:auto}
+.sheet{
+  position:fixed;left:0;right:0;bottom:0;z-index:95;margin:0 auto;max-width:480px;
+  background:var(--card);border-radius:28px 28px 0 0;
+  transform:translateY(105%);transition:transform .32s cubic-bezier(.22,.9,.3,1);
+  max-height:88vh;overflow-y:auto;
+  padding-bottom:calc(20px + env(safe-area-inset-bottom));
+}
+.sheet.on{transform:none}
+.sheet .grab{width:40px;height:4px;border-radius:99px;background:var(--line);margin:12px auto 0}
+.sheet-hero{
+  margin:16px 20px 0;border-radius:var(--r-md);aspect-ratio:16/10;
+  display:grid;place-items:center;font-size:88px;overflow:hidden;position:relative;
+}
+.sheet-hero img{width:100%;height:100%;object-fit:cover}
+.sheet-body{padding:18px 22px 0}
+.sheet-body .brand{font-size:13px;font-weight:700;color:var(--ink3)}
+.sheet-body h2{font-size:20px;font-weight:800;line-height:1.35;margin-top:4px;word-break:keep-all}
+.sheet-body .rev{font-size:12.5px;color:var(--ink3);font-weight:600;margin-top:6px}
+.sheet-price{display:flex;align-items:baseline;gap:8px;margin-top:14px}
+.sheet-price .dc{font-size:26px;font-weight:800;color:var(--accent)}
+.sheet-price .won{font-size:26px;font-weight:800}
+.sheet-price .orig{font-size:14px;color:var(--ink3);text-decoration:line-through;font-weight:500}
+.pricetag{
+  display:inline-flex;align-items:center;gap:4px;margin-top:10px;
+  font-size:12px;font-weight:800;color:var(--accent);
+  background:var(--accent-soft);padding:6px 11px;border-radius:999px;
+}
+.histbox{
+  margin-top:18px;background:var(--bg);border-radius:var(--r-md);padding:16px;
+}
+.histbox h4{font-size:13px;font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.hrow{display:flex;align-items:center;gap:10px;padding:7px 0;font-size:14px;font-weight:600}
+.hrow .ic{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:13px;flex:none;
+  background:#E7E9EE;
+}
+.hrow.low .ic{background:var(--accent);color:#fff;font-size:12px;font-weight:800}
+.hrow .lbl{flex:1;color:var(--ink2)}
+.hrow.low .lbl{color:var(--ink);font-weight:800}
+.hrow .p{font-weight:700;font-variant-numeric:tabular-nums;color:var(--ink2)}
+.hrow .p.strike{text-decoration:line-through;color:var(--ink3)}
+.hrow.low .p{color:var(--accent);font-weight:800;font-size:16px}
+.hbar{margin-top:10px;display:flex;height:34px;border-radius:10px;overflow:hidden}
+.hbar div{display:grid;place-items:center;font-size:10.5px;font-weight:800;color:#fff}
+.hbar .b1{background:#C6CBD4}
+.hbar .b2{background:#8E96A3}
+.hbar .b3{background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.sheet-gauge{margin-top:18px}
+.sheet-gauge .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+.sheet-gauge .top .n{font-size:15px;font-weight:800}
+.sheet-gauge .top .n b{color:var(--accent)}
+.sheet-gauge .top .t{font-size:12.5px;font-weight:700;color:var(--ink3);font-variant-numeric:tabular-nums}
+.avatars{display:flex;margin-top:12px;align-items:center}
+.avatars .av{
+  width:30px;height:30px;border-radius:50%;border:2px solid #fff;
+  display:grid;place-items:center;font-size:14px;margin-left:-8px;
+  background:var(--blue-soft);
+}
+.avatars .av:first-child{margin-left:0}
+.avatars .txt{font-size:12.5px;font-weight:600;color:var(--ink2);margin-left:10px}
+.sheet-cta{
+  display:flex;gap:10px;padding:18px 20px 0;
+}
+.btn-sub{
+  flex:none;width:56px;height:56px;border-radius:var(--r-md);background:var(--bg);
+  display:grid;place-items:center;font-size:22px;transition:transform .15s;
+}
+.btn-sub:active{transform:scale(.92)}
+.btn-main{
+  flex:1;height:56px;border-radius:var(--r-md);
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#fff;font-size:16.5px;font-weight:800;
+  box-shadow:0 8px 20px rgba(255,77,46,.32);
+  transition:transform .15s,opacity .2s;
+}
+.btn-main:active{transform:scale(.97)}
+.btn-main.alerted{background:var(--green);box-shadow:0 8px 20px rgba(0,196,113,.28)}
+.btn-main.reallink{background:linear-gradient(135deg,#03C75A,#00A94F);box-shadow:0 8px 20px rgba(3,199,90,.3)}
+.sheet-note{font-size:11.5px;color:var(--ink3);text-align:center;margin-top:12px;padding:0 20px;line-height:1.5}
+
+/* ───── my page ───── */
+.my-empty{padding:70px 40px;text-align:center}
+.my-empty .e{font-size:56px;margin-bottom:16px}
+.my-empty h3{font-size:17px;font-weight:800;margin-bottom:8px}
+.my-empty p{font-size:13.5px;color:var(--ink3);line-height:1.55;word-break:keep-all}
+.my-sum{
+  margin:14px 20px 0;background:linear-gradient(135deg,#17181D,#33363F);border-radius:var(--r-lg);
+  padding:22px;color:#fff;display:flex;justify-content:space-between;align-items:center;
+}
+.my-sum .l .cap{font-size:12.5px;opacity:.7;font-weight:600;margin-bottom:6px}
+.my-sum .l .v{font-size:24px;font-weight:800}
+.my-sum .l .v b{color:#FFB39B}
+.my-sum .r{font-size:44px}
+.my-list{padding:16px 20px 0;display:flex;flex-direction:column;gap:10px}
+.my-item{
+  background:var(--card);border-radius:var(--r-md);padding:14px;box-shadow:var(--shadow);
+  display:flex;gap:12px;align-items:center;
+}
+.my-item .th{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;font-size:30px;flex:none;overflow:hidden}
+.my-item .th img{width:100%;height:100%;object-fit:cover}
+.my-item .info{flex:1;min-width:0}
+.my-item .info .n{font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.my-item .info .s{font-size:12px;color:var(--ink3);font-weight:600;margin-top:3px}
+.my-item .st{flex:none;font-size:12px;font-weight:800;padding:6px 10px;border-radius:8px}
+.st.ing{background:var(--accent-soft);color:var(--accent)}
+.st.ok{background:var(--green-soft);color:var(--green)}
+
+/* ───── bottom nav ───── */
+.nav{
+  position:fixed;bottom:0;left:0;right:0;z-index:80;margin:0 auto;max-width:480px;
+  background:rgba(255,255,255,.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  border-top:1px solid var(--line);
+  display:flex;padding:8px 0 calc(8px + env(safe-area-inset-bottom));
+}
+.nav button{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10.5px;font-weight:700;color:var(--ink3)}
+.nav button .i{font-size:22px;transition:transform .18s}
+.nav button.on{color:var(--ink)}
+.nav button.on .i{transform:translateY(-2px)}
+.nav .bdg{
+  position:absolute;transform:translate(12px,-2px);
+  background:var(--accent);color:#fff;font-size:9px;font-weight:800;
+  min-width:15px;height:15px;border-radius:99px;display:grid;place-items:center;padding:0 4px;
+}
+
+/* ───── toast ───── */
+.toast{
+  position:fixed;bottom:calc(100px + env(safe-area-inset-bottom));left:50%;transform:translate(-50%,16px);
+  background:rgba(23,24,29,.92);color:#fff;font-size:13.5px;font-weight:600;
+  padding:12px 20px;border-radius:99px;z-index:120;opacity:0;pointer-events:none;
+  transition:.28s cubic-bezier(.22,.9,.3,1);white-space:nowrap;
+}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+.hide{display:none!important}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="logo"><span class="mark">🏷️</span>최저가픽</div>
+  <div class="hdr-live"><span class="dot"></span>오늘 <span id="liveCnt">1,024명</span> 득템</div>
+</header>
+
+<main id="pageHome">
+  <!-- search -->
+  <div class="searchbar">
+    <span class="si">🔍</span>
+    <input id="q" type="search" placeholder="상품·브랜드 검색 (예: 가글, 3M, 텀블러)" autocomplete="off">
+    <button id="qClear" class="qclear hide">✕</button>
+  </div>
+
+  <!-- hero -->
+  <section class="hero" id="hero">
+    <div class="hero-track" id="heroTrack"></div>
+    <div class="hero-dots" id="heroDots"></div>
+  </section>
+
+  <!-- 오늘까지만 이 가격 -->
+  <section class="sec" id="secRush">
+    <div class="sec-hd"><h3>⏰ 오늘까지만 이 가격</h3></div>
+    <div class="rush-wrap" id="rushWrap"></div>
+  </section>
+
+  <!-- category + grid -->
+  <section class="sec" style="margin-top:18px">
+    <div class="chips" id="chips"></div>
+    <div class="sortrow">
+      <span class="cnt"><span id="secLabel">오늘의 딜</span> <b id="dealCnt">0</b>개</span>
+      <div class="sortsel" id="sortSel">
+        <button data-s="pop" class="on">인기순</button>
+        <button data-s="dc">할인율순</button>
+        <button data-s="end">마감임박순</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <div class="foot-note">최저가픽은 네이버 쇼핑 커넥트 활동을 포함하며, 일부 상품 구매 시 수수료를 제공받을 수 있습니다.</div>
+</main>
+
+<main id="pageMy" class="hide"></main>
+
+<!-- bottom sheet -->
+<div class="dim" id="dim"></div>
+<div class="sheet" id="sheet"></div>
+
+<!-- nav -->
+<nav class="nav">
+  <button id="navHome" class="on"><span class="i">🏠</span>홈</button>
+  <button id="navMy"><span class="bdg hide" id="myBdg">0</span><span class="i">🔔</span>내 알림</button>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ══════════ 카탈로그 ══════════
+   real:true → shopick 실제 제휴 링크 상품
+   stock: 오늘 특가 물량, sold: 소진 수량 */
+const CATALOG=[]; // 실제 딜은 catalog.json에서 로드
+
+const CATS=["전체","생활리빙","식품","화장미용","디지털가전","출산육아","스포츠레저","패션","가구인테리어"];
+const CAT_ICON={"전체":"🛒","생활리빙":"🧽","식품":"🍎","화장미용":"💄","디지털가전":"🔌","출산육아":"🍼","스포츠레저":"⚽","패션":"👕","가구인테리어":"🛋️"};
+// 블로그 게시판(~픽)과 1:1: 생활리빙픽·식품픽·화장미용픽·디지털가전픽·출산육아픽·스포츠레저픽·패션픽·가구인테리어픽
+const CAT_ALIAS={"생활":"생활리빙","주방":"생활리빙","뷰티/헬스":"화장미용","디지털":"디지털가전","유아/반려":"출산육아","레저":"스포츠레저"};
+const CAT_SPECIAL={socks:"패션",tumbler:"가구인테리어",airfryer:"디지털가전"}; // 시드 개별 예외
+const BADGE_TXT={hot:"🔥 오늘핫딜",almost:"⚡️ 품절임박",best:"👍 검증픽",new:"✨ 신규특가",real:"✅ 실제딜"};
+
+/* ── state ── */
+const LS="lowpick_v1";
+let state=JSON.parse(localStorage.getItem(LS)||'{"alerts":[],"liked":[]}');
+const save=()=>localStorage.setItem(LS,JSON.stringify(state));
+let curCat="전체",curSort="pop",curQ="";
+const NOW=Date.now();
+CATALOG.forEach(d=>{
+  d.cat=CAT_SPECIAL[d.id]||CAT_ALIAS[d.cat]||d.cat; // 구 카테고리 → 블로그 게시판명으로 정규화
+  d.endsAt=NOW+d.endH*3600*1000;
+  d.avg=Math.round((d.orig*0.55+d.price*0.45)/100)*100; // 최근 3개월 평균가(추정치)
+});
+
+const $=s=>document.querySelector(s);
+const won=n=>n.toLocaleString("ko-KR");
+const fmtT=ms=>{
+  if(ms<=0)return"마감";
+  const h=Math.floor(ms/3600000),m=Math.floor(ms%3600000/60000),s=Math.floor(ms%60000/1000);
+  return h>0?`${h}:${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`:`${m}:${String(s).padStart(2,"0")}`;
+};
+
+function toast(msg){
+  const t=$("#toast");t.textContent=msg;t.classList.add("on");
+  clearTimeout(t._tm);t._tm=setTimeout(()=>t.classList.remove("on"),1800);
+}
+
+/* ── hero ── */
+const HERO=[
+ {bg:"linear-gradient(135deg,#FF4D2E,#FF8A3D)",cap:"오늘의 특가 브리핑",h:"오늘의 최저가만<br>골라 담았습니다",sub:"매일 아침 9시 업데이트",e:"🏷️"},
+ {bg:"linear-gradient(135deg,#3182F6,#6FA8FF)",cap:"3개월 가격 추적",h:"정가 주고 사면<br>손해예요",sub:"평균가보다 진짜 싼 딜만 통과",e:"📉"},
+ {bg:"linear-gradient(135deg,#7C5CFF,#A78BFA)",cap:"실시간 검증딜",h:"리뷰 7.9만개<br>리스테린 46% 특가",sub:"실제 최저가 링크 연동",e:"🦷"},
+];
+let heroIdx=0;
+function renderHero(){
+  $("#heroTrack").innerHTML=HERO.map(h=>`
+    <div class="hero-slide" style="background:${h.bg}">
+      <div class="txt"><div class="cap">${h.cap}</div><h2>${h.h}</h2><div class="sub">${h.sub}</div></div>
+      <div class="big">${h.e}</div>
+    </div>`).join("");
+  $("#heroDots").innerHTML=HERO.map((_,i)=>`<i class="${i===0?"on":""}"></i>`).join("");
+  setInterval(()=>{
+    heroIdx=(heroIdx+1)%HERO.length;
+    $("#heroTrack").style.transform=`translateX(-${heroIdx*100}%)`;
+    document.querySelectorAll("#heroDots i").forEach((d,i)=>d.classList.toggle("on",i===heroIdx));
+  },3800);
+}
+
+/* ── rush (오늘 마감) ── */
+function renderRush(){
+  const rush=CATALOG.filter(d=>d.img).sort((a,b)=>a.endsAt-b.endsAt).slice(0,7);
+  $("#rushWrap").innerHTML=rush.map(d=>`
+    <div class="rush" onclick="openSheet('${d.id}')">
+      <div class="thumb" style="background:${d.bg}">${d.img?`<img src="${d.img}" alt="">`:d.emoji}</div>
+      <div class="timer" data-timer="${d.endsAt}">--:--</div>
+      <div class="name">${d.name}</div>
+      <div class="price"><span class="dc">${d.dc}%</span><span class="won">${won(d.price)}원</span></div>
+      <div class="left">${d.stock-d.sold}개 남음!</div>
+    </div>`).join("");
+}
+
+/* ── chips / grid ── */
+function renderChips(){
+  $("#chips").innerHTML=CATS.map(c=>`<button class="chip ${c===curCat?"on":""}" onclick="setCat('${c}')"><span class="ci">${CAT_ICON[c]||""}</span>${c}</button>`).join("");
+}
+function setCat(c){curCat=c;renderChips();renderGrid();}
+function setSort(s){
+  curSort=s;
+  document.querySelectorAll("#sortSel button").forEach(b=>b.classList.toggle("on",b.dataset.s===s));
+  renderGrid();
+}
+document.querySelectorAll("#sortSel button").forEach(b=>b.onclick=()=>setSort(b.dataset.s));
+
+/* ── 검색 ── */
+function applySearch(q){
+  curQ=q.trim();
+  const searching=curQ.length>0;
+  $("#hero").classList.toggle("hide",searching);       // 검색 중엔 배너 숨김
+  $("#secRush").classList.toggle("hide",searching);    // 검색 중엔 '오늘까지만' 숨김
+  $("#chips").classList.toggle("hide",searching);      // 검색 중엔 카테고리 숨김
+  $("#qClear").classList.toggle("hide",!searching);
+  $("#secLabel").textContent=searching?`'${curQ}' 검색결과`:"오늘의 딜";
+  renderGrid();
+}
+$("#q").addEventListener("input",e=>applySearch(e.target.value));
+$("#qClear").onclick=()=>{$("#q").value="";applySearch("");$("#q").focus();};
+
+function renderGrid(){
+  let list=CATALOG.filter(d=>d.img); // 사진 있는 실제 딜만
+  if(curQ){
+    const q=curQ.toLowerCase();
+    list=list.filter(d=>((d.name||"")+" "+(d.brand||"")+" "+(d.cat||"")).toLowerCase().includes(q));
+  }else{
+    list=list.filter(d=>curCat==="전체"||d.cat===curCat);
+  }
+  if(curSort==="dc")list.sort((a,b)=>b.dc-a.dc);
+  else if(curSort==="end")list.sort((a,b)=>a.endsAt-b.endsAt);
+  else list.sort((a,b)=>(b.sold/b.stock)-(a.sold/a.stock));
+  $("#dealCnt").textContent=list.length;
+  if(!list.length){
+    $("#grid").innerHTML=`<div class="no-result">🔍 '${curQ||curCat}'에 맞는 딜이 없어요.<br>다른 검색어로 찾아보세요.</div>`;
+    return;
+  }
+  $("#grid").innerHTML=list.map((d,i)=>{
+    const pct=Math.min(100,Math.round(d.sold/d.stock*100));
+    const me=state.alerts.includes(d.id), liked=state.liked.includes(d.id);
+    return`
+    <div class="deal" style="animation-delay:${i*0.03}s" onclick="openSheet('${d.id}')">
+      <div class="thumb" style="background:${d.bg}">
+        ${d.img?`<img src="${d.img}" alt="" loading="lazy">`:d.emoji}
+        <span class="badge ${d.badge}">${BADGE_TXT[d.badge]}</span>
+      </div>
+      <button class="like" onclick="event.stopPropagation();toggleLike('${d.id}')">${liked?"❤️":"🤍"}</button>
+      <div class="body">
+        <div class="brand">${d.brand}</div>
+        <div class="name">${d.name}</div>
+        <div class="pricebox">
+          <div class="orig">${won(d.orig)}원</div>
+          <div class="now"><span class="dc">${d.dc}%</span><span class="won">${won(d.price)}</span><span class="unit">원</span></div>
+        </div>
+        <div class="gauge">
+          <div class="bar"><div class="fill" style="width:${pct}%"></div></div>
+          <div class="meta"><span class="pplcnt">${pct>=90?"품절 임박 ⚡️":`${pct}% 소진`}</span><span class="goal">${d.stock-d.sold}개 남음</span></div>
+        </div>
+      </div>
+      ${me?'<div class="alerted">최저가 알림 ON 🔔</div>':""}
+    </div>`;
+  }).join("");
+}
+
+function toggleLike(id){
+  const i=state.liked.indexOf(id);
+  if(i>=0){state.liked.splice(i,1);}else{state.liked.push(id);toast("찜 목록에 담았어요 ❤️");}
+  save();renderGrid();
+}
+
+/* ── bottom sheet ── */
+let curDeal=null;
+function openSheet(id){
+  const d=CATALOG.find(x=>x.id===id);curDeal=d;
+  const pct=Math.min(100,Math.round(d.sold/d.stock*100));
+  const me=state.alerts.includes(d.id);
+  const vsAvg=Math.round((1-d.price/d.avg)*100);
+  const w1=Math.round(d.orig/(d.orig+d.avg+d.price)*100);
+  const w2=Math.round(d.avg/(d.orig+d.avg+d.price)*100);
+  const avatarEmo=["😀","😎","🥰","🤩","😊"];
+  $("#sheet").innerHTML=`
+    <div class="grab"></div>
+    <div class="sheet-hero" style="background:${d.bg}">${d.img?`<img src="${d.img}" alt="">`:d.emoji}</div>
+    <div class="sheet-body">
+      <div class="brand">${d.brand} · ${d.cat}</div>
+      <h2>${d.name}</h2>
+      <div class="rev">⭐ 리뷰 ${won(d.reviews)}개 ${d.real?" · ✅ 실제 판매 링크 연동":""}</div>
+      <div class="sheet-price"><span class="dc">${d.dc}%</span><span class="won">${won(d.price)}원</span><span class="orig">${won(d.orig)}원</span></div>
+      <div class="pricetag">📉 최근 3개월 평균가보다 ${vsAvg}% 저렴</div>
+      <div class="histbox">
+        <h4>💰 이 가격, 얼마나 싼 거예요?</h4>
+        <div class="hrow"><span class="ic">🏬</span><span class="lbl">정가</span><span class="p strike">${won(d.orig)}원</span></div>
+        <div class="hrow"><span class="ic">📊</span><span class="lbl">최근 3개월 평균</span><span class="p">${won(d.avg)}원</span></div>
+        <div class="hrow low"><span class="ic">✓</span><span class="lbl">오늘 최저가픽</span><span class="p">${won(d.price)}원</span></div>
+        <div class="hbar">
+          <div class="b1" style="width:${w1}%">정가</div>
+          <div class="b2" style="width:${w2}%">평균</div>
+          <div class="b3" style="width:${100-w1-w2}%">오늘</div>
+        </div>
+      </div>
+      <div class="sheet-gauge">
+        <div class="top">
+          <span class="n">오늘 물량 <b>${pct}%</b> 소진 · ${d.stock-d.sold}개 남음</span>
+          <span class="t" data-timer="${d.endsAt}">--:--</span>
+        </div>
+        <div class="gauge"><div class="bar"><div class="fill" style="width:${pct}%"></div></div></div>
+        <div class="avatars">
+          ${avatarEmo.map(e=>`<span class="av">${e}</span>`).join("")}
+          <span class="txt">방금 <b>${3+Math.floor(pct/10)}명</b>이 이 딜을 봤어요</span>
+        </div>
+      </div>
+    </div>
+    <div class="sheet-cta">
+      <button class="btn-sub" onclick="toggleLike('${d.id}');openSheet('${d.id}')">${state.liked.includes(d.id)?"❤️":"🤍"}</button>
+      <button class="btn-sub" onclick="shareDeal()">📤</button>
+      ${d.real
+        ?`<button class="btn-main reallink" onclick="goReal()">최저가로 바로 구매 →</button>`
+        :`<button class="btn-main ${me?"alerted":""}" onclick="toggleAlert()">${me?"알림 설정됨 🔔 (해제하기)":"더 떨어지면 알림 받기 🔔"}</button>`}
+    </div>
+    <div class="sheet-note">이 딜은 네이버 쇼핑 커넥트 활동의 일환으로, 구매 발생 시 수수료를 제공받을 수 있어요.<br>가격·재고는 판매처 사정에 따라 실시간 변동될 수 있으며, 실제 결제·배송은 각 판매처가 진행해요.</div>`;
+  $("#dim").classList.add("on");
+  $("#sheet").classList.add("on");
+  tickTimers();
+}
+function closeSheet(){$("#dim").classList.remove("on");$("#sheet").classList.remove("on");curDeal=null;}
+$("#dim").onclick=closeSheet;
+
+function toggleAlert(){
+  if(!curDeal)return;
+  const i=state.alerts.indexOf(curDeal.id);
+  if(i>=0){state.alerts.splice(i,1);toast("알림을 해제했어요");}
+  else{state.alerts.push(curDeal.id);toast("가격이 더 떨어지면 바로 알려드릴게요 🔔");}
+  save();updateBdg();renderGrid();openSheet(curDeal.id);
+}
+function goReal(){
+  toast("판매처로 이동해요 →");
+  setTimeout(()=>window.open(curDeal.url,"_blank"),400);
+}
+function shareDeal(){
+  if(!curDeal)return;
+  const txt=`[최저가픽] ${curDeal.name} — 정가 대비 ${curDeal.dc}% 할인, 오늘 ${won(curDeal.price)}원!`;
+  if(navigator.share){navigator.share({title:"최저가픽",text:txt}).catch(()=>{});}
+  else{navigator.clipboard?.writeText(txt);toast("공유 문구를 복사했어요 📋");}
+}
+
+/* ── my page (알림·찜) ── */
+function renderMy(){
+  const mine=CATALOG.filter(d=>state.alerts.includes(d.id)||state.liked.includes(d.id));
+  const saved=mine.reduce((s,d)=>s+(d.orig-d.price),0);
+  const el=$("#pageMy");
+  if(!mine.length){
+    el.innerHTML=`<div class="my-empty">
+      <div class="e">🔔</div><h3>아직 알림 설정한 딜이 없어요</h3>
+      <p>마음에 드는 딜에 알림을 걸어두면<br>가격이 더 떨어질 때 바로 알려드려요!</p>
+    </div>`;return;
+  }
+  el.innerHTML=`
+    <div class="my-sum">
+      <div class="l"><div class="cap">지금 다 사면 정가 대비</div><div class="v"><b>${won(saved)}원</b> 아껴요</div></div>
+      <div class="r">🐷</div>
+    </div>
+    <div class="my-list">
+      ${mine.map(d=>{
+        const alerted=state.alerts.includes(d.id);
+        return`<div class="my-item" onclick="openSheet('${d.id}')">
+          <div class="th" style="background:${d.bg}">${d.img?`<img src="${d.img}" alt="">`:d.emoji}</div>
+          <div class="info"><div class="n">${d.name}</div><div class="s">${won(d.price)}원 · 평균가 대비 -${Math.round((1-d.price/d.avg)*100)}%</div></div>
+          <span class="st ${alerted?"ing":"ok"}">${alerted?"알림 ON 🔔":"찜 ❤️"}</span>
+        </div>`;}).join("")}
+    </div>`;
+}
+
+/* ── nav ── */
+function updateBdg(){
+  const b=$("#myBdg");
+  b.textContent=state.alerts.length;
+  b.classList.toggle("hide",!state.alerts.length);
+}
+$("#navHome").onclick=()=>{
+  $("#pageHome").classList.remove("hide");$("#pageMy").classList.add("hide");
+  $("#navHome").classList.add("on");$("#navMy").classList.remove("on");
+  window.scrollTo({top:0});
+};
+$("#navMy").onclick=()=>{
+  renderMy();
+  $("#pageMy").classList.remove("hide");$("#pageHome").classList.add("hide");
+  $("#navMy").classList.add("on");$("#navHome").classList.remove("on");
+  window.scrollTo({top:0});
+};
+
+/* ── timers & live counter ── */
+function tickTimers(){
+  const now=Date.now();
+  document.querySelectorAll("[data-timer]").forEach(el=>{
+    el.textContent=fmtT(+el.dataset.timer-now);
+  });
+}
+setInterval(tickTimers,1000);
+let live=1024;
+setInterval(()=>{
+  live+=Math.floor(Math.random()*7)-2;
+  $("#liveCnt").textContent=won(live)+"명";
+},2600);
+
+/* ── catalog.json 병합 (add-deal.js로 추가한 실제 딜) ── */
+// catalog.json 우선순위: 외부 URL(배포용, 재배포 없이 갱신) → 실패 시 같은 폴더 파일(로컬)
+const CATALOG_URL="https://pnu10.github.io/lowest-pick/catalog.json";
+async function loadExternalCatalog(){
+  try{
+    let r=await fetch(CATALOG_URL,{cache:"no-store"}).catch(()=>null);
+    if(!r||!r.ok)r=await fetch("catalog.json",{cache:"no-store"});
+    if(!r.ok)return;
+    const ext=await r.json();
+    if(!Array.isArray(ext))return;
+    [...ext].reverse().forEach(d=>{
+      if(!d||!d.name||!d.price)return;
+      const i=CATALOG.findIndex(x=>(d.url&&x.url===d.url)||x.name===d.name);
+      if(i>=0)CATALOG.splice(i,1);
+      d.cat=CAT_SPECIAL[d.id]||CAT_ALIAS[d.cat]||d.cat; // 구 카테고리명도 게시판명으로 정규화
+      d.endsAt=NOW+(d.endH||24)*3600*1000;
+      d.avg=Math.round(((d.orig||d.price)*0.55+d.price*0.45)/100)*100;
+      CATALOG.unshift(d);
+    });
+    renderRush();renderGrid();tickTimers();
+  }catch(e){/* catalog.json 없으면 시드만 사용 */}
+}
+
+/* ── init ── */
+renderHero();renderRush();renderChips();renderGrid();updateBdg();tickTimers();
+loadExternalCatalog();
+</script>
+</body>
+</html>
