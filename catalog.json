@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-탁상용-미니-만국기",
+    "real": true,
+    "cat": "생활리빙",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260618_207/1781766536605qNB7U_JPEG/331607743338838_335349868.jpg?type=o1000",
+    "brand": "파름",
+    "name": "탁상용 미니 만국기",
+    "orig": 2500,
+    "price": 2000,
+    "dc": 20,
+    "stock": 90,
+    "sold": 84,
+    "endH": 36,
+    "reviews": 857,
+    "badge": "real",
+    "url": "https://naver.me/GGGBn5bW"
+  },
+  {
     "id": "real-일본-야마켄-야채탈수기-대용량-업소용-야채짤",
     "real": true,
     "cat": "생활리빙",
