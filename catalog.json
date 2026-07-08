@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-맥심모카골드-180T-식당-사무실-탕비실커피",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250618_24/1750218272697s06a7_PNG/64668663558331_1709560729.png?type=o1000",
+    "brand": "커피몬스터",
+    "name": "맥심모카골드 180T 식당 사무실 탕비실커피 다방커피믹스",
+    "orig": 27500,
+    "price": 27500,
+    "dc": 0,
+    "stock": 130,
+    "sold": 106,
+    "endH": 58,
+    "reviews": 26,
+    "badge": "real",
+    "url": "https://naver.me/F3ES9ydW"
+  },
+  {
     "id": "real-국내산-홍감자-햇-수미-감자-카스테라",
     "real": true,
     "cat": "식품",
