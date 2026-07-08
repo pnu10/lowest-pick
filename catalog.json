@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-파손보상-맥반석-구운계란-구운란-대란-30구",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20240614_7/1718349908255Eg6lQ_JPEG/6831832177822998_940969639.jpg?type=o1000",
+    "brand": "굿스푼 다이어트",
+    "name": "파손보상 맥반석 구운계란 구운란 대란 30구+30구(60구) 2판 반숙란",
+    "orig": 26500,
+    "price": 22100,
+    "dc": 17,
+    "stock": 50,
+    "sold": 35,
+    "endH": 60,
+    "reviews": 182537,
+    "badge": "real",
+    "url": "https://naver.me/5RAYqVLb"
+  },
+  {
     "id": "real-연세우유-더클래식-멸균우유-흰우유-180ml",
     "real": true,
     "cat": "식품",
