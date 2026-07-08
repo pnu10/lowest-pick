@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-백만-효소-사랑",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260317_22/1773733653841aCwGH_PNG/107866472597603831_1592386062.png?type=o1000",
+    "brand": "대장사랑 미궁365",
+    "name": "백만 효소 사랑",
+    "orig": 135000,
+    "price": 49900,
+    "dc": 63,
+    "stock": 70,
+    "sold": 51,
+    "endH": 55,
+    "reviews": 9882,
+    "badge": "real",
+    "url": "https://naver.me/Fc6L4ehQ"
+  },
+  {
     "id": "real-4만리뷰-DA디자인-럭셔리-메탈-고급-주차번",
     "real": true,
     "cat": "가구인테리어",
