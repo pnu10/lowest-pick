@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-이지핏-가정용재활용-분리수거함-쓰레기-분리수",
+    "real": true,
+    "cat": "생활리빙",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20251105_96/1762312349028QTzkj_JPEG/16905716974224582_290045863.JPG?type=o1000",
+    "brand": "킴스트리",
+    "name": "이지핏 가정용재활용 분리수거함 쓰레기 분리수거 업소용 분리수거쓰레기통 이동식 3단",
+    "orig": 85000,
+    "price": 45800,
+    "dc": 46,
+    "stock": 70,
+    "sold": 54,
+    "endH": 29,
+    "reviews": 807,
+    "badge": "real",
+    "url": "https://naver.me/GcA5FXEg"
+  },
+  {
     "id": "real-왕타칫솔-치실-치간칫솔-왕타치간칫솔-wang",
     "real": true,
     "cat": "생활리빙",
