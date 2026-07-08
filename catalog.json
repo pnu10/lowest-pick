@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-팔레트슬라임-얼먹딸기-왁뿌슬라임-왁스뿌시기-",
+    "real": true,
+    "cat": "생활리빙",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260325_279/1774401928809UxjwF_PNG/37379004641594530_1472143926.png?type=o1000",
+    "brand": "팔레트슬라임",
+    "name": "팔레트슬라임 얼먹딸기 왁뿌슬라임 왁스뿌시기 왁뿌볼 슬라임",
+    "orig": 15500,
+    "price": 14500,
+    "dc": 6,
+    "stock": 40,
+    "sold": 33,
+    "endH": 27,
+    "reviews": 12,
+    "badge": "real",
+    "url": "https://naver.me/xTyLGZiB"
+  },
+  {
     "id": "real-1-1-살림백서-천연-유래98-세탁세제-액체",
     "real": true,
     "cat": "생활리빙",
