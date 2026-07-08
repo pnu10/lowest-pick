@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-연세우유-더클래식-멸균우유-흰우유-180ml",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260115_46/1768441583832hVJaT_JPEG/102574446923247294_50931614.jpg?type=o1000",
+    "brand": "다솜푸드마켓",
+    "name": "연세우유 더클래식 멸균우유 흰우유, 180ml, 48개",
+    "orig": 29900,
+    "price": 29900,
+    "dc": 0,
+    "stock": 120,
+    "sold": 102,
+    "endH": 52,
+    "reviews": 2669,
+    "badge": "real",
+    "url": "https://naver.me/xEXnNed6"
+  },
+  {
     "id": "real-백만-효소-사랑",
     "real": true,
     "cat": "식품",
