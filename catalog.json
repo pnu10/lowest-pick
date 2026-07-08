@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-국내산-홍감자-햇-수미-감자-카스테라",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260623_194/1782196538764XbmNO_PNG/36886394685226118_1110149370.png?type=o1000",
+    "brand": "맛꾼푸드",
+    "name": "국내산 홍감자 햇 수미 감자 카스테라",
+    "orig": 13500,
+    "price": 8900,
+    "dc": 34,
+    "stock": 150,
+    "sold": 85,
+    "endH": 17,
+    "reviews": 5254,
+    "badge": "real",
+    "url": "https://naver.me/GKIZ1Ro5"
+  },
+  {
     "id": "real-파손보상-맥반석-구운계란-구운란-대란-30구",
     "real": true,
     "cat": "식품",
