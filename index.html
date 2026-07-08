@@ -121,6 +121,13 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;letter-spacin
 .qclear{flex:none;width:22px;height:22px;border-radius:50%;background:var(--line);color:var(--ink2);font-size:11px;font-weight:800;display:grid;place-items:center}
 .no-result{grid-column:1/-1;text-align:center;padding:48px 20px;color:var(--ink3);font-size:14px;font-weight:600;line-height:1.6}
 .foot-note{padding:22px 24px calc(90px + env(safe-area-inset-bottom));text-align:center;font-size:11.5px;color:var(--ink3);font-weight:500;line-height:1.6}
+/* 정직 데이터 UI */
+.rev-mini{margin-top:9px;font-size:12px;font-weight:600;color:var(--ink3)}
+.rev-mini .lowtag{color:var(--accent);font-weight:800}
+.rush .thumb{position:relative}
+.rush .thumb .dcbadge{position:absolute;top:8px;left:8px;z-index:2;background:linear-gradient(135deg,#FF4D2E,#FF7A3D);color:#fff;font-size:12px;font-weight:800;padding:3px 9px;border-radius:8px}
+.track-soon{margin-top:12px;background:var(--accent-soft);color:var(--accent);font-size:12.5px;font-weight:600;line-height:1.5;padding:11px 13px;border-radius:12px}
+.track-low{margin-top:8px;color:var(--green);font-size:12.5px;font-weight:800}
 
 /* ───── category chips ───── */
 .chips{
@@ -349,7 +356,7 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;letter-spacin
 
 <header class="hdr">
   <div class="logo"><span class="mark">🏷️</span>최저가픽</div>
-  <div class="hdr-live"><span class="dot"></span>오늘 <span id="liveCnt">1,024명</span> 득템</div>
+  <div class="hdr-live"><span class="dot"></span>매일 새 딜 업데이트</div>
 </header>
 
 <main id="pageHome">
@@ -368,7 +375,7 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;letter-spacin
 
   <!-- 오늘까지만 이 가격 -->
   <section class="sec" id="secRush">
-    <div class="sec-hd"><h3>⏰ 오늘까지만 이 가격</h3></div>
+    <div class="sec-hd"><h3>🔥 할인율 높은 딜</h3></div>
     <div class="rush-wrap" id="rushWrap"></div>
   </section>
 
@@ -380,7 +387,7 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;letter-spacin
       <div class="sortsel" id="sortSel">
         <button data-s="pop" class="on">인기순</button>
         <button data-s="dc">할인율순</button>
-        <button data-s="end">마감임박순</button>
+        <button data-s="low">낮은가격순</button>
       </div>
     </div>
     <div class="grid" id="grid"></div>
@@ -443,9 +450,9 @@ function toast(msg){
 
 /* ── hero ── */
 const HERO=[
- {bg:"linear-gradient(135deg,#FF4D2E,#FF8A3D)",cap:"오늘의 특가 브리핑",h:"오늘의 최저가만<br>골라 담았습니다",sub:"매일 아침 9시 업데이트",e:"🏷️"},
- {bg:"linear-gradient(135deg,#3182F6,#6FA8FF)",cap:"3개월 가격 추적",h:"정가 주고 사면<br>손해예요",sub:"평균가보다 진짜 싼 딜만 통과",e:"📉"},
- {bg:"linear-gradient(135deg,#7C5CFF,#A78BFA)",cap:"실시간 검증딜",h:"리뷰 7.9만개<br>리스테린 46% 특가",sub:"실제 최저가 링크 연동",e:"🦷"},
+ {bg:"linear-gradient(135deg,#FF4D2E,#FF8A3D)",cap:"오늘의 특가 브리핑",h:"할인율 높은 딜만<br>골라 담았어요",sub:"매일 새로 업데이트",e:"🏷️"},
+ {bg:"linear-gradient(135deg,#3182F6,#6FA8FF)",cap:"정직한 딜",h:"과장 없이<br>진짜 할인율만",sub:"실제 정가·판매가 기준",e:"🧾"},
+ {bg:"linear-gradient(135deg,#7C5CFF,#A78BFA)",cap:"리뷰로 검증",h:"리뷰 많은<br>믿을 만한 상품",sub:"실제 판매 링크 연동",e:"⭐"},
 ];
 let heroIdx=0;
 function renderHero(){
@@ -464,14 +471,13 @@ function renderHero(){
 
 /* ── rush (오늘 마감) ── */
 function renderRush(){
-  const rush=CATALOG.filter(d=>d.img).sort((a,b)=>a.endsAt-b.endsAt).slice(0,7);
+  const rush=CATALOG.filter(d=>d.img).sort((a,b)=>b.dc-a.dc).slice(0,7);
   $("#rushWrap").innerHTML=rush.map(d=>`
     <div class="rush" onclick="openSheet('${d.id}')">
-      <div class="thumb" style="background:${d.bg}">${d.img?`<img src="${d.img}" alt="">`:d.emoji}</div>
-      <div class="timer" data-timer="${d.endsAt}">--:--</div>
+      <div class="thumb" style="background:${d.bg}"><span class="dcbadge">${d.dc}%</span>${d.img?`<img src="${d.img}" alt="">`:d.emoji}</div>
       <div class="name">${d.name}</div>
       <div class="price"><span class="dc">${d.dc}%</span><span class="won">${won(d.price)}원</span></div>
-      <div class="left">${d.stock-d.sold}개 남음!</div>
+      <div class="left">⭐ 리뷰 ${won(d.reviews)}</div>
     </div>`).join("");
 }
 
@@ -510,21 +516,21 @@ function renderGrid(){
     list=list.filter(d=>curCat==="전체"||d.cat===curCat);
   }
   if(curSort==="dc")list.sort((a,b)=>b.dc-a.dc);
-  else if(curSort==="end")list.sort((a,b)=>a.endsAt-b.endsAt);
-  else list.sort((a,b)=>(b.sold/b.stock)-(a.sold/a.stock));
+  else if(curSort==="low")list.sort((a,b)=>a.price-b.price);
+  else list.sort((a,b)=>(b.reviews||0)-(a.reviews||0)); // 인기순 = 리뷰 많은 순(실제값)
   $("#dealCnt").textContent=list.length;
   if(!list.length){
     $("#grid").innerHTML=`<div class="no-result">🔍 '${curQ||curCat}'에 맞는 딜이 없어요.<br>다른 검색어로 찾아보세요.</div>`;
     return;
   }
   $("#grid").innerHTML=list.map((d,i)=>{
-    const pct=Math.min(100,Math.round(d.sold/d.stock*100));
-    const me=state.alerts.includes(d.id), liked=state.liked.includes(d.id);
+    const liked=state.liked.includes(d.id);
+    const lo=lowestInfo(d); // 실제 가격기록 기반 최저가(있을 때만)
     return`
     <div class="deal" style="animation-delay:${i*0.03}s" onclick="openSheet('${d.id}')">
       <div class="thumb" style="background:${d.bg}">
         ${d.img?`<img src="${d.img}" alt="" loading="lazy">`:d.emoji}
-        <span class="badge ${d.badge}">${BADGE_TXT[d.badge]}</span>
+        <span class="badge best">${d.dc}% 할인</span>
       </div>
       <button class="like" onclick="event.stopPropagation();toggleLike('${d.id}')">${liked?"❤️":"🤍"}</button>
       <div class="body">
@@ -534,12 +540,8 @@ function renderGrid(){
           <div class="orig">${won(d.orig)}원</div>
           <div class="now"><span class="dc">${d.dc}%</span><span class="won">${won(d.price)}</span><span class="unit">원</span></div>
         </div>
-        <div class="gauge">
-          <div class="bar"><div class="fill" style="width:${pct}%"></div></div>
-          <div class="meta"><span class="pplcnt">${pct>=90?"품절 임박 ⚡️":`${pct}% 소진`}</span><span class="goal">${d.stock-d.sold}개 남음</span></div>
-        </div>
+        <div class="rev-mini">⭐ 리뷰 ${won(d.reviews)}개${lo?` · <span class="lowtag">${lo}</span>`:""}</div>
       </div>
-      ${me?'<div class="alerted">최저가 알림 ON 🔔</div>':""}
     </div>`;
   }).join("");
 }
@@ -554,42 +556,21 @@ function toggleLike(id){
 let curDeal=null;
 function openSheet(id){
   const d=CATALOG.find(x=>x.id===id);curDeal=d;
-  const pct=Math.min(100,Math.round(d.sold/d.stock*100));
   const me=state.alerts.includes(d.id);
-  const vsAvg=Math.round((1-d.price/d.avg)*100);
-  const w1=Math.round(d.orig/(d.orig+d.avg+d.price)*100);
-  const w2=Math.round(d.avg/(d.orig+d.avg+d.price)*100);
-  const avatarEmo=["😀","😎","🥰","🤩","😊"];
+  const dcAmt=won(d.orig-d.price);
   $("#sheet").innerHTML=`
     <div class="grab"></div>
     <div class="sheet-hero" style="background:${d.bg}">${d.img?`<img src="${d.img}" alt="">`:d.emoji}</div>
     <div class="sheet-body">
       <div class="brand">${d.brand} · ${d.cat}</div>
       <h2>${d.name}</h2>
-      <div class="rev">⭐ 리뷰 ${won(d.reviews)}개 ${d.real?" · ✅ 실제 판매 링크 연동":""}</div>
+      <div class="rev">⭐ 리뷰 ${won(d.reviews)}개${d.real?" · ✅ 실제 판매 링크 연동":""}</div>
       <div class="sheet-price"><span class="dc">${d.dc}%</span><span class="won">${won(d.price)}원</span><span class="orig">${won(d.orig)}원</span></div>
-      <div class="pricetag">📉 최근 3개월 평균가보다 ${vsAvg}% 저렴</div>
       <div class="histbox">
-        <h4>💰 이 가격, 얼마나 싼 거예요?</h4>
+        <h4>💰 가격 정보</h4>
         <div class="hrow"><span class="ic">🏬</span><span class="lbl">정가</span><span class="p strike">${won(d.orig)}원</span></div>
-        <div class="hrow"><span class="ic">📊</span><span class="lbl">최근 3개월 평균</span><span class="p">${won(d.avg)}원</span></div>
-        <div class="hrow low"><span class="ic">✓</span><span class="lbl">오늘 최저가픽</span><span class="p">${won(d.price)}원</span></div>
-        <div class="hbar">
-          <div class="b1" style="width:${w1}%">정가</div>
-          <div class="b2" style="width:${w2}%">평균</div>
-          <div class="b3" style="width:${100-w1-w2}%">오늘</div>
-        </div>
-      </div>
-      <div class="sheet-gauge">
-        <div class="top">
-          <span class="n">오늘 물량 <b>${pct}%</b> 소진 · ${d.stock-d.sold}개 남음</span>
-          <span class="t" data-timer="${d.endsAt}">--:--</span>
-        </div>
-        <div class="gauge"><div class="bar"><div class="fill" style="width:${pct}%"></div></div></div>
-        <div class="avatars">
-          ${avatarEmo.map(e=>`<span class="av">${e}</span>`).join("")}
-          <span class="txt">방금 <b>${3+Math.floor(pct/10)}명</b>이 이 딜을 봤어요</span>
-        </div>
+        <div class="hrow low"><span class="ic">✓</span><span class="lbl">현재 딜가</span><span class="p">${won(d.price)}원 · ${dcAmt}원 할인</span></div>
+        ${priceTrackHtml(d)}
       </div>
     </div>
     <div class="sheet-cta">
@@ -670,19 +651,42 @@ $("#navMy").onclick=()=>{
   window.scrollTo({top:0});
 };
 
-/* ── timers & live counter ── */
-function tickTimers(){
-  const now=Date.now();
-  document.querySelectorAll("[data-timer]").forEach(el=>{
-    el.textContent=fmtT(+el.dataset.timer-now);
-  });
+/* ── 실제 가격 기록(price-history.json) 기반 최저가 ── */
+let PRICE_HISTORY={}; // { url: [{d:"2026-07-08", p:19200}, ...] }
+function tickTimers(){} // 타이머 제거됨(호환용 no-op)
+
+// 날짜 중복 제거한 기록 배열
+function histOf(d){
+  const h=PRICE_HISTORY[d&&d.url]||[];
+  const byDay={}; h.forEach(x=>{byDay[x.d]=x.p;});
+  return Object.entries(byDay).map(([dt,p])=>({d:dt,p})).sort((a,b)=>a.d<b.d?-1:1);
 }
-setInterval(tickTimers,1000);
-let live=1024;
-setInterval(()=>{
-  live+=Math.floor(Math.random()*7)-2;
-  $("#liveCnt").textContent=won(live)+"명";
-},2600);
+// 그리드 카드용 짧은 최저가 태그 (2일 이상 기록 있을 때만)
+function lowestInfo(d){
+  const h=histOf(d); if(h.length<2)return "";
+  const min=Math.min(...h.map(x=>x.p));
+  if(d.price<=min)return "역대 최저가";
+  return "";
+}
+// 상세시트용 가격추적 블록
+function priceTrackHtml(d){
+  const h=histOf(d);
+  if(h.length<2){
+    return `<div class="track-soon">📈 이 상품 가격을 매일 기록하고 있어요. 며칠 뒤 최저가 추이를 보여드릴게요.</div>`;
+  }
+  const min=Math.min(...h.map(x=>x.p));
+  const days=h.length;
+  const isLow=d.price<=min;
+  return `<div class="hrow"><span class="ic">📉</span><span class="lbl">최근 ${days}일 최저가</span><span class="p">${won(min)}원</span></div>
+    ${isLow?`<div class="track-low">✅ 기록상 최저가예요 (최근 ${days}일 기준)</div>`:``}`;
+}
+async function loadPriceHistory(){
+  try{
+    let r=await fetch("https://pnu10.github.io/lowest-pick/price-history.json",{cache:"no-store"}).catch(()=>null);
+    if(!r||!r.ok)r=await fetch("price-history.json",{cache:"no-store"}).catch(()=>null);
+    if(r&&r.ok){PRICE_HISTORY=await r.json()||{};renderGrid();}
+  }catch(e){/* 없으면 최저가 기능만 비활성, 앱은 정상 */}
+}
 
 /* ── catalog.json 병합 (add-deal.js로 추가한 실제 딜) ── */
 // catalog.json 우선순위: 외부 URL(배포용, 재배포 없이 갱신) → 실패 시 같은 폴더 파일(로컬)
@@ -699,17 +703,16 @@ async function loadExternalCatalog(){
       const i=CATALOG.findIndex(x=>(d.url&&x.url===d.url)||x.name===d.name);
       if(i>=0)CATALOG.splice(i,1);
       d.cat=CAT_SPECIAL[d.id]||CAT_ALIAS[d.cat]||d.cat; // 구 카테고리명도 게시판명으로 정규화
-      d.endsAt=NOW+(d.endH||24)*3600*1000;
-      d.avg=Math.round(((d.orig||d.price)*0.55+d.price*0.45)/100)*100;
       CATALOG.unshift(d);
     });
-    renderRush();renderGrid();tickTimers();
+    renderRush();renderGrid();
   }catch(e){/* catalog.json 없으면 시드만 사용 */}
 }
 
 /* ── init ── */
-renderHero();renderRush();renderChips();renderGrid();updateBdg();tickTimers();
+renderHero();renderRush();renderChips();renderGrid();updateBdg();
 loadExternalCatalog();
+loadPriceHistory();
 </script>
 </body>
 </html>
