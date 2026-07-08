@@ -405,7 +405,7 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;letter-spacin
 <!-- nav -->
 <nav class="nav">
   <button id="navHome" class="on"><span class="i">🏠</span>홈</button>
-  <button id="navMy"><span class="bdg hide" id="myBdg">0</span><span class="i">🔔</span>내 알림</button>
+  <button id="navMy"><span class="bdg hide" id="myBdg">0</span><span class="i">❤️</span>찜</button>
 </nav>
 
 <div class="toast" id="toast"></div>
@@ -549,14 +549,13 @@ function renderGrid(){
 function toggleLike(id){
   const i=state.liked.indexOf(id);
   if(i>=0){state.liked.splice(i,1);}else{state.liked.push(id);toast("찜 목록에 담았어요 ❤️");}
-  save();renderGrid();
+  save();updateBdg();renderGrid();
 }
 
 /* ── bottom sheet ── */
 let curDeal=null;
 function openSheet(id){
   const d=CATALOG.find(x=>x.id===id);curDeal=d;
-  const me=state.alerts.includes(d.id);
   const dcAmt=won(d.orig-d.price);
   $("#sheet").innerHTML=`
     <div class="grab"></div>
@@ -576,9 +575,9 @@ function openSheet(id){
     <div class="sheet-cta">
       <button class="btn-sub" onclick="toggleLike('${d.id}');openSheet('${d.id}')">${state.liked.includes(d.id)?"❤️":"🤍"}</button>
       <button class="btn-sub" onclick="shareDeal()">📤</button>
-      ${d.real
+      ${d.url
         ?`<button class="btn-main reallink" onclick="goReal()">최저가로 바로 구매 →</button>`
-        :`<button class="btn-main ${me?"alerted":""}" onclick="toggleAlert()">${me?"알림 설정됨 🔔 (해제하기)":"더 떨어지면 알림 받기 🔔"}</button>`}
+        :`<button class="btn-main" disabled style="opacity:.5">구매 링크 준비 중</button>`}
     </div>
     <div class="sheet-note">이 딜은 네이버 쇼핑 커넥트 활동의 일환으로, 구매 발생 시 수수료를 제공받을 수 있어요.<br>가격·재고는 판매처 사정에 따라 실시간 변동될 수 있으며, 실제 결제·배송은 각 판매처가 진행해요.</div>`;
   $("#dim").classList.add("on");
@@ -588,13 +587,6 @@ function openSheet(id){
 function closeSheet(){$("#dim").classList.remove("on");$("#sheet").classList.remove("on");curDeal=null;}
 $("#dim").onclick=closeSheet;
 
-function toggleAlert(){
-  if(!curDeal)return;
-  const i=state.alerts.indexOf(curDeal.id);
-  if(i>=0){state.alerts.splice(i,1);toast("알림을 해제했어요");}
-  else{state.alerts.push(curDeal.id);toast("가격이 더 떨어지면 바로 알려드릴게요 🔔");}
-  save();updateBdg();renderGrid();openSheet(curDeal.id);
-}
 function goReal(){
   toast("판매처로 이동해요 →");
   setTimeout(()=>window.open(curDeal.url,"_blank"),400);
@@ -606,29 +598,28 @@ function shareDeal(){
   else{navigator.clipboard?.writeText(txt);toast("공유 문구를 복사했어요 📋");}
 }
 
-/* ── my page (알림·찜) ── */
+/* ── my page (찜) ── */
 function renderMy(){
-  const mine=CATALOG.filter(d=>state.alerts.includes(d.id)||state.liked.includes(d.id));
+  const mine=CATALOG.filter(d=>state.liked.includes(d.id));
   const saved=mine.reduce((s,d)=>s+(d.orig-d.price),0);
   const el=$("#pageMy");
   if(!mine.length){
     el.innerHTML=`<div class="my-empty">
-      <div class="e">🔔</div><h3>아직 알림 설정한 딜이 없어요</h3>
-      <p>마음에 드는 딜에 알림을 걸어두면<br>가격이 더 떨어질 때 바로 알려드려요!</p>
+      <div class="e">❤️</div><h3>아직 찜한 딜이 없어요</h3>
+      <p>마음에 드는 딜의 하트를 누르면<br>여기에 모아서 볼 수 있어요!</p>
     </div>`;return;
   }
   el.innerHTML=`
     <div class="my-sum">
-      <div class="l"><div class="cap">지금 다 사면 정가 대비</div><div class="v"><b>${won(saved)}원</b> 아껴요</div></div>
+      <div class="l"><div class="cap">찜한 딜 지금 다 사면 정가 대비</div><div class="v"><b>${won(saved)}원</b> 아껴요</div></div>
       <div class="r">🐷</div>
     </div>
     <div class="my-list">
       ${mine.map(d=>{
-        const alerted=state.alerts.includes(d.id);
         return`<div class="my-item" onclick="openSheet('${d.id}')">
           <div class="th" style="background:${d.bg}">${d.img?`<img src="${d.img}" alt="">`:d.emoji}</div>
-          <div class="info"><div class="n">${d.name}</div><div class="s">${won(d.price)}원 · 평균가 대비 -${Math.round((1-d.price/d.avg)*100)}%</div></div>
-          <span class="st ${alerted?"ing":"ok"}">${alerted?"알림 ON 🔔":"찜 ❤️"}</span>
+          <div class="info"><div class="n">${d.name}</div><div class="s">${won(d.price)}원 · ${d.dc}% 할인</div></div>
+          <span class="st ok">찜 ❤️</span>
         </div>`;}).join("")}
     </div>`;
 }
@@ -636,8 +627,8 @@ function renderMy(){
 /* ── nav ── */
 function updateBdg(){
   const b=$("#myBdg");
-  b.textContent=state.alerts.length;
-  b.classList.toggle("hide",!state.alerts.length);
+  b.textContent=state.liked.length;
+  b.classList.toggle("hide",!state.liked.length);
 }
 $("#navHome").onclick=()=>{
   $("#pageHome").classList.remove("hide");$("#pageMy").classList.add("hide");
