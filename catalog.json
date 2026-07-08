@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-생활물가-베이킹소다-과탄산소다-구연산-1kg",
+    "real": true,
+    "cat": "생활리빙",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20240724_104/1721780475911LM5NG_JPEG/11161835707204392_733210466.jpg?type=o1000",
+    "brand": "크리오 공식스토어",
+    "name": "[생활물가] 베이킹소다/과탄산소다/구연산 1kgx3개",
+    "orig": 23900,
+    "price": 18900,
+    "dc": 21,
+    "stock": 130,
+    "sold": 85,
+    "endH": 61,
+    "reviews": 1410,
+    "badge": "real",
+    "url": "https://naver.me/xLNl4K8b"
+  },
+  {
     "id": "real-고리형-모기향거치대-연소기-모기약-낚시-캠핑",
     "real": true,
     "cat": "생활리빙",
