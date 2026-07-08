@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-랄라-접이식카트",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250430_122/1746004720075oqQ9u_JPEG/20946937776722281_1497098281.jpg?type=o1000",
+    "brand": "오늘도 랄라",
+    "name": "랄라 접이식카트",
+    "orig": 59900,
+    "price": 43900,
+    "dc": 27,
+    "stock": 100,
+    "sold": 65,
+    "endH": 46,
+    "reviews": 47637,
+    "badge": "real",
+    "url": "https://naver.me/574ROlNr"
+  },
+  {
     "id": "real-한일-오이지짤순이-업소용-가정용-나물-두부-",
     "real": true,
     "cat": "생활리빙",
