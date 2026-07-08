@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-건강한식탁-옻칠-나무-수저세트",
+    "real": true,
+    "cat": "생활리빙",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250307_232/1741280318262ewpNo_JPEG/75413123176036065_924933639.jpg?type=o1000",
+    "brand": "건강한 식탁",
+    "name": "건강한식탁 옻칠 나무 수저세트",
+    "orig": 8400,
+    "price": 6700,
+    "dc": 20,
+    "stock": 90,
+    "sold": 51,
+    "endH": 53,
+    "reviews": 33558,
+    "badge": "real",
+    "url": "https://naver.me/GDQKUseb"
+  },
+  {
     "id": "real-은비제작소-베스트-번짐없고-선명한-날인-최상",
     "real": true,
     "cat": "생활리빙",
