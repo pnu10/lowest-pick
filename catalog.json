@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-대림바스-무광-니켈-세면대수전-DL-L231",
+    "real": true,
+    "cat": "생활리빙",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260416_58/1776287554759phH11_PNG/52055856838459635_1478422593.png?type=o1000",
+    "brand": "대림바스베스트몰",
+    "name": "대림바스 무광 니켈 세면대수전 DL-L2310SN SUS 욕실 세면기",
+    "orig": 65000,
+    "price": 57000,
+    "dc": 12,
+    "stock": 60,
+    "sold": 44,
+    "endH": 56,
+    "reviews": 811,
+    "badge": "real",
+    "url": "https://naver.me/5sufxyqW"
+  },
+  {
     "id": "real-엑시툴-농약분무기-충전식-자동-무선전동-고압",
     "real": true,
     "cat": "생활리빙",
