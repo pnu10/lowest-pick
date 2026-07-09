@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-나이키-남자-실내-수영복-숏사각-스퀘어레그-",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20251125_145/17640712329262ooLD_PNG/98204210067013826_89564067.png?type=o1000",
+    "brand": "나이키스윔",
+    "name": "나이키 남자 실내 수영복 숏사각 스퀘어레그 강습용 탄탄이 NESSA002",
+    "orig": 69000,
+    "price": 61000,
+    "dc": 12,
+    "stock": 60,
+    "sold": 43,
+    "endH": 15,
+    "reviews": 253,
+    "badge": "real",
+    "url": "https://naver.me/Gxr7UrmP"
+  },
+  {
     "id": "real-루트웨이-대용량-보조배터리-PB360W-파워",
     "real": true,
     "cat": "스포츠레저",
