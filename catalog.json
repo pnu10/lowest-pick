@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-쉬즈미스-타이블라우스-리본-브이넥-폴리-봄블",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20240223_282/1708677479795uN4VK_JPEG/109813259517714314_737767413.jpg?type=o1000",
+    "brand": "쉬즈미스 광주금남로점",
+    "name": "쉬즈미스 타이블라우스 리본 브이넥 폴리 봄블라우스 25년 봄",
+    "orig": 138000,
+    "price": 69000,
+    "dc": 50,
+    "stock": 130,
+    "sold": 105,
+    "endH": 60,
+    "reviews": 50,
+    "badge": "real",
+    "url": "https://naver.me/xoGEc8vG"
+  },
+  {
     "id": "real-머피-점프수트-나시-멜빵-바지-반바지-여아-",
     "real": true,
     "cat": "출산육아",
