@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-신일-좌석용-가정용-선풍기-35cm-4엽",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20240416_42/1713242189208Y9Tcu_PNG/114378084920132612_1098671497.png?type=o1000",
+    "brand": "더모아플러스샵",
+    "name": "신일 좌석용 가정용 선풍기 35cm 4엽",
+    "orig": 95000,
+    "price": 55000,
+    "dc": 42,
+    "stock": 60,
+    "sold": 35,
+    "endH": 48,
+    "reviews": 2019,
+    "badge": "real",
+    "url": "https://naver.me/539TMbny"
+  },
+  {
     "id": "real-삼성전자-무선키보드마우스세트-SP-R1600",
     "real": true,
     "cat": "디지털가전",
