@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-소문난돌상",
+    "real": true,
+    "cat": "출산육아",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260222_99/1771692275205aLPHA_JPEG/44512329354209141_222457223.jpg?type=o1000",
+    "brand": "소문난돌상",
+    "name": "소문난돌상",
+    "orig": 49000,
+    "price": 49000,
+    "dc": 0,
+    "stock": 130,
+    "sold": 79,
+    "endH": 23,
+    "reviews": 17520,
+    "badge": "real",
+    "url": "https://naver.me/Gi0Cfnng"
+  },
+  {
     "id": "real-크록스-크록밴드-바야밴드-클래식-볼드-바야-",
     "real": true,
     "cat": "패션",
