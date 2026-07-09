@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-메가마트-링티-제로-복숭아맛-1L",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20241230_275/1735534611382N1Ern_JPEG/10304578195015362_399665746.jpg?type=o1000",
+    "brand": "메가마트 동래점",
+    "name": "메가마트 링티 제로 복숭아맛 1L",
+    "orig": 3490,
+    "price": 1580,
+    "dc": 55,
+    "stock": 130,
+    "sold": 87,
+    "endH": 49,
+    "reviews": 85,
+    "badge": "real",
+    "url": "https://naver.me/FqIJGfsy"
+  },
+  {
     "id": "real-마늘쫑-장아찌-간장-짱아치-절임-반찬-500",
     "real": true,
     "cat": "식품",
