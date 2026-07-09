@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-아디다스골프-남성-보아-골프화",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260527_287/17798618936594l3Or_JPEG/56842739810231315_2003778926.JPEG?type=o1000",
+    "brand": "한강골프",
+    "name": "아디다스골프 남성 보아 골프화",
+    "orig": 99000,
+    "price": 89000,
+    "dc": 10,
+    "stock": 60,
+    "sold": 41,
+    "endH": 12,
+    "reviews": 4888,
+    "badge": "real",
+    "url": "https://naver.me/xKy5MlaL"
+  },
+  {
     "id": "real-르까프-다이얼-트레킹화-멀티트랙-등산화-경량",
     "real": true,
     "cat": "스포츠레저",
