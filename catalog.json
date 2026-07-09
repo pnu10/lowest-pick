@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-K2-세이프티-X밴더-쿨토시-골프-팔토시-자",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20240614_133/1718376891650TdQDV_JPEG/2445270449261449_463504841.jpg?type=o1000",
+    "brand": "힐링스토리샵",
+    "name": "K2 세이프티 X밴더 쿨토시 골프 팔토시 자외선차단 여름 암슬리브 일반형",
+    "orig": 11200,
+    "price": 5900,
+    "dc": 47,
+    "stock": 110,
+    "sold": 62,
+    "endH": 57,
+    "reviews": 35818,
+    "badge": "real",
+    "url": "https://naver.me/GcA5Pen1"
+  },
+  {
     "id": "real-엑사이더-실내자전거-CF-918B-접이식-기",
     "real": true,
     "cat": "스포츠레저",
