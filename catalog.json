@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-쿠잉-레트로-소형냉장고-REF-D121-미니",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20231018_171/1697608829696PP0eY_JPEG/25814968454064472_2129380268.jpg?type=o1000",
+    "brand": "쿠잉",
+    "name": "쿠잉 레트로 소형냉장고 REF-D121 미니 원룸 사무실 신혼 슬림 왼쪽(좌), 크림",
+    "orig": 399000,
+    "price": 329000,
+    "dc": 18,
+    "stock": 90,
+    "sold": 83,
+    "endH": 59,
+    "reviews": 5997,
+    "badge": "real",
+    "url": "https://naver.me/Gi0CwIKA"
+  },
+  {
     "id": "real-삼성-직수정수기-언더싱크-예쁜-빌트인-직수형",
     "real": true,
     "cat": "디지털가전",
