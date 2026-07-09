@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-육상-선수가-선택한-러닝벨트",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250920_43/1758361322658dEwiQ_JPEG/42033605719589630_1151047547.jpg?type=o1000",
+    "brand": "아이언빅",
+    "name": "육상 선수가 선택한 러닝벨트",
+    "orig": 25000,
+    "price": 14700,
+    "dc": 41,
+    "stock": 50,
+    "sold": 28,
+    "endH": 23,
+    "reviews": 11211,
+    "badge": "real",
+    "url": "https://naver.me/xCjz5ICJ"
+  },
+  {
     "id": "real-하비터틀-스윔고글",
     "real": true,
     "cat": "스포츠레저",
