@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-트라보스-전기오토바이-전동스쿠터-바이크-삼륜",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260107_261/1767764474915fdlJF_PNG/43382531313173068_997404331.png?type=o1000",
+    "brand": "제이비엘케이",
+    "name": "트라보스 전기오토바이 전동스쿠터 바이크 삼륜 세발 노인 어르신 삼발이 카트 출퇴근 농업용",
+    "orig": 1503900,
+    "price": 1503900,
+    "dc": 0,
+    "stock": 60,
+    "sold": 41,
+    "endH": 18,
+    "reviews": 5,
+    "badge": "real",
+    "url": "https://naver.me/FHOvqYqD"
+  },
+  {
     "id": "real-카라반-레벨러",
     "real": true,
     "cat": "스포츠레저",
