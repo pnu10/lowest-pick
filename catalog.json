@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-마이밀-뉴프로틴-오리지널-단백질음료-190m",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250224_223/1740355035652IyqOJ_PNG/24128856113928982_671583771.png?type=o1000",
+    "brand": "대상웰라이프 본사쇼핑몰",
+    "name": "마이밀 뉴프로틴 오리지널 단백질음료 190ml, 60개",
+    "orig": 123000,
+    "price": 62500,
+    "dc": 49,
+    "stock": 130,
+    "sold": 85,
+    "endH": 29,
+    "reviews": 88655,
+    "badge": "real",
+    "url": "https://naver.me/Fjmi3vWr"
+  },
+  {
     "id": "real-순돌이네-국내가공-진미채-일미-300g",
     "real": true,
     "cat": "식품",
