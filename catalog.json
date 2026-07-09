@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-카프리팬츠-여성반바지-바이커팬츠-5부반바지",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250712_134/1752312668188oDjmF_JPEG/86445493337157028_280653465.jpeg?type=o1000",
+    "brand": "이버유 ebuu",
+    "name": "카프리팬츠 여성반바지 바이커팬츠 5부반바지",
+    "orig": 29900,
+    "price": 19900,
+    "dc": 33,
+    "stock": 150,
+    "sold": 99,
+    "endH": 28,
+    "reviews": 33,
+    "badge": "real",
+    "url": "https://naver.me/5DZ16ZuO"
+  },
+  {
     "id": "real-남자반팔티-오버핏-쿨티셔츠-쿨링-쿨론-냉감-",
     "real": true,
     "cat": "패션",
