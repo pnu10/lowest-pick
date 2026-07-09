@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-국내산-자라-장어-즙-엑기스-진액-30포-기",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20231128_239/1701173824375DEvVD_PNG/15156253894936292_952909566.png?type=o1000",
+    "brand": "동성탕제원",
+    "name": "국내산 자라 장어 즙 엑기스 진액 30포 기력회복",
+    "orig": 120000,
+    "price": 70000,
+    "dc": 42,
+    "stock": 150,
+    "sold": 107,
+    "endH": 58,
+    "reviews": 43,
+    "badge": "real",
+    "url": "https://naver.me/5B02g0sL"
+  },
+  {
     "id": "real-카프리팬츠-여성반바지-바이커팬츠-5부반바지",
     "real": true,
     "cat": "패션",
