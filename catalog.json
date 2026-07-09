@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-힐스-고양이사료-어덜트-라이트-2kg-103",
+    "real": true,
+    "cat": "출산육아",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250703_239/1751527948217nBWUY_JPEG/26698231010982183_682315356.jpg?type=o1000",
+    "brand": "힐스코리아",
+    "name": "힐스 고양이사료 어덜트 라이트 2kg [10302HG]+스크래처",
+    "orig": 52000,
+    "price": 49400,
+    "dc": 5,
+    "stock": 110,
+    "sold": 70,
+    "endH": 49,
+    "reviews": 7304,
+    "badge": "real",
+    "url": "https://naver.me/xm07KzkH"
+  },
+  {
     "id": "real-출장-엔진오일-교환-현대-기아-르노삼성-쌍용",
     "real": true,
     "cat": "생활리빙",
