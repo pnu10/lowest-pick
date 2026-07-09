@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-보아르-에이블-듀얼-오븐-에어프라이어-23L",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20200702_120/1593657916530nD2jd_JPEG/31021304730165796_1439520779.jpg?type=o1000",
+    "brand": "보아르",
+    "name": "보아르 에이블 듀얼 오븐 에어프라이어 23L 로티세리 스텐 대용량 오븐형 에어프라이기",
+    "orig": 138000,
+    "price": 138000,
+    "dc": 0,
+    "stock": 80,
+    "sold": 69,
+    "endH": 61,
+    "reviews": 7661,
+    "badge": "real",
+    "url": "https://naver.me/xnOYTOlr"
+  },
+  {
     "id": "real-삼성전자-비스포크-김치냉장고",
     "real": true,
     "cat": "디지털가전",
