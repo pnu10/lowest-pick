@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-디디오랩-무회전-플랫-전자레인지",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250623_282/1750663819931MVwnt_JPEG/275352434180910_116836991.jpg?type=o1000",
+    "brand": "디디오랩",
+    "name": "디디오랩 무회전 플랫 전자레인지",
+    "orig": 209000,
+    "price": 169000,
+    "dc": 19,
+    "stock": 50,
+    "sold": 28,
+    "endH": 52,
+    "reviews": 7364,
+    "badge": "real",
+    "url": "https://naver.me/FJOzEEWa"
+  },
+  {
     "id": "real-아이룸-차이슨-무선청소기-터보소닉-F9-PL",
     "real": true,
     "cat": "디지털가전",
