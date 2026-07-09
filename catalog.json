@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-28일분-동국제약-마이핏S-파라다이스그레인-",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260624_169/1782263736562z8eAM_JPEG/12323126842956091_1963736984.jpg?type=o1000",
+    "brand": "동국제약 뉴트리션",
+    "name": "[28일분] 동국제약 마이핏S 파라다이스그레인 버닝 6-파라돌 56정, 1개",
+    "orig": 30000,
+    "price": 14900,
+    "dc": 50,
+    "stock": 40,
+    "sold": 28,
+    "endH": 14,
+    "reviews": 77,
+    "badge": "real",
+    "url": "https://naver.me/5g4bkbQD"
+  },
+  {
     "id": "real-빙그레-투게더-오리지널-바닐라-900ml-4",
     "real": true,
     "cat": "식품",
