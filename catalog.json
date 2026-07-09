@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-남자-슈퍼스판-카고-반바지-빅사이즈-포켓-밴",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250225_11/17404608183770LqYv_JPEG/51415692281670007_9061734.jpg?type=o1000",
+    "brand": "핏콕",
+    "name": "남자 슈퍼스판 카고 반바지 빅사이즈 포켓 밴딩",
+    "orig": 39800,
+    "price": 19800,
+    "dc": 50,
+    "stock": 70,
+    "sold": 62,
+    "endH": 64,
+    "reviews": 669,
+    "badge": "real",
+    "url": "https://naver.me/FlBeuIM0"
+  },
+  {
     "id": "real-해결사-남자-반바지-밴딩-트레이닝-여름-팬츠",
     "real": true,
     "cat": "패션",
