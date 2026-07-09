@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-크리썸-바람건조-무선-가정용-칫솔살균기-CR",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250728_66/1753670824861RVwoR_JPEG/3365060553139855_1337331910.jpg?type=o1000",
+    "brand": "크리썸",
+    "name": "크리썸 바람건조 무선 가정용 칫솔살균기 CRE-A001",
+    "orig": 40000,
+    "price": 29900,
+    "dc": 25,
+    "stock": 140,
+    "sold": 98,
+    "endH": 18,
+    "reviews": 21323,
+    "badge": "real",
+    "url": "https://naver.me/xAfgDpos"
+  },
+  {
     "id": "real-이니스프리-화산송이-바하-모공-피지-클렌징폼",
     "real": true,
     "cat": "화장미용",
