@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-산지직송-동광수산-동해-오징어",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20210413_274/1618293703669jhA86_JPEG/19429483351198433_1055671716.jpg?type=o1000",
+    "brand": "동광수산",
+    "name": "산지직송 동광수산 동해 오징어",
+    "orig": 36900,
+    "price": 18900,
+    "dc": 49,
+    "stock": 40,
+    "sold": 37,
+    "endH": 20,
+    "reviews": 13102,
+    "badge": "real",
+    "url": "https://naver.me/GjyuLyKi"
+  },
+  {
     "id": "real-휴닉-베지어트-단백질-쉐이크-다이어트-식사대",
     "real": true,
     "cat": "식품",
