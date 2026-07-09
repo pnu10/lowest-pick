@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-브로이코스메틱-핸드아머-핸드크림-오리지널-7",
+    "real": true,
+    "cat": "화장미용",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250922_128/1758505710962jedWy_JPEG/74731025820752634_2087500360.JPG?type=o1000",
+    "brand": "브로이코스메틱",
+    "name": "브로이코스메틱 핸드아머 핸드크림 오리지널 70ml",
+    "orig": 18000,
+    "price": 14400,
+    "dc": 20,
+    "stock": 110,
+    "sold": 74,
+    "endH": 17,
+    "reviews": 5875,
+    "badge": "real",
+    "url": "https://naver.me/F2LC7RsB"
+  },
+  {
     "id": "real-타투유스티커-2주-유지되는-오래가는-지워지는",
     "real": true,
     "cat": "화장미용",
