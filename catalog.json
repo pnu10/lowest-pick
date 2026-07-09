@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-소형-벽걸이-선풍기-벽걸이용-벽-화장실-가정",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20230628_131/16879594428792epsF_JPEG/1848300663477168_278135284.jpg?type=o1000",
+    "brand": "가정용영업용매장업소형사무실",
+    "name": "소형 벽걸이 선풍기 벽걸이용 벽 화장실 가정용 미니 벽걸이선풍기",
+    "orig": 39900,
+    "price": 29900,
+    "dc": 25,
+    "stock": 140,
+    "sold": 126,
+    "endH": 55,
+    "reviews": 73,
+    "badge": "real",
+    "url": "https://naver.me/5WUrIm4w"
+  },
+  {
     "id": "real-아이룸-차이슨-무선청소기-제트클린-BLDC-",
     "real": true,
     "cat": "디지털가전",
