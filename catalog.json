@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-뭉클-프리지아-니치-향수-명품-수제-미니어처",
+    "real": true,
+    "cat": "화장미용",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260707_295/1783404870323PAbEy_PNG/117537719431766523_1318310339.png?type=o1000",
+    "brand": "뭉클",
+    "name": "뭉클 프리지아 니치 향수 명품 수제 미니어처 휴대용 퍼퓸 5ml(샘플 시향 향수 아님)",
+    "orig": 5830,
+    "price": 3900,
+    "dc": 33,
+    "stock": 100,
+    "sold": 77,
+    "endH": 19,
+    "reviews": 30508,
+    "badge": "real",
+    "url": "https://naver.me/5QsoI8IB"
+  },
+  {
     "id": "real-피토메르-레데마끼양-1000ml-대용량-클린",
     "real": true,
     "cat": "화장미용",
