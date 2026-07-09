@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-하이웨스트-버뮤다팬츠-여성-반바지-5부-세미",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250720_288/1753001370763zBluS_JPEG/19929202239184184_1625544302.jpg?type=o1000",
+    "brand": "코이블리",
+    "name": "하이웨스트 버뮤다팬츠 여성 반바지 5부 세미 와이드팬츠 여자 여름 바지 통바지 화이트 블랙",
+    "orig": 33000,
+    "price": 27900,
+    "dc": 15,
+    "stock": 120,
+    "sold": 83,
+    "endH": 34,
+    "reviews": 234,
+    "badge": "real",
+    "url": "https://naver.me/xpjwoFAu"
+  },
+  {
     "id": "real-남자-기모-조거팬츠-겨울-카고-조거-밴딩-스",
     "real": true,
     "cat": "패션",
