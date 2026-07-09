@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-닌자-블라스트-포터블-블렌더",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260331_76/17749453490940JAEH_JPEG/4864770185638748_531217133.jpg?type=o1000",
+    "brand": "샤크닌자",
+    "name": "닌자 블라스트 포터블 블렌더",
+    "orig": 119900,
+    "price": 119900,
+    "dc": 0,
+    "stock": 80,
+    "sold": 44,
+    "endH": 58,
+    "reviews": 15836,
+    "badge": "real",
+    "url": "https://naver.me/IgMVeA9k"
+  },
+  {
     "id": "real-갤럭시-워치-9H-액정보호-강화유리필름-2매",
     "real": true,
     "cat": "디지털가전",
