@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-삼성전자-김치냉장고-비스포크-328L-스탠드",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20241209_66/1733729217870DYWXw_JPEG/67862048996976396_1983350506.jpg?type=o1000",
+    "brand": "삼성공식파트너 현성전자",
+    "name": "삼성전자 김치냉장고 비스포크 328L 스탠드형 3도어 김치플러스 비스코프 삼성김치냉장고",
+    "orig": 1790000,
+    "price": 1429000,
+    "dc": 20,
+    "stock": 40,
+    "sold": 22,
+    "endH": 22,
+    "reviews": 1782,
+    "badge": "real",
+    "url": "https://naver.me/59lt579Y"
+  },
+  {
     "id": "real-애플-레트로-XDA-PBT-키캡",
     "real": true,
     "cat": "디지털가전",
