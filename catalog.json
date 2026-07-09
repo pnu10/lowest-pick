@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-삼성-냉장고-500리터-525L-원룸-모텔-",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250123_112/17376212485007z8eI_JPEG/26292652341279732_1709946603.jpg?type=o1000",
+    "brand": "삼성공식파트너 현성전자",
+    "name": "삼성 냉장고 500리터 525L 원룸 모텔 사무실 오피스텔 소형 삼성냉장고 2도어 냉장",
+    "orig": 1249000,
+    "price": 829000,
+    "dc": 34,
+    "stock": 140,
+    "sold": 104,
+    "endH": 32,
+    "reviews": 4056,
+    "badge": "real",
+    "url": "https://naver.me/GCJKGoOx"
+  },
+  {
     "id": "real-울트라S플러스-모기퇴치기-벌레-파리-날벌레-",
     "real": true,
     "cat": "디지털가전",
