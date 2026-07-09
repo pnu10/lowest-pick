@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-슈퍼적립-카누-바리스타-캡슐-커피머신-브리즈",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260706_256/1783295722539PFGrx_JPEG/128205727351420162_1538496731.jpg?type=o1000",
+    "brand": "카누 공식 브랜드스토어",
+    "name": "[슈퍼적립] 카누 바리스타 캡슐 커피머신 브리즈 + 증정품",
+    "orig": 169000,
+    "price": 119000,
+    "dc": 30,
+    "stock": 110,
+    "sold": 66,
+    "endH": 52,
+    "reviews": 24041,
+    "badge": "real",
+    "url": "https://naver.me/FSvegpZ6"
+  },
+  {
     "id": "real-오픈이벤트-트립톡Z-맥세이프그립톡-핸드폰스탠",
     "real": true,
     "cat": "디지털가전",
