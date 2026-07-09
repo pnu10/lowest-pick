@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-퀄리스포츠-엑스트론-슬림-48V-500W",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260701_229/17828751265821tRfr_JPEG/117008019711061506_1805717627.jpg?type=o1000",
+    "brand": "퀄리스포츠",
+    "name": "퀄리스포츠 엑스트론 슬림 48V_500W",
+    "orig": 1630000,
+    "price": 1630000,
+    "dc": 0,
+    "stock": 90,
+    "sold": 52,
+    "endH": 58,
+    "reviews": 1000,
+    "badge": "real",
+    "url": "https://naver.me/FLEjqb4M"
+  },
+  {
     "id": "real-안전한-등산스틱-오직-하이콜릭에서만-가능합니",
     "real": true,
     "cat": "스포츠레저",
