@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-시홈-휴대용선풍기-냉각-에어컨-손선풍기-미니",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250415_106/1744678003164Sx2Xo_JPEG/73581885137976394_1425204819.jpg?type=o1000",
+    "brand": "시홈",
+    "name": "시홈 휴대용선풍기 냉각 에어컨 손선풍기 미니 손풍기 핸디 핸드",
+    "orig": 42400,
+    "price": 28400,
+    "dc": 33,
+    "stock": 70,
+    "sold": 64,
+    "endH": 56,
+    "reviews": 1384,
+    "badge": "real",
+    "url": "https://naver.me/xM5OF27b"
+  },
+  {
     "id": "real-드리미-무선-자동-물걸레청소기-H12-Pro",
     "real": true,
     "cat": "디지털가전",
