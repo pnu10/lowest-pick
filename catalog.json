@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-햇감자-홍-수미감자-3kg-5kg-10kg-",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260410_212/1775807107889hm9yL_PNG/16953837565961252_1716807367.png?type=o1000",
+    "brand": "달달하지",
+    "name": "햇감자 홍 수미감자 3kg 5kg 10kg 알 두백감자 돼지 히카마",
+    "orig": 30000,
+    "price": 18000,
+    "dc": 40,
+    "stock": 100,
+    "sold": 89,
+    "endH": 46,
+    "reviews": 386,
+    "badge": "real",
+    "url": "https://naver.me/GahnyUlr"
+  },
+  {
     "id": "real-K꽃게-어부가-직접-판매하는-손질-절단-꽃게",
     "real": true,
     "cat": "식품",
