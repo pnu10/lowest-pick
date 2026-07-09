@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-무빙큐빅스-삼탠바이미-화이트에디션-스마트티비",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250213_60/1739415765545NmtBO_JPEG/73548584142788563_1804692597.jpg?type=o1000",
+    "brand": "큐빅스",
+    "name": "무빙큐빅스 삼탠바이미 화이트에디션 스마트티비 이동식tv X1시리즈 셋트 109cm(43인치 TV), UHD QLED, 자가설치",
+    "orig": 719000,
+    "price": 499000,
+    "dc": 31,
+    "stock": 140,
+    "sold": 79,
+    "endH": 46,
+    "reviews": 1333,
+    "badge": "real",
+    "url": "https://naver.me/5sufFswI"
+  },
+  {
     "id": "real-솔러스에어-무선선풍기-USB-탁상용선풍기-소",
     "real": true,
     "cat": "디지털가전",
