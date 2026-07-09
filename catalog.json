@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-귀리-잡곡-국산-혼합곡-렌틸콩-수향미-1L-",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20241205_203/1733361822104X7W42_JPEG/61270407068959752_2047089905.jpg?type=o1000",
+    "brand": "방앗간아이",
+    "name": "귀리 잡곡 국산 혼합곡 렌틸콩 수향미 1L 500ml 800g 찰보리 찹쌀 저속노화",
+    "orig": 14600,
+    "price": 7800,
+    "dc": 47,
+    "stock": 100,
+    "sold": 82,
+    "endH": 15,
+    "reviews": 13153,
+    "badge": "real",
+    "url": "https://naver.me/G7NGTNwg"
+  },
+  {
     "id": "real-산지직송-동광수산-동해-오징어",
     "real": true,
     "cat": "식품",
