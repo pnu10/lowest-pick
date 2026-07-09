@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-커리쉴-뉴트리션-서포트-데일리-트리트먼트-미",
+    "real": true,
+    "cat": "화장미용",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250314_52/1741914594555nmI5W_JPEG/2584082347493446_1467680632.jpg?type=o1000",
+    "brand": "커리쉴",
+    "name": "커리쉴 뉴트리션 서포트 데일리 트리트먼트,미용실트리트먼트",
+    "orig": 30000,
+    "price": 28500,
+    "dc": 5,
+    "stock": 110,
+    "sold": 78,
+    "endH": 40,
+    "reviews": 9043,
+    "badge": "real",
+    "url": "https://naver.me/551oJKG6"
+  },
+  {
     "id": "real-일본-카이-119-손톱깎이-S-네일케어-튀지",
     "real": true,
     "cat": "화장미용",
