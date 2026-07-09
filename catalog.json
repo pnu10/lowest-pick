@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-국민-분유포트-홀리-티메이커-전기티포트-주전",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250722_131/1753160644358TKzlY_PNG/41226906172935284_1193641984.png?type=o1000",
+    "brand": "홀리에홀리다",
+    "name": "국민 분유포트 홀리 티메이커 전기티포트 주전자 커피포트기",
+    "orig": 99000,
+    "price": 53900,
+    "dc": 46,
+    "stock": 140,
+    "sold": 97,
+    "endH": 7,
+    "reviews": 24330,
+    "badge": "real",
+    "url": "https://naver.me/5AuwwnSz"
+  },
+  {
     "id": "real-갤럭시워치8스트랩-클래식-싱글투어-가죽-스마",
     "real": true,
     "cat": "디지털가전",
