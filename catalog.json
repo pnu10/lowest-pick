@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-실크테라피-본드앤리페어-헤어-에센스-대용량-",
+    "real": true,
+    "cat": "화장미용",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250726_14/1753502615171gBDiR_PNG/2316770803572962_1827208011.png?type=o1000",
+    "brand": "DSmall",
+    "name": "실크테라피 본드앤리페어 헤어 에센스 대용량 130ml, 8개",
+    "orig": 152000,
+    "price": 93500,
+    "dc": 38,
+    "stock": 80,
+    "sold": 49,
+    "endH": 61,
+    "reviews": 161,
+    "badge": "real",
+    "url": "https://naver.me/xaTxZuG5"
+  },
+  {
     "id": "real-100-천연성분-칸디다균99-감소-유기농-포",
     "real": true,
     "cat": "화장미용",
