@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-삼성전자-무선키보드마우스세트-SP-R1600",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20241031_118/1730354805234q4uS8_JPEG/64487610356509573_1019910580.jpg?type=o1000",
+    "brand": "삼성공식파트너 모니칸",
+    "name": "삼성전자 무선키보드마우스세트 SP-R1600 저소음 마우스 사무용 업무용 블랙, 멤브레인",
+    "orig": 48000,
+    "price": 39900,
+    "dc": 17,
+    "stock": 120,
+    "sold": 82,
+    "endH": 26,
+    "reviews": 5087,
+    "badge": "real",
+    "url": "https://naver.me/5Yo6xHgX"
+  },
+  {
     "id": "real-2025년형-대용량-21kg-의류건조기-화이",
     "real": true,
     "cat": "디지털가전",
