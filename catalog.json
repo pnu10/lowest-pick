@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-열대과일-패션후르츠-퓨레1kg-망고-람부탄-",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20251017_76/1760674166745dK33c_JPEG/25565424814635615_1598435598.jpg?type=o1000",
+    "brand": "비비수산",
+    "name": "열대과일 패션후르츠 퓨레1kg 망고 람부탄 리치 잭후르츠 냉동과일",
+    "orig": 5900,
+    "price": 4000,
+    "dc": 32,
+    "stock": 40,
+    "sold": 35,
+    "endH": 30,
+    "reviews": 35220,
+    "badge": "real",
+    "url": "https://naver.me/xiLVZEIu"
+  },
+  {
     "id": "real-매실청-매실액기스-매실액-매실청-매실엑기스-",
     "real": true,
     "cat": "식품",
