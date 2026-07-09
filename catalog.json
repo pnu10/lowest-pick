@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-마들푸드-춘천-닭갈비-1kg-숯불-닭다리살-",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250609_273/1749450728371MTtCU_PNG/51394742148160758_1348105884.png?type=o1000",
+    "brand": "닭갈비의 기준 마들",
+    "name": "마들푸드 춘천 닭갈비 1kg 숯불 닭다리살 양념 순살 캠핑음식",
+    "orig": 22000,
+    "price": 19900,
+    "dc": 10,
+    "stock": 130,
+    "sold": 107,
+    "endH": 17,
+    "reviews": 34020,
+    "badge": "real",
+    "url": "https://naver.me/xcgLdf3C"
+  },
+  {
     "id": "real-불스원-레인OK-에탄올-3in1-코팅-워셔액",
     "real": true,
     "cat": "생활리빙",
