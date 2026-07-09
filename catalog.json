@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-드리미-무선-자동-물걸레청소기-H12-Pro",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250812_256/1754993494982uqA6R_PNG/6419463038018814_1969749420.png?type=o1000",
+    "brand": "드리미 테크놀로지 코리아",
+    "name": "드리미 무선 자동 물걸레청소기 H12 Pro FlexReach 업그레이드 모델 건습식청소기",
+    "orig": 599000,
+    "price": 329000,
+    "dc": 45,
+    "stock": 150,
+    "sold": 110,
+    "endH": 48,
+    "reviews": 2872,
+    "badge": "real",
+    "url": "https://naver.me/5PWYKieT"
+  },
+  {
     "id": "real-보만-살균-25초-퀵-터보-핸디형-스팀다리미",
     "real": true,
     "cat": "디지털가전",
