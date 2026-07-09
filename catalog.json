@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-유청단백질",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260708_50/17834824054972Du7s_PNG/117615289621859664_508316594.png?type=o1000",
+    "brand": "뉴트리션팩토리",
+    "name": "유청단백질",
+    "orig": 35400,
+    "price": 35400,
+    "dc": 0,
+    "stock": 100,
+    "sold": 87,
+    "endH": 35,
+    "reviews": 9369,
+    "badge": "real",
+    "url": "https://naver.me/xwogYyIy"
+  },
+  {
     "id": "real-제주-삼다수-500ml-40개-무라벨-유라벨",
     "real": true,
     "cat": "식품",
