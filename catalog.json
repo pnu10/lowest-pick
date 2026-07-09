@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-이노크-BLDC-손끼임방지-날개없는선풍기-무",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20240708_209/1720398698970MHSSL_JPEG/1801299021413365_2029862923.jpg?type=o1000",
+    "brand": "이노크아든공식몰",
+    "name": "이노크 BLDC 손끼임방지 날개없는선풍기 무드등 발터치 저소음 선풍기 IA-FNH3000",
+    "orig": 329000,
+    "price": 199000,
+    "dc": 40,
+    "stock": 40,
+    "sold": 31,
+    "endH": 14,
+    "reviews": 99,
+    "badge": "real",
+    "url": "https://naver.me/5sufdpv8"
+  },
+  {
     "id": "real-쿠잉-레트로-미니냉장고-REF-D85-크림-",
     "real": true,
     "cat": "디지털가전",
