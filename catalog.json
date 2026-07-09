@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-여자여름가디건-반팔-V넥-블랙-니트-레이스-",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260405_164/1775373869274MGdzb_JPEG/68098987551657172_608953169.jpg?type=o1000",
+    "brand": "나미오",
+    "name": "여자여름가디건 반팔 V넥 블랙 니트 레이스 배색 가디건",
+    "orig": 32900,
+    "price": 29900,
+    "dc": 9,
+    "stock": 120,
+    "sold": 100,
+    "endH": 13,
+    "reviews": 12,
+    "badge": "real",
+    "url": "https://naver.me/xbKbyOmg"
+  },
+  {
     "id": "real-면접블라우스-라운드넥-정장-이너-화이트-블라",
     "real": true,
     "cat": "패션",
