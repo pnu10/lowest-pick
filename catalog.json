@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-클리커스-전자동-반동-워터건-물총-CP-25",
+    "real": true,
+    "cat": "출산육아",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20240531_132/1717125515217jnKkP_PNG/118261357903666999_67070525.png?type=o1000",
+    "brand": "클리커스",
+    "name": "클리커스 전자동 반동 워터건 물총 CP-250 2025년",
+    "orig": 41000,
+    "price": 22800,
+    "dc": 44,
+    "stock": 80,
+    "sold": 59,
+    "endH": 46,
+    "reviews": 774,
+    "badge": "real",
+    "url": "https://naver.me/xAfguBxI"
+  },
+  {
     "id": "real-아가모아-돌반지-보관함-케이스-돌반지함-보관",
     "real": true,
     "cat": "패션",
