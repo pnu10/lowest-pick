@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-매실청-매실액기스-매실액-매실청-매실엑기스-",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260526_41/1779755138098pQazC_PNG/59889369855055036_325223037.png?type=o1000",
+    "brand": "녹차먹은매실",
+    "name": "매실청 매실액기스 매실액 매실청 매실엑기스 매실원액 매실즙 매실차",
+    "orig": 21000,
+    "price": 12900,
+    "dc": 39,
+    "stock": 90,
+    "sold": 80,
+    "endH": 32,
+    "reviews": 1336,
+    "badge": "real",
+    "url": "https://naver.me/5WUrqv4o"
+  },
+  {
     "id": "real-모어네이처-고함량-커큐민-강황-고흡수-고농축",
     "real": true,
     "cat": "식품",
