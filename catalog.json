@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-칠갑농산-냉면육수-300ml-1박스-30개입",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260120_187/17688972447980LGvq_PNG/2844477496494814_1517867605.png?type=o1000",
+    "brand": "칠갑농산",
+    "name": "칠갑농산 냉면육수 300ml 1박스 (30개입)",
+    "orig": 19900,
+    "price": 19900,
+    "dc": 0,
+    "stock": 120,
+    "sold": 87,
+    "endH": 43,
+    "reviews": 1215,
+    "badge": "real",
+    "url": "https://naver.me/FgEA2HYs"
+  },
+  {
     "id": "real-청년농부-정경석-햇-양파",
     "real": true,
     "cat": "식품",
