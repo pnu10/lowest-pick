@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-더수-여름-가을-겨울-텐셀-레깅스-7부-10",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20190516_89/thesoo_1557990323511cq2fI_JPEG/40621503158365157_1073425644.jpg?type=o1000",
+    "brand": "더수",
+    "name": "더수 여름 가을 겨울 텐셀 레깅스 7부 10부",
+    "orig": 11500,
+    "price": 11500,
+    "dc": 0,
+    "stock": 70,
+    "sold": 51,
+    "endH": 62,
+    "reviews": 1580,
+    "badge": "real",
+    "url": "https://naver.me/Gjyufp8G"
+  },
+  {
     "id": "real-1-1-쿨링-아이스-3부-5부-밴딩-팬츠-여",
     "real": true,
     "cat": "패션",
