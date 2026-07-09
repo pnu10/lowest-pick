@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-쿠쿠-인스퓨어-제습기-DH-YNL1652FE",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250422_28/1745288181852txiNs_JPEG/39830927064723214_1728369326.jpg?type=o1000",
+    "brand": "쿠쿠전자",
+    "name": "쿠쿠 인스퓨어 제습기 DH-YNL1652FEB 어스베이지 16L",
+    "orig": 499000,
+    "price": 271000,
+    "dc": 46,
+    "stock": 130,
+    "sold": 96,
+    "endH": 18,
+    "reviews": 2317,
+    "badge": "real",
+    "url": "https://naver.me/GEd6m5We"
+  },
+  {
     "id": "real-쿠잉-레트로-소형냉장고-REF-D121-미니",
     "real": true,
     "cat": "디지털가전",
