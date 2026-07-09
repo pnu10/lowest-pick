@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-이니스프리-그린티-씨드-히알루론산-진정-보습",
+    "real": true,
+    "cat": "화장미용",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260704_228/1783165691883IijDw_JPEG/128075696691707734_483449292.jpg?type=o1000",
+    "brand": "이니스프리",
+    "name": "이니스프리 그린티 씨드 히알루론산 진정 보습 수분크림 80ml, 2개",
+    "orig": 76000,
+    "price": 53200,
+    "dc": 30,
+    "stock": 110,
+    "sold": 63,
+    "endH": 8,
+    "reviews": 35631,
+    "badge": "real",
+    "url": "https://naver.me/xXnotVSd"
+  },
+  {
     "id": "real-커리쉴-뉴트리션-서포트-데일리-트리트먼트-미",
     "real": true,
     "cat": "화장미용",
