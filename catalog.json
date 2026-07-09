@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-99-9-살균-만능청소템-비쎌-슬림-스팀청소",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20230821_119/1692583589563lGLrt_JPEG/6515652380660579_1191329363.jpg?type=o1000",
+    "brand": "비쎌코리아",
+    "name": "99.9% 살균! 만능청소템, 비쎌 슬림 스팀청소기",
+    "orig": 328000,
+    "price": 228000,
+    "dc": 30,
+    "stock": 70,
+    "sold": 42,
+    "endH": 52,
+    "reviews": 27175,
+    "badge": "real",
+    "url": "https://naver.me/GIIAm3Sx"
+  },
+  {
     "id": "real-삼성-얼음-정수기-비스포크-AI-얼음정수기-",
     "real": true,
     "cat": "디지털가전",
