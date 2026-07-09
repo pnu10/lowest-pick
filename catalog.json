@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-애플-레트로-XDA-PBT-키캡",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20220928_85/16643293827097buci_JPEG/65465216529086635_809815710.jpg?type=o1000",
+    "brand": "키캡연구소",
+    "name": "애플 레트로 XDA PBT 키캡",
+    "orig": 39300,
+    "price": 19800,
+    "dc": 50,
+    "stock": 80,
+    "sold": 71,
+    "endH": 17,
+    "reviews": 1365,
+    "badge": "real",
+    "url": "https://naver.me/xPY7Jrya"
+  },
+  {
     "id": "real-에어블로우-실링팬-C2-132cm-천장-선풍",
     "real": true,
     "cat": "디지털가전",
