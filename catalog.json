@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-아오라-전동물총-대용량-물총-자동-연사-전자",
+    "real": true,
+    "cat": "출산육아",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20240816_190/1723776092995qzVMS_JPEG/4263713826414223_1067848566.jpg?type=o1000",
+    "brand": "AORA",
+    "name": "아오라 전동물총 대용량 물총 자동 연사 전자 대형 전자동 워터건 블랙",
+    "orig": 48000,
+    "price": 29900,
+    "dc": 38,
+    "stock": 140,
+    "sold": 97,
+    "endH": 24,
+    "reviews": 383,
+    "badge": "real",
+    "url": "https://naver.me/Gxr7ZYlO"
+  },
+  {
     "id": "real-아기수영복-키즈래쉬가드-여아-남아-유아-수영",
     "real": true,
     "cat": "출산육아",
