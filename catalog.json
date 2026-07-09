@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-어반캠퍼-원터치-텐트-어반2",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250403_180/1743646044648tsCg7_PNG/26303844432888696_1258827247.png?type=o1000",
+    "brand": "메사캠프",
+    "name": "어반캠퍼 원터치 텐트 어반2",
+    "orig": 169000,
+    "price": 59900,
+    "dc": 65,
+    "stock": 40,
+    "sold": 35,
+    "endH": 43,
+    "reviews": 522,
+    "badge": "real",
+    "url": "https://naver.me/5IfLDahu"
+  },
+  {
     "id": "real-로티캠프-그늘막-감성-해변-접이식-파라솔-미",
     "real": true,
     "cat": "스포츠레저",
