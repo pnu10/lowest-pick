@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-마추픽추-에어텐트-에어오션-면텐트",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250624_67/1750747561375kBTv6_JPEG/4855749280453355_1889216667.jpg?type=o1000",
+    "brand": "마추픽추",
+    "name": "마추픽추 에어텐트 에어오션 면텐트",
+    "orig": 1990000,
+    "price": 1390000,
+    "dc": 30,
+    "stock": 50,
+    "sold": 27,
+    "endH": 39,
+    "reviews": 903,
+    "badge": "real",
+    "url": "https://naver.me/FHOvIEzE"
+  },
+  {
     "id": "real-지벤-선풍기조끼-에어-쿨-여름-작업조끼-ZB",
     "real": true,
     "cat": "생활리빙",
