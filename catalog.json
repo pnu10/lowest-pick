@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-키즈-주니어-모먼트수영복",
+    "real": true,
+    "cat": "출산육아",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20251015_299/1760483781542Ka2IG_JPEG/94616668394424933_851610013.jpg?type=o1000",
+    "brand": "헤이키즈 앤 주니어",
+    "name": "키즈/주니어 모먼트수영복",
+    "orig": 28800,
+    "price": 28800,
+    "dc": 0,
+    "stock": 110,
+    "sold": 96,
+    "endH": 32,
+    "reviews": 143,
+    "badge": "real",
+    "url": "https://naver.me/xm077xcX"
+  },
+  {
     "id": "real-1-1-생폰-방탄-범퍼-핸폰-맥세이프-핸드폰",
     "real": true,
     "cat": "디지털가전",
