@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-피토메르-레데마끼양-1000ml-대용량-클린",
+    "real": true,
+    "cat": "화장미용",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260323_69/1774260044367lNVvu_JPEG/14950294396417140_328767850.jpg?type=o1000",
+    "brand": "끌리오뷰티",
+    "name": "피토메르 레데마끼양 1000ml 대용량 클린징밀크",
+    "orig": 143000,
+    "price": 109000,
+    "dc": 24,
+    "stock": 150,
+    "sold": 92,
+    "endH": 33,
+    "reviews": 259,
+    "badge": "real",
+    "url": "https://naver.me/xzH96M8t"
+  },
+  {
     "id": "real-원솝-천연비누",
     "real": true,
     "cat": "화장미용",
