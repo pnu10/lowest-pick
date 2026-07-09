@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-휴고스-이동식-에어컨",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260601_216/1780274567821n1gSk_JPEG/1635018944447660_511088607.jpg?type=o1000",
+    "brand": "휴고스",
+    "name": "휴고스 이동식 에어컨",
+    "orig": 3000000,
+    "price": 1380000,
+    "dc": 54,
+    "stock": 80,
+    "sold": 73,
+    "endH": 23,
+    "reviews": 107,
+    "badge": "real",
+    "url": "https://naver.me/xqbZLX1F"
+  },
+  {
     "id": "real-디디오랩-무회전-플랫-전자레인지",
     "real": true,
     "cat": "디지털가전",
