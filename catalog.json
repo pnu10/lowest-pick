@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-에이투-본플렉스-골전도이어폰-스포츠-플렉시블",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260212_270/177088444725029XHA_JPEG/122950234257643692_521552825.jpg?type=o1000",
+    "brand": "에이투스토어",
+    "name": "에이투 본플렉스 골전도이어폰 스포츠 플렉시블 블루투스 IPX7 방수 BONE FLEX",
+    "orig": 119000,
+    "price": 59900,
+    "dc": 50,
+    "stock": 90,
+    "sold": 53,
+    "endH": 30,
+    "reviews": 298,
+    "badge": "real",
+    "url": "https://naver.me/FuN9wJaV"
+  },
+  {
     "id": "real-닌자-블라스트-포터블-블렌더",
     "real": true,
     "cat": "디지털가전",
