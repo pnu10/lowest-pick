@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-아가모아-돌반지-보관함-케이스-돌반지함-보관",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250307_281/1741312090200XDhGm_JPEG/75444900325169013_1074298565.jpg?type=o1000",
+    "brand": "아가모아",
+    "name": "아가모아 돌반지 보관함 케이스 돌반지함 보관 아기 보석함",
+    "orig": 45000,
+    "price": 28200,
+    "dc": 37,
+    "stock": 140,
+    "sold": 93,
+    "endH": 6,
+    "reviews": 2531,
+    "badge": "real",
+    "url": "https://naver.me/FwGr6h3v"
+  },
+  {
     "id": "real-뮤고랑-블록놀이-테이블-의자-세트",
     "real": true,
     "cat": "출산육아",
