@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-삼성-WindowFit-창문형-에어컨",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250327_95/1743034783677DnXH7_JPEG/77389196490285812_1548210470.jpg?type=o1000",
+    "brand": "삼성공식파트너 보보",
+    "name": "삼성 WindowFit 창문형 에어컨",
+    "orig": 1090000,
+    "price": 898000,
+    "dc": 18,
+    "stock": 40,
+    "sold": 25,
+    "endH": 16,
+    "reviews": 12607,
+    "badge": "real",
+    "url": "https://naver.me/FsoOSKTM"
+  },
+  {
     "id": "real-쿠쿠-건조분쇄형-에코웨일-2L-음식물처리기-",
     "real": true,
     "cat": "디지털가전",
