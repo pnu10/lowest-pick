@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-양배추즙",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20210319_36/1616124750200TQGjG_JPEG/17260595884289462_2022626070.jpg?type=o1000",
+    "brand": "자람푸드",
+    "name": "양배추즙",
+    "orig": 28900,
+    "price": 22900,
+    "dc": 21,
+    "stock": 60,
+    "sold": 45,
+    "endH": 63,
+    "reviews": 144916,
+    "badge": "real",
+    "url": "https://naver.me/G7NGzvBJ"
+  },
+  {
     "id": "real-농부플러스-저온압착-국산-참기름-180ml",
     "real": true,
     "cat": "식품",
