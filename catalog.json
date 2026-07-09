@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-가볍고-폭신폭신한-오즈키즈-브리드-키즈-아쿠",
+    "real": true,
+    "cat": "출산육아",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260626_94/1782434063779lnHcA_JPEG/3625479246390763_1063939727.jpg?type=o1000",
+    "brand": "오즈키즈",
+    "name": "가볍고 폭신폭신한 오즈키즈 브리드  키즈 아쿠아 샌들",
+    "orig": 35000,
+    "price": 22900,
+    "dc": 35,
+    "stock": 70,
+    "sold": 39,
+    "endH": 55,
+    "reviews": 3941,
+    "badge": "real",
+    "url": "https://naver.me/GtY6BRsW"
+  },
+  {
     "id": "real-아기-수영복-우주복-래시가드-플랩캡-아기수영",
     "real": true,
     "cat": "출산육아",
