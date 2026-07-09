@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-팔레트슬라임",
+    "real": true,
+    "cat": "출산육아",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260605_202/1780658835008p8gN5_JPEG/2019286137494732_1390640472.jpg?type=o1000",
+    "brand": "팔레트슬라임",
+    "name": "팔레트슬라임",
+    "orig": 7900,
+    "price": 4900,
+    "dc": 38,
+    "stock": 60,
+    "sold": 48,
+    "endH": 18,
+    "reviews": 970,
+    "badge": "real",
+    "url": "https://naver.me/xk95F9IE"
+  },
+  {
     "id": "real-미엘-클래식-물티슈-100매-20팩",
     "real": true,
     "cat": "출산육아",
