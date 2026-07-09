@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-보상판매-파인뷰-X600-블랙박스-QHD-G",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250626_262/17508996052453uTOp_JPEG/51961376884156_1093921137.jpg?type=o1000",
+    "brand": "파인뷰 본사",
+    "name": "[보상판매]파인뷰 X600 블랙박스 QHD GPS 64GB, 설치비별도",
+    "orig": 389000,
+    "price": 159000,
+    "dc": 59,
+    "stock": 70,
+    "sold": 54,
+    "endH": 21,
+    "reviews": 1569,
+    "badge": "real",
+    "url": "https://naver.me/5p0Q58cX"
+  },
+  {
     "id": "real-갤럭시핏3-강화유리-하드-케이스-액정-보호-",
     "real": true,
     "cat": "디지털가전",
