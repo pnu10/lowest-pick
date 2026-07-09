@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-순돌이네-국내가공-진미채-일미-300g",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250812_221/1754999689581SfWic_JPEG/89132455996759147_716991177.jpg?type=o1000",
+    "brand": "순돌이네",
+    "name": "순돌이네 국내가공 진미채 일미 300g",
+    "orig": 11900,
+    "price": 9900,
+    "dc": 17,
+    "stock": 150,
+    "sold": 95,
+    "endH": 15,
+    "reviews": 2821,
+    "badge": "real",
+    "url": "https://naver.me/FmGMA1um"
+  },
+  {
     "id": "real-햇감자-홍-수미감자-3kg-5kg-10kg-",
     "real": true,
     "cat": "식품",
