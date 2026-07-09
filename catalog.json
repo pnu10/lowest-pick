@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-K꽃게-어부가-직접-판매하는-손질-절단-꽃게",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260708_173/1783500692802tC4sD_PNG/130465993792485192_1005424023.png?type=o1000",
+    "brand": "K-꽃게",
+    "name": "K꽃게 어부가 직접 판매하는 손질 절단 꽃게",
+    "orig": 20900,
+    "price": 16650,
+    "dc": 20,
+    "stock": 130,
+    "sold": 85,
+    "endH": 39,
+    "reviews": 4758,
+    "badge": "real",
+    "url": "https://naver.me/5o01ZDKc"
+  },
+  {
     "id": "real-국산-미숫가루-검은콩-50-고소한-식사대용-",
     "real": true,
     "cat": "식품",
