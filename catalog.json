@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-핸드솝-손세정제-500ml-2개-핸드워시-리",
+    "real": true,
+    "cat": "화장미용",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260423_255/1776917478416Fm7ec_JPEG/27475406324141887_846863031.jpg?type=o1000",
+    "brand": "생활공작소",
+    "name": "핸드솝 손세정제 500ml 2개+핸드워시 리필 400ml 5개",
+    "orig": 50000,
+    "price": 22900,
+    "dc": 54,
+    "stock": 80,
+    "sold": 65,
+    "endH": 40,
+    "reviews": 50336,
+    "badge": "real",
+    "url": "https://naver.me/xYNYqI9k"
+  },
+  {
     "id": "real-뭉클-프리지아-니치-향수-명품-수제-미니어처",
     "real": true,
     "cat": "화장미용",
