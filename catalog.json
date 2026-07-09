@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-게이트맨-도어락-바로잠김-푸시풀도어락-IoT",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250404_134/1743728398749bXok3_JPEG/30585251860753322_326218403.jpg?type=o1000",
+    "brand": "게이트맨 공식브랜드스토어",
+    "name": "게이트맨 도어락 바로잠김 푸시풀도어락 IoT도어락 디지털도어락 현관문 카드번호키 스마트도어락 GP-500R 스마트도어락",
+    "orig": 378000,
+    "price": 330280,
+    "dc": 13,
+    "stock": 60,
+    "sold": 43,
+    "endH": 12,
+    "reviews": 2048,
+    "badge": "real",
+    "url": "https://naver.me/5hoRjEvj"
+  },
+  {
     "id": "real-웨어플래닛-아이폰-맥세이프카드지갑-그립-톡홀",
     "real": true,
     "cat": "디지털가전",
