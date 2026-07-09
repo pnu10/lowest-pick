@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-아이폰과-에어팟을-동시에-고속-충전",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260417_36/1776387789985J0buG_JPEG/215769076774546_958023153.jpg?type=o1000",
+    "brand": "CHOETECH",
+    "name": "아이폰과 에어팟을 동시에 고속 충전!",
+    "orig": 38900,
+    "price": 35900,
+    "dc": 8,
+    "stock": 130,
+    "sold": 98,
+    "endH": 46,
+    "reviews": 5762,
+    "badge": "real",
+    "url": "https://naver.me/Grgppwm2"
+  },
+  {
     "id": "real-보상판매-파인뷰-X600-블랙박스-QHD-G",
     "real": true,
     "cat": "디지털가전",
