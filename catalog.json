@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-편안한-폴리-루즈핏-리얼히든셔츠",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20230429_99/1682744653971htBsi_JPEG/11463214778889978_1277947317.jpg?type=o1000",
+    "brand": "션타운",
+    "name": "편안한 폴리 루즈핏 리얼히든셔츠",
+    "orig": 24350,
+    "price": 19500,
+    "dc": 20,
+    "stock": 140,
+    "sold": 101,
+    "endH": 57,
+    "reviews": 7097,
+    "badge": "real",
+    "url": "https://naver.me/5RAYnjN7"
+  },
+  {
     "id": "real-남자린넨셔츠-오버핏셔츠-구김없는셔츠",
     "real": true,
     "cat": "패션",
