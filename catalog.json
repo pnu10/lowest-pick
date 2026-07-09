@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-쿠쿠-인스퓨어-헤리티지-28평형-공기청정기-",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250313_127/1741830274891uMPPv_JPEG/75963138992348530_87541154.jpg?type=o1000",
+    "brand": "쿠쿠전자",
+    "name": "쿠쿠 인스퓨어 헤리티지  28평형 공기청정기 AC-28AHNL20FNW",
+    "orig": 759000,
+    "price": 539000,
+    "dc": 29,
+    "stock": 130,
+    "sold": 86,
+    "endH": 20,
+    "reviews": 4229,
+    "badge": "real",
+    "url": "https://naver.me/x0OFkFla"
+  },
+  {
     "id": "real-차박-캠핑-필수템-로모스-고속충전-대용량-보",
     "real": true,
     "cat": "디지털가전",
