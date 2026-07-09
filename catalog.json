@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-1-1-생폰-방탄-범퍼-핸폰-맥세이프-핸드폰",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260523_282/1779526885046QIMSp_PNG/113659756169113210_68047513.png?type=o1000",
+    "brand": "맥스가드",
+    "name": "1+1 생폰 방탄 범퍼 핸폰 맥세이프 핸드폰 케이스 투명, 갤럭시s25 FE 갤S25 FE",
+    "orig": 10900,
+    "price": 8900,
+    "dc": 18,
+    "stock": 80,
+    "sold": 71,
+    "endH": 45,
+    "reviews": 5535,
+    "badge": "real",
+    "url": "https://naver.me/x4l44uBx"
+  },
+  {
     "id": "real-삼성-갤럭시-버즈4-버즈4프로-케이스-호랑이",
     "real": true,
     "cat": "디지털가전",
