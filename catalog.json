@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-골프보스턴백",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250605_115/17491189734049GnXl_PNG/83251796981335219_588611576.png?type=o1000",
+    "brand": "MoCL",
+    "name": "골프보스턴백",
+    "orig": 284000,
+    "price": 284000,
+    "dc": 0,
+    "stock": 140,
+    "sold": 85,
+    "endH": 62,
+    "reviews": 345,
+    "badge": "real",
+    "url": "https://naver.me/GCJK762J"
+  },
+  {
     "id": "real-멜킨-EVA-폼롤러-45cm-스트레칭-휴대용",
     "real": true,
     "cat": "스포츠레저",
