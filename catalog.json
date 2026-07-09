@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-마늘쫑-장아찌-간장-짱아치-절임-반찬-500",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260414_128/1776175571661KpBiP_PNG/18251604536142636_1228481073.png?type=o1000",
+    "brand": "규린이네수제과일청",
+    "name": "마늘쫑 장아찌 간장 짱아치 절임 반찬 500g",
+    "orig": 16900,
+    "price": 11900,
+    "dc": 30,
+    "stock": 60,
+    "sold": 34,
+    "endH": 29,
+    "reviews": 118,
+    "badge": "real",
+    "url": "https://naver.me/F6Q95S72"
+  },
+  {
     "id": "real-이유시작-야채-과일-큐브-토핑",
     "real": true,
     "cat": "출산육아",
