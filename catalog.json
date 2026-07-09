@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-하비터틀-스윔고글",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250811_79/1754875983141hbNCh_PNG/9487028378051660_1190754113.png?type=o1000",
+    "brand": "첫취미",
+    "name": "하비터틀 스윔고글",
+    "orig": 35000,
+    "price": 24800,
+    "dc": 29,
+    "stock": 80,
+    "sold": 75,
+    "endH": 47,
+    "reviews": 1532,
+    "badge": "real",
+    "url": "https://naver.me/5reFlRpR"
+  },
+  {
     "id": "real-굿스터치-허리보호대-허리복대-의료용-지지대-",
     "real": true,
     "cat": "스포츠레저",
