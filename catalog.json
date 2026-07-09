@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-레이윙-디스커버리-D5-접이식-전기자전거-폴",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260412_271/1775989528806PkqGe_JPEG/51607561297645177_715253503.jpg?type=o1000",
+    "brand": "레이윙",
+    "name": "레이윙 디스커버리 D5 접이식 전기자전거 폴딩 출퇴근 5.2Ah, 팬텀블랙",
+    "orig": 1290000,
+    "price": 579000,
+    "dc": 55,
+    "stock": 70,
+    "sold": 51,
+    "endH": 32,
+    "reviews": 826,
+    "badge": "real",
+    "url": "https://naver.me/xAfg9lo6"
+  },
+  {
     "id": "real-룸인어스-TPU-층간소음-퍼즐-제로매트",
     "real": true,
     "cat": "출산육아",
