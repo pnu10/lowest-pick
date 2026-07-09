@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-스톤힐-모니터-받침대도-역시-스톤힐",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260522_243/1779443734610Mg7r3_JPEG/29808024647555666_686974618.jpg?type=o1000",
+    "brand": "스톤힐",
+    "name": "[스톤힐 모니터 받침대도 역시 스톤힐!",
+    "orig": 25900,
+    "price": 13400,
+    "dc": 48,
+    "stock": 120,
+    "sold": 86,
+    "endH": 41,
+    "reviews": 38394,
+    "badge": "real",
+    "url": "https://naver.me/5OlkRcbp"
+  },
+  {
     "id": "real-게이트맨-도어락-바로잠김-푸시풀도어락-IoT",
     "real": true,
     "cat": "디지털가전",
