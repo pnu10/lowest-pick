@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-어부가-만드는-자연산-다슬기즙-100ml-3",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260330_42/17748560660615rvA7_JPEG/39578489873716119_1887742783.jpg?type=o1000",
+    "brand": "황금이네",
+    "name": "어부가 만드는 자연산 다슬기즙 100ml 30포 진액 엑기스",
+    "orig": 279600,
+    "price": 69900,
+    "dc": 75,
+    "stock": 50,
+    "sold": 47,
+    "endH": 34,
+    "reviews": 2184,
+    "badge": "real",
+    "url": "https://naver.me/xk95Zttk"
+  },
+  {
     "id": "real-칠갑농산-냉면육수-300ml-1박스-30개입",
     "real": true,
     "cat": "식품",
