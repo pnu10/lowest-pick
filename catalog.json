@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-빙그레-투게더-오리지널-바닐라-900ml-4",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20241216_33/1734325648981R2VC1_JPEG/18136489872330950_437858690.jpg?type=o1000",
+    "brand": "빙그레",
+    "name": "빙그레 투게더 오리지널 바닐라 900ml 4개 아이스크림",
+    "orig": 27900,
+    "price": 26900,
+    "dc": 4,
+    "stock": 70,
+    "sold": 39,
+    "endH": 16,
+    "reviews": 7266,
+    "badge": "real",
+    "url": "https://naver.me/Fx2addXc"
+  },
+  {
     "id": "real-마이밀-뉴프로틴-오리지널-단백질음료-190m",
     "real": true,
     "cat": "식품",
