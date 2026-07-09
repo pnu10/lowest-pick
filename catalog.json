@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-농부플러스-저온압착-국산-참기름-180ml",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260204_145/1770192382949pFRGB_JPEG/24850373935745495_983378500.jpg?type=o1000",
+    "brand": "농부플러스",
+    "name": "농부플러스 저온압착 국산 참기름 180ml",
+    "orig": 32900,
+    "price": 28900,
+    "dc": 12,
+    "stock": 120,
+    "sold": 87,
+    "endH": 27,
+    "reviews": 35021,
+    "badge": "real",
+    "url": "https://naver.me/51uypdih"
+  },
+  {
     "id": "real-경남제약-관절건강엔-콘드로이친1200-뮤코다",
     "real": true,
     "cat": "식품",
