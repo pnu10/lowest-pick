@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-엘와이엘벅스쉴드-11개",
+    "real": true,
+    "cat": "출산육아",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20230621_84/1687340692379P5pxI_PNG/33700331168515885_1085046999.png?type=o1000",
+    "brand": "믿추",
+    "name": "엘와이엘벅스쉴드 11개",
+    "orig": 22000,
+    "price": 18900,
+    "dc": 14,
+    "stock": 80,
+    "sold": 73,
+    "endH": 51,
+    "reviews": 1462,
+    "badge": "real",
+    "url": "https://naver.me/x7eaiM28"
+  },
+  {
     "id": "real-유아발레복-아기-여아-긴팔-발레복-타이즈-볼",
     "real": true,
     "cat": "출산육아",
