@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-평양-냉면-물냉면-1인분-메밀",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260602_226/1780362231074zgdoq_JPEG/57884907933123879_359399887.jpg?type=o1000",
+    "brand": "대한민국농수산",
+    "name": "평양 냉면 물냉면 1인분 메밀",
+    "orig": 1400,
+    "price": 1300,
+    "dc": 7,
+    "stock": 150,
+    "sold": 131,
+    "endH": 63,
+    "reviews": 4238,
+    "badge": "real",
+    "url": "https://naver.me/5nhJCYCU"
+  },
+  {
     "id": "real-넛츠피아-하루견과-100봉-견과류-믹스넛-세",
     "real": true,
     "cat": "식품",
