@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-필립스-면도기-SkinIQ-5000-전기면도",
+    "real": true,
+    "cat": "화장미용",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260703_136/1783055939711yB0dv_JPEG/36734217826428688_1037808117.jpg?type=o1000",
+    "brand": "필립스",
+    "name": "필립스 면도기 SkinIQ 5000 전기면도기 S5880/33+명함케이스",
+    "orig": 269000,
+    "price": 138900,
+    "dc": 48,
+    "stock": 80,
+    "sold": 61,
+    "endH": 60,
+    "reviews": 7881,
+    "badge": "real",
+    "url": "https://naver.me/FZoXBtIG"
+  },
+  {
     "id": "real-계란찜기-반숙-계란삶는기계-2단-에그쿠커-옐",
     "real": true,
     "cat": "디지털가전",
