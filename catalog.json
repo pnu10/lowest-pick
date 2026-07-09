@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-무직타이거-집콕랑-노트북-아이패드-파우치-맥",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20251219_213/1766122648888CBRWa_JPEG/7527825548535761_1171543656.jpg?type=o1000",
+    "brand": "무직타이거",
+    "name": "[무직타이거] 집콕랑 노트북 아이패드 파우치 (맥북에어 맥북프로 그램 삼성)",
+    "orig": 42000,
+    "price": 42000,
+    "dc": 0,
+    "stock": 130,
+    "sold": 78,
+    "endH": 10,
+    "reviews": 85,
+    "badge": "real",
+    "url": "https://naver.me/x0OFkzw6"
+  },
+  {
     "id": "real-삼성-WindowFit-창문형-에어컨",
     "real": true,
     "cat": "디지털가전",
