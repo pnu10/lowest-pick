@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-듀플렉스-써큘레이터-스탠드-에어서큘레이터-선",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20230615_76/1686795167654ppqxT_JPEG/669655282673700_337964005.jpg?type=o1000",
+    "brand": "듀플렉스",
+    "name": "듀플렉스 써큘레이터 스탠드 에어서큘레이터 선풍기 DPK-55CF",
+    "orig": 78800,
+    "price": 39800,
+    "dc": 49,
+    "stock": 60,
+    "sold": 41,
+    "endH": 7,
+    "reviews": 18737,
+    "badge": "real",
+    "url": "https://naver.me/IGsek8Ki"
+  },
+  {
     "id": "real-슈퍼적립-카누-바리스타-캡슐-커피머신-브리즈",
     "real": true,
     "cat": "디지털가전",
