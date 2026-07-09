@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-데이비드-파크골프채-DP101-브라운-MEN",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260112_184/17682102582416r5U9_JPEG/17780470698931605_966523585.jpg?type=o1000",
+    "brand": "데이비드",
+    "name": "데이비드 파크골프채 DP101 브라운 MEN 파크볼채",
+    "orig": 637000,
+    "price": 319000,
+    "dc": 50,
+    "stock": 130,
+    "sold": 74,
+    "endH": 40,
+    "reviews": 4351,
+    "badge": "real",
+    "url": "https://naver.me/FORqWMBy"
+  },
+  {
     "id": "real-리젠시-골프백-보호패드-항공커버-지지대-골프",
     "real": true,
     "cat": "스포츠레저",
