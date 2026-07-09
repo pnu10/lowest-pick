@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-100-천연성분-칸디다균99-감소-유기농-포",
+    "real": true,
+    "cat": "화장미용",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260421_147/1776755653113HhD5R_JPEG/110888531657292906_1323248291.jpg?type=o1000",
+    "brand": "포블랑시",
+    "name": "[100%천연성분 칸디다균99%감소]유기농 포블랑시여성청결제 유산균Y존 분비물냄새 생리약국",
+    "orig": 51000,
+    "price": 39000,
+    "dc": 24,
+    "stock": 140,
+    "sold": 108,
+    "endH": 54,
+    "reviews": 18895,
+    "badge": "real",
+    "url": "https://naver.me/xJc5M743"
+  },
+  {
     "id": "real-이지마인드-100시간보습-달팽이크림-70ml",
     "real": true,
     "cat": "화장미용",
