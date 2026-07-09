@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-제닉스-TITAN-SB9-게이밍스피커-사운드",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20251212_295/1765498610177tQjNy_JPEG/18424671695897206_1761604875.jpg?type=o1000",
+    "brand": "제닉스본사",
+    "name": "제닉스 TITAN SB9 게이밍스피커 사운드바 컴퓨터스피커",
+    "orig": 129000,
+    "price": 89000,
+    "dc": 31,
+    "stock": 70,
+    "sold": 64,
+    "endH": 53,
+    "reviews": 2884,
+    "badge": "real",
+    "url": "https://naver.me/FgEAAtwj"
+  },
+  {
     "id": "real-위니아-클라쎄-WFE112SSA-AK-12k",
     "real": true,
     "cat": "디지털가전",
