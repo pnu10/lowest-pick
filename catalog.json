@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-자연새긴-알부민-메가골드",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250722_194/1753171809014888YK_PNG/40370415871976134_969516021.png?type=o1000",
+    "brand": "자연새긴",
+    "name": "자연새긴 알부민 메가골드",
+    "orig": 99800,
+    "price": 58500,
+    "dc": 41,
+    "stock": 140,
+    "sold": 121,
+    "endH": 33,
+    "reviews": 5899,
+    "badge": "real",
+    "url": "https://naver.me/G8fwi1UH"
+  },
+  {
     "id": "real-위바이옴-두뇌엔-닥터PS-70-포스파티딜세린",
     "real": true,
     "cat": "식품",
