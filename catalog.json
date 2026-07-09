@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-더웨이나인-미친스판-정장나시-기본-원피스",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250422_181/1745302087081BIefh_JPEG/8286940767537661_594328156.jpg?type=o1000",
+    "brand": "더웨이나인",
+    "name": "[더웨이나인] 미친스판 정장나시 기본 원피스",
+    "orig": 62000,
+    "price": 62000,
+    "dc": 0,
+    "stock": 50,
+    "sold": 39,
+    "endH": 9,
+    "reviews": 1423,
+    "badge": "real",
+    "url": "https://naver.me/5fdBMAXO"
+  },
+  {
     "id": "real-멜킨-가정용-문틀철봉-실내-턱걸이-홈트-운동",
     "real": true,
     "cat": "스포츠레저",
