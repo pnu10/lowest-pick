@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-경남제약-관절건강엔-콘드로이친1200-뮤코다",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20241230_4/17355321445194KJQo_JPEG/49389347340038094_511945569.jpg?type=o1000",
+    "brand": "엘비에쓰",
+    "name": "경남제약 관절건강엔 콘드로이친1200 뮤코다당단백 건강기능식품 60정, 6개",
+    "orig": 104000,
+    "price": 104000,
+    "dc": 0,
+    "stock": 140,
+    "sold": 123,
+    "endH": 64,
+    "reviews": 146,
+    "badge": "real",
+    "url": "https://naver.me/GsBzWsAu"
+  },
+  {
     "id": "real-고소한-견과류-구운-아몬드-볶음-볶은-아몬드",
     "real": true,
     "cat": "식품",
