@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-해결사-남자-반바지-밴딩-트레이닝-여름-팬츠",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260424_85/1776994190254uAP67_JPEG/27552118146633313_2090518731.jpg?type=o1000",
+    "brand": "해결사 스토어",
+    "name": "해결사 남자 반바지 밴딩 트레이닝 여름 팬츠",
+    "orig": 17700,
+    "price": 15200,
+    "dc": 14,
+    "stock": 60,
+    "sold": 52,
+    "endH": 34,
+    "reviews": 768,
+    "badge": "real",
+    "url": "https://naver.me/FetIPolj"
+  },
+  {
     "id": "real-매일매일-편하게-입는-데일리-여자-반팔-티블",
     "real": true,
     "cat": "패션",
