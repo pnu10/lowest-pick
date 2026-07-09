@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-삼성전자-비스포크-김치냉장고",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20251212_41/1765512905514BP5QK_JPEG/34628787623295949_1823598834.jpg?type=o1000",
+    "brand": "삼성공식파트너 문성전자",
+    "name": "삼성전자 비스포크 김치냉장고",
+    "orig": 2550000,
+    "price": 2349000,
+    "dc": 8,
+    "stock": 70,
+    "sold": 52,
+    "endH": 57,
+    "reviews": 4989,
+    "badge": "real",
+    "url": "https://naver.me/xsZ5ulHW"
+  },
+  {
     "id": "real-2025년형-21KG-AI버블-세탁-드럼세탁",
     "real": true,
     "cat": "디지털가전",
