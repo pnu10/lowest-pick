@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-휴닉-베지어트-단백질-쉐이크-다이어트-식사대",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20240825_192/1724569431467gU1Yh_JPEG/30462723289945838_1774046827.jpg?type=o1000",
+    "brand": "휴닉",
+    "name": "휴닉 베지어트 단백질 쉐이크 다이어트 식사대용 비건 프로틴 810g",
+    "orig": 143000,
+    "price": 69900,
+    "dc": 51,
+    "stock": 50,
+    "sold": 40,
+    "endH": 16,
+    "reviews": 8894,
+    "badge": "real",
+    "url": "https://naver.me/IFEOQGJw"
+  },
+  {
     "id": "real-어부가-만드는-자연산-다슬기즙-100ml-3",
     "real": true,
     "cat": "식품",
