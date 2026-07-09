@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-탑텐-남성-COOL-밴딩-데님-쇼츠-MSF2",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260409_120/1775738191418zG8KE_JPEG/88922936450410447_1202601932.jpg?type=o1000",
+    "brand": "탑텐 공식스토어",
+    "name": "탑텐 남성 COOL 밴딩 데님 쇼츠_MSF2DH1901",
+    "orig": 39900,
+    "price": 15900,
+    "dc": 60,
+    "stock": 70,
+    "sold": 44,
+    "endH": 62,
+    "reviews": 353,
+    "badge": "real",
+    "url": "https://naver.me/xJc5Ac7H"
+  },
+  {
     "id": "real-국내산-자라-장어-즙-엑기스-진액-30포-기",
     "real": true,
     "cat": "식품",
