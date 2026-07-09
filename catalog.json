@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-삼성-얼음-정수기-비스포크-AI-얼음정수기-",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260220_228/1771555787015CTSCX_JPEG/14392145522966467_317751881.jpg?type=o1000",
+    "brand": "삼성공식파트너 현성전자",
+    "name": "삼성 얼음 정수기 비스포크 AI 얼음정수기 스탠드 예쁜 일시불 비스코프 직수 냉온 정수",
+    "orig": 2624000,
+    "price": 2449000,
+    "dc": 7,
+    "stock": 120,
+    "sold": 77,
+    "endH": 54,
+    "reviews": 179,
+    "badge": "real",
+    "url": "https://naver.me/x0OF4zxf"
+  },
+  {
     "id": "real-스톤힐-모니터-받침대도-역시-스톤힐",
     "real": true,
     "cat": "디지털가전",
