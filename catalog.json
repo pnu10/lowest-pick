@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-루트웨이-대용량-보조배터리-PB360W-파워",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260612_244/1781239226928gmUHQ_JPEG/508772034465564_853895235.jpg?type=o1000",
+    "brand": "루트웨이",
+    "name": "루트웨이 대용량 보조배터리 PB360W 파워뱅크 초고속 충전",
+    "orig": 399000,
+    "price": 279000,
+    "dc": 30,
+    "stock": 120,
+    "sold": 88,
+    "endH": 40,
+    "reviews": 868,
+    "badge": "real",
+    "url": "https://naver.me/GEd6MiGg"
+  },
+  {
     "id": "real-로라벨-메쉬-필라테스복-여성-요가복-필라테스",
     "real": true,
     "cat": "스포츠레저",
