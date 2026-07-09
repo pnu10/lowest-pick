@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-리젠시-골프백-보호패드-항공커버-지지대-골프",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20241122_148/1732225466798M1I4A_JPEG/8712843041840548_2057745008.jpg?type=o1000",
+    "brand": "리젠시 Regency",
+    "name": "리젠시 골프백 보호패드 항공커버 지지대 골프채보호 골프채 골프클럽",
+    "orig": 19900,
+    "price": 15900,
+    "dc": 20,
+    "stock": 130,
+    "sold": 94,
+    "endH": 12,
+    "reviews": 573,
+    "badge": "real",
+    "url": "https://naver.me/5l2nDCle"
+  },
+  {
     "id": "real-골프보스턴백",
     "real": true,
     "cat": "스포츠레저",
