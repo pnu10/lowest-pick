@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-공기좋고-물-맑은-고장-예천군에서-재배한-믿",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260703_252/1783065607590Gsxd3_JPEG/11575813542789469_1620399083.jpg?type=o1000",
+    "brand": "소화농장",
+    "name": "공기좋고 물 맑은 고장 예천군에서 재배한 믿고 드실수 있는 혼합 강낭콩 입니다",
+    "orig": 22000,
+    "price": 22000,
+    "dc": 0,
+    "stock": 50,
+    "sold": 35,
+    "endH": 17,
+    "reviews": 6036,
+    "badge": "real",
+    "url": "https://naver.me/5PWY1TgA"
+  },
+  {
     "id": "real-메가마트-링티-제로-복숭아맛-1L",
     "real": true,
     "cat": "식품",
