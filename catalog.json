@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-에어블로우-실링팬-C2-132cm-천장-선풍",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20210413_243/1618297140409X7B2A_JPEG/19432983115368405_1466984958.jpg?type=o1000",
+    "brand": "에어블로우",
+    "name": "에어블로우 실링팬 C2 132cm 천장 선풍기 거실 실링팬",
+    "orig": 429000,
+    "price": 299000,
+    "dc": 30,
+    "stock": 130,
+    "sold": 94,
+    "endH": 34,
+    "reviews": 6954,
+    "badge": "real",
+    "url": "https://naver.me/GjyuhxhX"
+  },
+  {
     "id": "real-쿠쿠-인스퓨어-헤리티지-28평형-공기청정기-",
     "real": true,
     "cat": "디지털가전",
