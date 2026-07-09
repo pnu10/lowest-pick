@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-인터픽셀-IP2740-FHD-리얼-180Hz",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20210329_43/1616984059652jyzhs_JPEG/18119893458522992_1804636720.jpg?type=o1000",
+    "brand": "인터픽셀",
+    "name": "인터픽셀 IP2740 FHD 리얼 180Hz 165Hz 68.5cm 게이밍 모니터 초슬림",
+    "orig": 249000,
+    "price": 229000,
+    "dc": 8,
+    "stock": 90,
+    "sold": 56,
+    "endH": 55,
+    "reviews": 15401,
+    "badge": "real",
+    "url": "https://naver.me/Gxr7xA2n"
+  },
+  {
     "id": "real-삼성-갤럭시북4-NT750XGR-A51A-i",
     "real": true,
     "cat": "디지털가전",
