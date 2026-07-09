@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-모어네이처-고함량-커큐민-강황-고흡수-고농축",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260619_9/1781830569216Qc2MM_JPEG/115963364215778108_2014284505.jpg?type=o1000",
+    "brand": "모어네이처",
+    "name": "모어네이처 고함량 커큐민 | 강황·고흡수·고농축 보조제",
+    "orig": 306000,
+    "price": 137700,
+    "dc": 55,
+    "stock": 120,
+    "sold": 91,
+    "endH": 6,
+    "reviews": 5899,
+    "badge": "real",
+    "url": "https://naver.me/G5kz2R6N"
+  },
+  {
     "id": "real-평양-냉면-물냉면-1인분-메밀",
     "real": true,
     "cat": "식품",
