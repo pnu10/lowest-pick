@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-이지마인드-100시간보습-달팽이크림-70ml",
+    "real": true,
+    "cat": "화장미용",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20230102_285/1672631520096VBLY0_PNG/73767353909334454_123282505.png?type=o1000",
+    "brand": "이지 마인드",
+    "name": "이지마인드 100시간보습 달팽이크림 70ml / 스네일 영양크림",
+    "orig": 25000,
+    "price": 15000,
+    "dc": 40,
+    "stock": 140,
+    "sold": 103,
+    "endH": 7,
+    "reviews": 2655,
+    "badge": "real",
+    "url": "https://naver.me/xxo4trOn"
+  },
+  {
     "id": "real-이니스프리-그린티-씨드-히알루론산-진정-보습",
     "real": true,
     "cat": "화장미용",
