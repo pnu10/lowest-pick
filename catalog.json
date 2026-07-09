@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-로티캠프-ROTICAMP",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250523_30/1747980056907hrdxY_JPEG/10894146049941988_1852571245.jpg?type=o1000",
+    "brand": "로티",
+    "name": "[로티캠프 ROTICAMP]",
+    "orig": 92900,
+    "price": 82900,
+    "dc": 11,
+    "stock": 120,
+    "sold": 99,
+    "endH": 48,
+    "reviews": 21931,
+    "badge": "real",
+    "url": "https://naver.me/5c8xkg3e"
+  },
+  {
     "id": "real-키친아트-소프트-쿨러백-5L-15L-25L",
     "real": true,
     "cat": "스포츠레저",
