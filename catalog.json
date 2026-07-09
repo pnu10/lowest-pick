@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-뮤고랑-블록놀이-테이블-의자-세트",
+    "real": true,
+    "cat": "출산육아",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20251104_36/1762240887384c5FIo_PNG/96373789520627439_1389780433.png?type=o1000",
+    "brand": "뮤고랑",
+    "name": "뮤고랑 블록놀이 테이블 + 의자 세트",
+    "orig": 100000,
+    "price": 73100,
+    "dc": 27,
+    "stock": 60,
+    "sold": 35,
+    "endH": 64,
+    "reviews": 1002,
+    "badge": "real",
+    "url": "https://naver.me/FiPqzDGL"
+  },
+  {
     "id": "real-팔레트슬라임",
     "real": true,
     "cat": "출산육아",
