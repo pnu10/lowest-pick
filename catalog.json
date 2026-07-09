@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-삼성-갤럭시북4-NT750XGR-A51A-i",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260706_290/1783263930432ICuCk_JPEG/117396765568987119_18853951.jpg?type=o1000",
+    "brand": "삼성mall 한사랑씨앤씨",
+    "name": "삼성 갤럭시북4 NT750XGR-A51A i5 16GB 256GB 노트북",
+    "orig": 1224000,
+    "price": 1198000,
+    "dc": 2,
+    "stock": 70,
+    "sold": 56,
+    "endH": 28,
+    "reviews": 14422,
+    "badge": "real",
+    "url": "https://naver.me/FTdWadP9"
+  },
+  {
     "id": "real-보아르-에이블-듀얼-오븐-에어프라이어-23L",
     "real": true,
     "cat": "디지털가전",
