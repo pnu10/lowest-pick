@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-빅사이즈-자체제작-여름-박시-루즈핏-맥시-롱",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250527_74/1748353795990jYYLu_PNG/2926278612019978_1164238543.png?type=o1000",
+    "brand": "에스빅샵",
+    "name": "빅사이즈 자체제작 여름 박시 루즈핏 맥시 롱 원피스 셔링 프릴 린넨 마 하객 여신 드레스",
+    "orig": 25900,
+    "price": 17900,
+    "dc": 31,
+    "stock": 140,
+    "sold": 82,
+    "endH": 17,
+    "reviews": 1410,
+    "badge": "real",
+    "url": "https://naver.me/GB3jgJNK"
+  },
+  {
     "id": "real-더수-여름-가을-겨울-텐셀-레깅스-7부-10",
     "real": true,
     "cat": "패션",
