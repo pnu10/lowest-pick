@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-효자-전동드릴-21V-무선-충전-해머-드라이",
+    "real": true,
+    "cat": "생활리빙",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20241122_41/1732260050068W9XvY_PNG/8028352170513405_1652269213.png?type=o1000",
+    "brand": "효자",
+    "name": "효자 전동드릴 21V 무선 충전 해머 드라이버 가정용",
+    "orig": 119000,
+    "price": 79000,
+    "dc": 34,
+    "stock": 40,
+    "sold": 29,
+    "endH": 5,
+    "reviews": 1675,
+    "badge": "real",
+    "url": "https://naver.me/x1uCOGas"
+  },
+  {
     "id": "real-펫토-강아지계단-강아지-논슬립-계단-스텝-탄",
     "real": true,
     "cat": "출산육아",
