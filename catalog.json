@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-구김없는-슬림핏-세미와이드핏-히든밴딩-슬랙스",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20241024_252/1729722999279NV5fU_JPEG/63855800423115297_1744534276.jpg?type=o1000",
+    "brand": "시크놈",
+    "name": "구김없는 슬림핏 세미와이드핏 히든밴딩 슬랙스",
+    "orig": 35500,
+    "price": 26790,
+    "dc": 25,
+    "stock": 140,
+    "sold": 77,
+    "endH": 56,
+    "reviews": 10706,
+    "badge": "real",
+    "url": "https://naver.me/IFEOmXd8"
+  },
+  {
     "id": "real-편안한-폴리-루즈핏-리얼히든셔츠",
     "real": true,
     "cat": "패션",
