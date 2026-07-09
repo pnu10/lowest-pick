@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-드리미-L40s-Pro-Ultra-로봇청소기",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260213_145/1770943577164NxsIb_JPEG/105076349446548225_453926131.jpg?type=o1000",
+    "brand": "드리미 한국 공식 대리점",
+    "name": "드리미 L40s Pro Ultra 로봇청소기 사이드 브러시 엉킴 방지 온수세척 열풍건조",
+    "orig": 1290000,
+    "price": 799000,
+    "dc": 38,
+    "stock": 120,
+    "sold": 66,
+    "endH": 31,
+    "reviews": 2573,
+    "badge": "real",
+    "url": "https://naver.me/5ECiuocD"
+  },
+  {
     "id": "real-1-1-생폰-방탄-범퍼-핸폰-맥세이프-핸드폰",
     "real": true,
     "cat": "디지털가전",
