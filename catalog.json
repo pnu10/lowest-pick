@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-위니아-클라쎄-WFE112SSA-AK-12k",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260206_118/1770365653177BfRvR_PNG/104498466415780854_1342983919.png?type=o1000",
+    "brand": "큐에이드 스토어",
+    "name": "위니아 클라쎄 WFE112SSA(AK) 12kg 통돌이세탁기 원룸 오피스텔 라이트실버",
+    "orig": 483000,
+    "price": 319000,
+    "dc": 34,
+    "stock": 100,
+    "sold": 94,
+    "endH": 32,
+    "reviews": 165,
+    "badge": "real",
+    "url": "https://naver.me/FCZhhGpE"
+  },
+  {
     "id": "real-아이폰과-에어팟을-동시에-고속-충전",
     "real": true,
     "cat": "디지털가전",
