@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-타투유스티커-2주-유지되는-오래가는-지워지는",
+    "real": true,
+    "cat": "화장미용",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250623_118/17506698096014vswS_JPEG/76058174271090088_1956045062.jpg?type=o1000",
+    "brand": "타투유",
+    "name": "타투유스티커 2주 유지되는 오래가는 지워지는 문신 타투 제작가능",
+    "orig": 19900,
+    "price": 10900,
+    "dc": 45,
+    "stock": 150,
+    "sold": 115,
+    "endH": 24,
+    "reviews": 3534,
+    "badge": "real",
+    "url": "https://naver.me/5xgJWO66"
+  },
+  {
     "id": "real-매니큐어-손톱-펄-네일-케어-일반-메니큐어-",
     "real": true,
     "cat": "화장미용",
