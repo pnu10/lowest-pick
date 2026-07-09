@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-아이스-냉동-고구마-군고구마-엿구마-1kg-",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20220413_110/16498434076456zNDp_JPEG/50979187354449228_1491704792.jpg?type=o1000",
+    "brand": "맛꾼푸드",
+    "name": "아이스 냉동 고구마 군고구마 엿구마 1kg x 2봉",
+    "orig": 29900,
+    "price": 25800,
+    "dc": 14,
+    "stock": 90,
+    "sold": 59,
+    "endH": 37,
+    "reviews": 21848,
+    "badge": "real",
+    "url": "https://naver.me/GYD37cF8"
+  },
+  {
     "id": "real-전라도식-국산-열무김치-2kg-주문",
     "real": true,
     "cat": "식품",
