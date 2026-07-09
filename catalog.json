@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-솔러스에어-무선선풍기-USB-탁상용선풍기-소",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250211_180/1739262087869sfpDC_JPEG/21279174725571287_1170868330.jpg?type=o1000",
+    "brand": "솔러스에어",
+    "name": "솔러스에어 무선선풍기 USB 탁상용선풍기 소형 미니써큘레이터 그레이",
+    "orig": 49000,
+    "price": 29800,
+    "dc": 39,
+    "stock": 120,
+    "sold": 81,
+    "endH": 19,
+    "reviews": 9300,
+    "badge": "real",
+    "url": "https://naver.me/5GcTvprJ"
+  },
+  {
     "id": "real-99-9-살균-만능청소템-비쎌-슬림-스팀청소",
     "real": true,
     "cat": "디지털가전",
