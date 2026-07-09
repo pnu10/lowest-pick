@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-계란찜기-반숙-계란삶는기계-2단-에그쿠커-옐",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20251221_89/1766319025766HduoT_JPEG/83462112564782185_141202855.jpg?type=o1000",
+    "brand": "다씀",
+    "name": "계란찜기 반숙 계란삶는기계 2단 에그쿠커 옐로우 미니 고구마 멀티쿠커",
+    "orig": 12900,
+    "price": 8900,
+    "dc": 31,
+    "stock": 80,
+    "sold": 47,
+    "endH": 58,
+    "reviews": 45412,
+    "badge": "real",
+    "url": "https://naver.me/FkatsD16"
+  },
+  {
     "id": "real-메이튼-무선-애플-카플레이-오토-미러링-티맵",
     "real": true,
     "cat": "디지털가전",
