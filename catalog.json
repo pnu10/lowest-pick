@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-넛츠피아-하루견과-100봉-견과류-믹스넛-세",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260209_10/1770616713538ALfW1_JPEG/104749526803243923_1129037728.jpg?type=o1000",
+    "brand": "넛츠피아",
+    "name": "넛츠피아 하루견과 100봉 견과류 믹스넛 세트 추석 명절",
+    "orig": 70000,
+    "price": 29900,
+    "dc": 57,
+    "stock": 50,
+    "sold": 45,
+    "endH": 44,
+    "reviews": 49401,
+    "badge": "real",
+    "url": "https://naver.me/Gi0CjRMZ"
+  },
+  {
     "id": "real-밀크씨슬-비타민B-1000-간-건강-간에좋은",
     "real": true,
     "cat": "식품",
