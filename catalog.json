@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-삼성전자-삼성-유선-키보드-SKG-3000U",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250217_172/1739761228076R99Qy_JPEG/42336976816547670_157264551.jpg?type=o1000",
+    "brand": "삼성공식파트너 모니칸",
+    "name": "삼성전자 삼성 유선 키보드 SKG-3000UB 멤브레인 USB타입 사무용 업무용",
+    "orig": 28500,
+    "price": 21500,
+    "dc": 25,
+    "stock": 60,
+    "sold": 36,
+    "endH": 60,
+    "reviews": 5721,
+    "badge": "real",
+    "url": "https://naver.me/574RxE0q"
+  },
+  {
     "id": "real-드리미-L40s-Pro-Ultra-로봇청소기",
     "real": true,
     "cat": "디지털가전",
