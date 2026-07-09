@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-아이깨끗해-핸드워시-손세정제-바세린-무타공-",
+    "real": true,
+    "cat": "생활리빙",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250630_160/1751271477542uIVH0_JPEG/85404405663737725_2132620309.jpg?type=o1000",
+    "brand": "JS테크",
+    "name": "아이깨끗해 핸드워시 손세정제 바세린 무타공 공중부양 벽걸이 거치대",
+    "orig": 9980,
+    "price": 6980,
+    "dc": 30,
+    "stock": 70,
+    "sold": 46,
+    "endH": 5,
+    "reviews": 35,
+    "badge": "real",
+    "url": "https://naver.me/5HyJp3JE"
+  },
+  {
     "id": "real-유세린-하이알루론-아이-크림-15ml-저자극",
     "real": true,
     "cat": "화장미용",
