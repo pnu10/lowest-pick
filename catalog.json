@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-삼성-갤럭시-버즈4-버즈4프로-케이스-호랑이",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260303_247/1772531683069N5Ukn_JPEG/23092456937101066_673111057.jpg?type=o1000",
+    "brand": "삼성공식파트너 dmac",
+    "name": "삼성 갤럭시 버즈4 버즈4프로 케이스 호랑이 전통 문양",
+    "orig": 39600,
+    "price": 29900,
+    "dc": 24,
+    "stock": 40,
+    "sold": 31,
+    "endH": 62,
+    "reviews": 245,
+    "badge": "real",
+    "url": "https://naver.me/xy7IIlHu"
+  },
+  {
     "id": "real-산리오-캐릭터즈-쿠로미-피규어-키링-USB-",
     "real": true,
     "cat": "디지털가전",
