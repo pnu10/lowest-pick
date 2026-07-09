@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-맥-립스틱-3g",
+    "real": true,
+    "cat": "화장미용",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250729_267/1753778015282wOD4U_JPEG/2592170925611765_624336210.jpeg?type=o1000",
+    "brand": "맥 MAC",
+    "name": "맥 립스틱 3g",
+    "orig": 38000,
+    "price": 38000,
+    "dc": 0,
+    "stock": 100,
+    "sold": 88,
+    "endH": 56,
+    "reviews": 4699,
+    "badge": "real",
+    "url": "https://naver.me/G9UmPnfr"
+  },
+  {
     "id": "real-라셀턴-토탈-솔루션-발톱세럼-문제성발톱-앰플",
     "real": true,
     "cat": "화장미용",
