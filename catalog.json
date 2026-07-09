@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-쿠잉-스탠드냉동고-FR-S70W-서랍형-소형",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20240517_2/17159073171487BNKc_JPEG/117043159848602063_1727129853.jpg?type=o1000",
+    "brand": "쿠잉",
+    "name": "쿠잉 스탠드냉동고 FR-S70W 서랍형 소형 미니 가정용",
+    "orig": 299000,
+    "price": 219000,
+    "dc": 27,
+    "stock": 100,
+    "sold": 59,
+    "endH": 59,
+    "reviews": 1333,
+    "badge": "real",
+    "url": "https://naver.me/5WUr5IDo"
+  },
+  {
     "id": "real-휴고스-이동식-에어컨",
     "real": true,
     "cat": "디지털가전",
