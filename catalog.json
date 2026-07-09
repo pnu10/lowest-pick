@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-플리츠-플레어-A라인-밴딩-롱-맥시-바스락-",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260605_11/1780644284571pa5BU_JPEG/57105630362031334_1183030923.jpg?type=o1000",
+    "brand": "델레브",
+    "name": "플리츠 플레어 A라인 밴딩 롱 맥시 바스락 스커트",
+    "orig": 44000,
+    "price": 33900,
+    "dc": 23,
+    "stock": 150,
+    "sold": 141,
+    "endH": 43,
+    "reviews": 427,
+    "badge": "real",
+    "url": "https://naver.me/GRDXxxkY"
+  },
+  {
     "id": "real-빅사이즈-자체제작-여름-박시-루즈핏-맥시-롱",
     "real": true,
     "cat": "패션",
