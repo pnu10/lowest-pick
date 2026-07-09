@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-10-포인트-지급-ECCO-에코코리아-바이옴",
+    "real": true,
+    "cat": "스포츠레저",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260304_260/1772598345079fvoYW_JPEG/18223537073423742_424669206.jpg?type=o1000",
+    "brand": "골프맥스",
+    "name": "[10% 포인트 지급] ECCO 에코코리아 바이옴 C5 GTX 132604 남성골프화",
+    "orig": 470000,
+    "price": 425000,
+    "dc": 10,
+    "stock": 150,
+    "sold": 110,
+    "endH": 21,
+    "reviews": 14,
+    "badge": "real",
+    "url": "https://naver.me/5kP51eVr"
+  },
+  {
     "id": "real-아디다스골프-남성-보아-골프화",
     "real": true,
     "cat": "스포츠레저",
