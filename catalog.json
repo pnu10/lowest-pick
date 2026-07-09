@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-단미-1구-인덕션-전기레인지-원형-인덕션렌지",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250701_157/17513317932421BkqG_JPEG/85464616377729671_897143564.jpg?type=o1000",
+    "brand": "단미스토어",
+    "name": "단미 1구 인덕션 전기레인지 원형 인덕션렌지 IN03",
+    "orig": 69000,
+    "price": 53800,
+    "dc": 22,
+    "stock": 140,
+    "sold": 123,
+    "endH": 23,
+    "reviews": 2657,
+    "badge": "real",
+    "url": "https://naver.me/FM9HdoYw"
+  },
+  {
     "id": "real-미닉스-무설치-식기세척기-PRO-소형-미니-",
     "real": true,
     "cat": "디지털가전",
