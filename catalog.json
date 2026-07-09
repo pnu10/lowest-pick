@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-국산-미숫가루-검은콩-50-고소한-식사대용-",
+    "real": true,
+    "cat": "식품",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20240104_283/17043502604836nQeu_JPEG/105486094292922092_201471928.jpg?type=o1000",
+    "brand": "복방앗간푸드",
+    "name": "국산 미숫가루 검은콩 50% 고소한 식사대용 300g 복방앗간",
+    "orig": 10000,
+    "price": 9300,
+    "dc": 7,
+    "stock": 60,
+    "sold": 35,
+    "endH": 25,
+    "reviews": 31663,
+    "badge": "real",
+    "url": "https://naver.me/x0OF02Lh"
+  },
+  {
     "id": "real-귀리-잡곡-국산-혼합곡-렌틸콩-수향미-1L-",
     "real": true,
     "cat": "식품",
