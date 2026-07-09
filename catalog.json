@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-아이룸-차이슨-무선청소기-제트클린-BLDC-",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260120_60/1768881832747cswLh_PNG/11393567727226387_127947645.png?type=o1000",
+    "brand": "아이룸 공식스토어",
+    "name": "아이룸 차이슨 무선청소기 제트클린 BLDC 핸디 스틱 진공 청소기",
+    "orig": 210000,
+    "price": 119000,
+    "dc": 43,
+    "stock": 90,
+    "sold": 52,
+    "endH": 12,
+    "reviews": 21880,
+    "badge": "real",
+    "url": "https://naver.me/xONShCQq"
+  },
+  {
     "id": "real-시홈-휴대용선풍기-냉각-에어컨-손선풍기-미니",
     "real": true,
     "cat": "디지털가전",
