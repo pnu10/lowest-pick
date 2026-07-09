@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-1-1-쿨링-아이스-3부-5부-밴딩-팬츠-여",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260706_52/1783302521487MGeIk_JPEG/4493936972958567_1892846769.jpg?type=o1000",
+    "brand": "리즈데이즈",
+    "name": "1+1 쿨링 아이스 3부 5부 밴딩 팬츠 여성 여름 반바지",
+    "orig": 36000,
+    "price": 15900,
+    "dc": 56,
+    "stock": 110,
+    "sold": 79,
+    "endH": 15,
+    "reviews": 3270,
+    "badge": "real",
+    "url": "https://naver.me/5eDRdlCi"
+  },
+  {
     "id": "real-나일론-3부-4부-우븐-반바지-밴딩-남자-여",
     "real": true,
     "cat": "패션",
