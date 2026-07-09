@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-나즐-아이패드프로-에어5세대-갤럭시탭-s7-",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20241026_260/1729936220406VO1MK_JPEG/64069025508427885_2013728984.jpg?type=o1000",
+    "brand": "나즐",
+    "name": "나즐 아이패드프로 에어5세대 갤럭시탭 s7 s8 플러스 12.9 태블릿 파우치",
+    "orig": 22900,
+    "price": 16900,
+    "dc": 26,
+    "stock": 150,
+    "sold": 112,
+    "endH": 8,
+    "reviews": 3750,
+    "badge": "real",
+    "url": "https://naver.me/FKGU1s7s"
+  },
+  {
     "id": "real-에이투-본플렉스-골전도이어폰-스포츠-플렉시블",
     "real": true,
     "cat": "디지털가전",
