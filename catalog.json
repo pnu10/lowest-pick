@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-오픈이벤트-트립톡Z-맥세이프그립톡-핸드폰스탠",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260318_107/1773811358416QzzY4_PNG/29091115899839005_496044959.png?type=o1000",
+    "brand": "트립베드",
+    "name": "[오픈이벤트] 트립톡Z 맥세이프그립톡 핸드폰스탠드 스마트톡링홀더",
+    "orig": 19900,
+    "price": 15900,
+    "dc": 20,
+    "stock": 120,
+    "sold": 103,
+    "endH": 28,
+    "reviews": 372,
+    "badge": "real",
+    "url": "https://naver.me/xsZ5uNCK"
+  },
+  {
     "id": "real-삼성전자-삼성-유선-키보드-SKG-3000U",
     "real": true,
     "cat": "디지털가전",
