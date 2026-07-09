@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-유이가-즐거운-이유-블라우풍트-ACC-ENC",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20250314_292/1741928217371ISvfp_JPEG/21601617717735680_1089888875.jpg?type=o1000",
+    "brand": "블라우풍트 본사 공식스토어",
+    "name": "유이가 즐거운 이유!블라우풍트 ACC ENC 노이즈캔슬링 블루투스이어폰 BLP-BE332W",
+    "orig": 42900,
+    "price": 28800,
+    "dc": 33,
+    "stock": 150,
+    "sold": 130,
+    "endH": 34,
+    "reviews": 31613,
+    "badge": "real",
+    "url": "https://naver.me/FhubC9vg"
+  },
+  {
     "id": "real-삼성전자-김치냉장고-비스포크-328L-스탠드",
     "real": true,
     "cat": "디지털가전",
