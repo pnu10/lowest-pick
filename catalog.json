@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-보아르-에이블나인-제빙기",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20220517_211/1652757954407frJ1F_JPEG/53893788227252682_615697739.jpg?type=o1000",
+    "brand": "보아르",
+    "name": "보아르 에이블나인 제빙기",
+    "orig": 158000,
+    "price": 149000,
+    "dc": 6,
+    "stock": 70,
+    "sold": 64,
+    "endH": 48,
+    "reviews": 2528,
+    "badge": "real",
+    "url": "https://naver.me/FwGre9WD"
+  },
+  {
     "id": "real-인터픽셀-IP2740-FHD-리얼-180Hz",
     "real": true,
     "cat": "디지털가전",
