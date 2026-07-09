@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-드월-냉풍기-가정용-냉방기-이동식-얼음-냉각",
+    "real": true,
+    "cat": "디지털가전",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20260410_41/1775789309051YYzSv_PNG/29384221136344927_728582902.png?type=o1000",
+    "brand": "드월",
+    "name": "드월 냉풍기 가정용 냉방기 이동식 얼음 냉각 에어컨 선풍기 업소용 사무실 에어쿨러",
+    "orig": 329000,
+    "price": 249000,
+    "dc": 24,
+    "stock": 90,
+    "sold": 79,
+    "endH": 63,
+    "reviews": 827,
+    "badge": "real",
+    "url": "https://naver.me/5wrOihFk"
+  },
+  {
     "id": "real-소형-벽걸이-선풍기-벽걸이용-벽-화장실-가정",
     "real": true,
     "cat": "디지털가전",
