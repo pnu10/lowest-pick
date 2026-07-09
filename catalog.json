@@ -1,5 +1,24 @@
 [
   {
+    "id": "real-매일매일-편하게-입는-데일리-여자-반팔-티블",
+    "real": true,
+    "cat": "패션",
+    "emoji": "🛍️",
+    "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
+    "img": "https://shop-phinf.pstatic.net/20210812_96/1628746853305c2dde_GIF/29882698709785654_671477742.gif?type=o1000",
+    "brand": "더웨이나인",
+    "name": "매일매일 편하게 입는 데일리 여자 반팔 티블라우스",
+    "orig": 45000,
+    "price": 39000,
+    "dc": 13,
+    "stock": 90,
+    "sold": 83,
+    "endH": 49,
+    "reviews": 518,
+    "badge": "real",
+    "url": "https://naver.me/FCZh7kzB"
+  },
+  {
     "id": "real-여자여자몰-여리여리최강자-나시세트-5부소매-",
     "real": true,
     "cat": "패션",
