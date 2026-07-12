@@ -711,13 +711,13 @@
     "orig": 8000,
     "price": 7900,
     "dc": 1,
-    "stock": 80,
-    "sold": 72,
-    "endH": 58,
-    "reviews": 4732,
+    "stock": 50,
+    "sold": 29,
+    "endH": 61,
+    "reviews": 4736,
     "badge": "real",
     "url": "https://naver.me/FSveJB6n",
-    "lastChecked": "2026-07-11"
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-가성비-좋은-기능성-접이식-캠핑-야전침대-조",
@@ -731,13 +731,13 @@
     "orig": 65900,
     "price": 43900,
     "dc": 33,
-    "stock": 60,
-    "sold": 48,
-    "endH": 59,
-    "reviews": 13421,
+    "stock": 50,
+    "sold": 42,
+    "endH": 35,
+    "reviews": 13429,
     "badge": "real",
     "url": "https://naver.me/xQJz7pq1",
-    "lastChecked": "2026-07-11"
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-4세대-자이로볼-오토볼-손목-전완근-악력-스",
@@ -757,7 +757,7 @@
     "reviews": 40753,
     "badge": "real",
     "url": "https://naver.me/xsZ5ntWn",
-    "lastChecked": "2026-07-11"
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-육상-선수가-선택한-러닝벨트",
@@ -771,13 +771,13 @@
     "orig": 25000,
     "price": 14700,
     "dc": 41,
-    "stock": 50,
-    "sold": 28,
-    "endH": 23,
-    "reviews": 11211,
+    "stock": 60,
+    "sold": 49,
+    "endH": 47,
+    "reviews": 11246,
     "badge": "real",
     "url": "https://naver.me/xCjz5ICJ",
-    "lastChecked": "2026-07-11"
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-하비터틀-스윔고글",
@@ -797,7 +797,7 @@
     "reviews": 1532,
     "badge": "real",
     "url": "https://naver.me/5reFlRpR",
-    "lastChecked": "2026-07-11"
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-굿스터치-허리보호대-허리복대-의료용-지지대-",
@@ -816,7 +816,8 @@
     "endH": 24,
     "reviews": 32642,
     "badge": "real",
-    "url": "https://naver.me/5p0QLo1q"
+    "url": "https://naver.me/5p0QLo1q",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-퀄리스포츠-엑스트론-슬림-48V-500W",
@@ -830,12 +831,13 @@
     "orig": 1630000,
     "price": 1630000,
     "dc": 0,
-    "stock": 90,
-    "sold": 52,
-    "endH": 58,
+    "stock": 40,
+    "sold": 30,
+    "endH": 63,
     "reviews": 1000,
     "badge": "real",
-    "url": "https://naver.me/FLEjqb4M"
+    "url": "https://naver.me/FLEjqb4M",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-안전한-등산스틱-오직-하이콜릭에서만-가능합니",
@@ -854,7 +856,8 @@
     "endH": 56,
     "reviews": 6425,
     "badge": "real",
-    "url": "https://naver.me/5DZ1CIAv"
+    "url": "https://naver.me/5DZ1CIAv",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-여성골프반바지-골프연습복-여자골프바지",
@@ -873,7 +876,8 @@
     "endH": 14,
     "reviews": 33,
     "badge": "real",
-    "url": "https://naver.me/5p0QLZTa"
+    "url": "https://naver.me/5p0QLZTa",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-JPX-MX-726R-오토바이헬멧-풀페이스-",
@@ -883,16 +887,17 @@
     "bg": "linear-gradient(135deg,#F1EDFF,#DDD6FE)",
     "img": "https://shop-phinf.pstatic.net/20250306_41/1741243986572OgYAA_JPEG/6305308695222015_1385399275.jpg?type=o1000",
     "brand": "JPX 공식스토어",
-    "name": "JPX MX-726R 오토바이헬멧 풀페이스 모듈러 오프로드 어드벤쳐 DOT ECE",
+    "name": "JPX 오토바이헬멧 MX-726R 모듈러 오프로드 어드벤쳐 풀페이스 헬멧",
     "orig": 177000,
     "price": 177000,
     "dc": 0,
-    "stock": 100,
-    "sold": 88,
-    "endH": 32,
+    "stock": 40,
+    "sold": 24,
+    "endH": 27,
     "reviews": 48,
     "badge": "real",
-    "url": "https://naver.me/GWWIa26u"
+    "url": "https://naver.me/GWWIa26u",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-스마트런-스탠다드-러닝모자-45g-초경량-타",
@@ -906,12 +911,13 @@
     "orig": 35000,
     "price": 29750,
     "dc": 15,
-    "stock": 110,
-    "sold": 102,
-    "endH": 8,
-    "reviews": 6609,
+    "stock": 120,
+    "sold": 79,
+    "endH": 23,
+    "reviews": 6623,
     "badge": "real",
-    "url": "https://naver.me/xUZip1bK"
+    "url": "https://naver.me/xUZip1bK",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-윌슨-테크-야구글러브-우투-아동용-성인용-캐",
@@ -925,12 +931,13 @@
     "orig": 42000,
     "price": 32900,
     "dc": 22,
-    "stock": 90,
-    "sold": 77,
-    "endH": 25,
-    "reviews": 12913,
+    "stock": 110,
+    "sold": 66,
+    "endH": 47,
+    "reviews": 12917,
     "badge": "real",
-    "url": "https://naver.me/xNpg5PJ1"
+    "url": "https://naver.me/xNpg5PJ1",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-캠핑-에어매트-커버-대형-패드-자충-매트-전",
@@ -944,12 +951,13 @@
     "orig": 45000,
     "price": 39900,
     "dc": 11,
-    "stock": 80,
-    "sold": 68,
-    "endH": 47,
-    "reviews": 1889,
+    "stock": 50,
+    "sold": 33,
+    "endH": 32,
+    "reviews": 1893,
     "badge": "real",
-    "url": "https://naver.me/5zUVurNX"
+    "url": "https://naver.me/5zUVurNX",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-프롬비-아이스볼-넥쿨러-넥밴드-냉감스카프-넥",
@@ -968,7 +976,8 @@
     "endH": 12,
     "reviews": 17799,
     "badge": "real",
-    "url": "https://naver.me/xxo48sKP"
+    "url": "https://naver.me/xxo48sKP",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-남성골프반팔티-남성골프상의-빅사이즈골프웨어",
@@ -987,7 +996,8 @@
     "endH": 53,
     "reviews": 25,
     "badge": "real",
-    "url": "https://naver.me/5K6kf0TW"
+    "url": "https://naver.me/5K6kf0TW",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-숀리-에어-스텝퍼-계단-오르기-실내-걷기-유",
@@ -1006,7 +1016,8 @@
     "endH": 48,
     "reviews": 24082,
     "badge": "real",
-    "url": "https://naver.me/FlBerwnf"
+    "url": "https://naver.me/FlBerwnf",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-야광-케이무라-한치에기-오리지널-잭스페로우-",
@@ -1020,12 +1031,13 @@
     "orig": 2500,
     "price": 2500,
     "dc": 0,
-    "stock": 90,
-    "sold": 67,
-    "endH": 60,
+    "stock": 50,
+    "sold": 45,
+    "endH": 16,
     "reviews": 114,
     "badge": "real",
-    "url": "https://naver.me/GVV4m08B"
+    "url": "https://naver.me/GVV4m08B",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-그늘막-옥상-차광막-주문제작-그늘애-썬쉐이드",
@@ -1039,12 +1051,13 @@
     "orig": 77600,
     "price": 39800,
     "dc": 49,
-    "stock": 70,
-    "sold": 47,
-    "endH": 38,
-    "reviews": 27945,
+    "stock": 130,
+    "sold": 123,
+    "endH": 63,
+    "reviews": 27967,
     "badge": "real",
-    "url": "https://naver.me/GSQaCymH"
+    "url": "https://naver.me/GSQaCymH",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-나이키-남자-실내-수영복-숏사각-스퀘어레그-",
@@ -1058,12 +1071,13 @@
     "orig": 69000,
     "price": 61000,
     "dc": 12,
-    "stock": 60,
-    "sold": 43,
-    "endH": 15,
+    "stock": 120,
+    "sold": 97,
+    "endH": 44,
     "reviews": 253,
     "badge": "real",
-    "url": "https://naver.me/Gxr7UrmP"
+    "url": "https://naver.me/Gxr7UrmP",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-루트웨이-대용량-보조배터리-PB360W-파워",
@@ -1077,12 +1091,13 @@
     "orig": 399000,
     "price": 279000,
     "dc": 30,
-    "stock": 120,
-    "sold": 88,
-    "endH": 40,
-    "reviews": 868,
+    "stock": 100,
+    "sold": 89,
+    "endH": 35,
+    "reviews": 872,
     "badge": "real",
-    "url": "https://naver.me/GEd6MiGg"
+    "url": "https://naver.me/GEd6MiGg",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-로라벨-메쉬-필라테스복-여성-요가복-필라테스",
@@ -1096,12 +1111,13 @@
     "orig": 28900,
     "price": 21900,
     "dc": 24,
-    "stock": 150,
-    "sold": 131,
-    "endH": 13,
+    "stock": 110,
+    "sold": 72,
+    "endH": 15,
     "reviews": 1963,
     "badge": "real",
-    "url": "https://naver.me/FSveJSwU"
+    "url": "https://naver.me/FSveJSwU",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-비헤이-오리지널-컬러웨빙-투명-비치백-M-국",
@@ -1116,11 +1132,12 @@
     "price": 31200,
     "dc": 20,
     "stock": 60,
-    "sold": 48,
-    "endH": 53,
-    "reviews": 2007,
+    "sold": 33,
+    "endH": 11,
+    "reviews": 2008,
     "badge": "real",
-    "url": "https://naver.me/x7eaUnxr"
+    "url": "https://naver.me/x7eaUnxr",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-핸즐-연습용-골프장갑-남성-골프장갑-왼손-합",
@@ -1134,12 +1151,13 @@
     "orig": 7000,
     "price": 4000,
     "dc": 43,
-    "stock": 130,
-    "sold": 98,
-    "endH": 47,
-    "reviews": 6148,
+    "stock": 90,
+    "sold": 71,
+    "endH": 57,
+    "reviews": 6152,
     "badge": "real",
-    "url": "https://naver.me/GzdsLEJj"
+    "url": "https://naver.me/GzdsLEJj",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-비밀공간-테니스화-인조잔디-클레이-옴니-코트",
@@ -1153,12 +1171,13 @@
     "orig": 99000,
     "price": 67000,
     "dc": 32,
-    "stock": 90,
-    "sold": 65,
-    "endH": 39,
-    "reviews": 1233,
+    "stock": 50,
+    "sold": 34,
+    "endH": 18,
+    "reviews": 1234,
     "badge": "real",
-    "url": "https://naver.me/GHL8QVag"
+    "url": "https://naver.me/GHL8QVag",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-요넥스-65Z4-배드민턴화-남성화-M1E-2",
@@ -1172,12 +1191,13 @@
     "orig": 195000,
     "price": 175000,
     "dc": 10,
-    "stock": 70,
-    "sold": 65,
-    "endH": 9,
-    "reviews": 717,
+    "stock": 40,
+    "sold": 23,
+    "endH": 37,
+    "reviews": 720,
     "badge": "real",
-    "url": "https://naver.me/G4d3PxQr"
+    "url": "https://naver.me/G4d3PxQr",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-데이비드-파크골프채-DP101-브라운-MEN",
@@ -1191,12 +1211,13 @@
     "orig": 637000,
     "price": 319000,
     "dc": 50,
-    "stock": 130,
-    "sold": 74,
-    "endH": 40,
-    "reviews": 4351,
+    "stock": 40,
+    "sold": 30,
+    "endH": 14,
+    "reviews": 4358,
     "badge": "real",
-    "url": "https://naver.me/FORqWMBy"
+    "url": "https://naver.me/FORqWMBy",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-리젠시-골프백-보호패드-항공커버-지지대-골프",
@@ -1210,12 +1231,13 @@
     "orig": 19900,
     "price": 15900,
     "dc": 20,
-    "stock": 130,
-    "sold": 94,
-    "endH": 12,
-    "reviews": 573,
+    "stock": 70,
+    "sold": 44,
+    "endH": 37,
+    "reviews": 575,
     "badge": "real",
-    "url": "https://naver.me/5l2nDCle"
+    "url": "https://naver.me/5l2nDCle",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-골프보스턴백",
@@ -1229,12 +1251,13 @@
     "orig": 284000,
     "price": 284000,
     "dc": 0,
-    "stock": 140,
-    "sold": 85,
-    "endH": 62,
-    "reviews": 345,
+    "stock": 60,
+    "sold": 43,
+    "endH": 46,
+    "reviews": 346,
     "badge": "real",
-    "url": "https://naver.me/GCJK762J"
+    "url": "https://naver.me/GCJK762J",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-멜킨-EVA-폼롤러-45cm-스트레칭-휴대용",
@@ -1249,11 +1272,12 @@
     "price": 10900,
     "dc": 50,
     "stock": 60,
-    "sold": 33,
-    "endH": 55,
-    "reviews": 147058,
+    "sold": 46,
+    "endH": 33,
+    "reviews": 147065,
     "badge": "real",
-    "url": "https://naver.me/G2YALFBJ"
+    "url": "https://naver.me/G2YALFBJ",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-1-1-아디다스-퍼포먼스-발목보호대-축구-농",
@@ -1267,12 +1291,13 @@
     "orig": 27000,
     "price": 22600,
     "dc": 16,
-    "stock": 80,
-    "sold": 70,
-    "endH": 62,
-    "reviews": 4248,
+    "stock": 140,
+    "sold": 102,
+    "endH": 34,
+    "reviews": 4252,
     "badge": "real",
-    "url": "https://naver.me/Gi0C7bjJ"
+    "url": "https://naver.me/Gi0C7bjJ",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-나이키-주니어-키즈-줌-머큐리얼-베이퍼-15",
@@ -1286,12 +1311,13 @@
     "orig": 129000,
     "price": 79000,
     "dc": 39,
-    "stock": 150,
-    "sold": 116,
-    "endH": 44,
+    "stock": 110,
+    "sold": 71,
+    "endH": 53,
     "reviews": 81,
     "badge": "real",
-    "url": "https://naver.me/xoGEFrVA"
+    "url": "https://naver.me/xoGEFrVA",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-트라보스-전기오토바이-전동스쿠터-바이크-삼륜",
@@ -1305,12 +1331,13 @@
     "orig": 1503900,
     "price": 1503900,
     "dc": 0,
-    "stock": 60,
-    "sold": 41,
-    "endH": 18,
+    "stock": 40,
+    "sold": 23,
+    "endH": 13,
     "reviews": 5,
     "badge": "real",
-    "url": "https://naver.me/FHOvqYqD"
+    "url": "https://naver.me/FHOvqYqD",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-카라반-레벨러",
@@ -1324,12 +1351,13 @@
     "orig": 90000,
     "price": 18000,
     "dc": 80,
-    "stock": 70,
-    "sold": 60,
-    "endH": 38,
+    "stock": 130,
+    "sold": 106,
+    "endH": 42,
     "reviews": 578,
     "badge": "real",
-    "url": "https://naver.me/5QsoE4hr"
+    "url": "https://naver.me/5QsoE4hr",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-스윔어바웃-클래식-넥베스트-튜브형-부력보조복",
@@ -1343,12 +1371,13 @@
     "orig": 25900,
     "price": 14900,
     "dc": 42,
-    "stock": 50,
-    "sold": 30,
-    "endH": 64,
-    "reviews": 5605,
+    "stock": 70,
+    "sold": 47,
+    "endH": 57,
+    "reviews": 5610,
     "badge": "real",
-    "url": "https://naver.me/FkatOpzK"
+    "url": "https://naver.me/FkatOpzK",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-제로웨이트210g-경량-등산가방-소형-배낭-",
@@ -1362,12 +1391,13 @@
     "orig": 68900,
     "price": 48900,
     "dc": 29,
-    "stock": 100,
-    "sold": 90,
-    "endH": 57,
-    "reviews": 6449,
+    "stock": 110,
+    "sold": 83,
+    "endH": 37,
+    "reviews": 6475,
     "badge": "real",
-    "url": "https://naver.me/5PWY3iRE"
+    "url": "https://naver.me/5PWY3iRE",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-로티캠프-아이언-미니-접이식-캠핑테이블-60",
@@ -1381,12 +1411,13 @@
     "orig": 29900,
     "price": 22900,
     "dc": 23,
-    "stock": 70,
-    "sold": 40,
-    "endH": 41,
+    "stock": 80,
+    "sold": 48,
+    "endH": 25,
     "reviews": 4797,
     "badge": "real",
-    "url": "https://naver.me/GQGaRwEN"
+    "url": "https://naver.me/GQGaRwEN",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-멜킨-NBR-요가매트-스탠다드-10mm-두꺼",
@@ -1400,12 +1431,13 @@
     "orig": 9560,
     "price": 8600,
     "dc": 10,
-    "stock": 140,
-    "sold": 97,
-    "endH": 63,
-    "reviews": 76592,
+    "stock": 80,
+    "sold": 60,
+    "endH": 5,
+    "reviews": 76614,
     "badge": "real",
-    "url": "https://naver.me/Grgp4wJJ"
+    "url": "https://naver.me/Grgp4wJJ",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-위크나인-여자-수영복-프릴-하이웨스트-오프숄",
@@ -1419,12 +1451,13 @@
     "orig": 23200,
     "price": 13900,
     "dc": 40,
-    "stock": 40,
-    "sold": 34,
-    "endH": 40,
+    "stock": 110,
+    "sold": 76,
+    "endH": 27,
     "reviews": 251,
     "badge": "real",
-    "url": "https://naver.me/xm07pEro"
+    "url": "https://naver.me/xm07pEro",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-국내생산-면-100-사파리-버킷햇-챙넓은-남",
@@ -1438,12 +1471,13 @@
     "orig": 25000,
     "price": 17800,
     "dc": 29,
-    "stock": 50,
-    "sold": 43,
-    "endH": 60,
-    "reviews": 2093,
+    "stock": 90,
+    "sold": 52,
+    "endH": 41,
+    "reviews": 2099,
     "badge": "real",
-    "url": "https://naver.me/5c8xkplW"
+    "url": "https://naver.me/5c8xkplW",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-기능성-손목보호대-아대-밴드-얇은-골프-테니",
@@ -1457,12 +1491,13 @@
     "orig": 18500,
     "price": 17000,
     "dc": 8,
-    "stock": 80,
-    "sold": 73,
-    "endH": 30,
-    "reviews": 9939,
+    "stock": 100,
+    "sold": 61,
+    "endH": 23,
+    "reviews": 9944,
     "badge": "real",
-    "url": "https://naver.me/xUZieIiG"
+    "url": "https://naver.me/xUZieIiG",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-로티캠프-ROTICAMP",
@@ -1481,7 +1516,8 @@
     "endH": 48,
     "reviews": 21931,
     "badge": "real",
-    "url": "https://naver.me/5c8xkg3e"
+    "url": "https://naver.me/5c8xkg3e",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-키친아트-소프트-쿨러백-5L-15L-25L",
@@ -1500,7 +1536,8 @@
     "endH": 31,
     "reviews": 13666,
     "badge": "real",
-    "url": "https://naver.me/5AuwWDiR"
+    "url": "https://naver.me/5AuwWDiR",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-페이퍼플레인키즈-아동-키즈-풋살화-끈없는-주",
@@ -1514,12 +1551,13 @@
     "orig": 42900,
     "price": 22890,
     "dc": 47,
-    "stock": 60,
-    "sold": 39,
-    "endH": 49,
+    "stock": 150,
+    "sold": 133,
+    "endH": 45,
     "reviews": 46,
     "badge": "real",
-    "url": "https://naver.me/GWWIzkum"
+    "url": "https://naver.me/GWWIzkum",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-톰디어-후미등겸용-어반-전동킥보드헬멧-전기-",
@@ -1534,11 +1572,12 @@
     "price": 37800,
     "dc": 14,
     "stock": 40,
-    "sold": 32,
-    "endH": 36,
+    "sold": 24,
+    "endH": 29,
     "reviews": 7008,
     "badge": "real",
-    "url": "https://naver.me/xVRP8Ea3"
+    "url": "https://naver.me/xVRP8Ea3",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-남자-여성-긴팔-래쉬가드-제이드-루즈핏-커플",
@@ -1552,12 +1591,13 @@
     "orig": 34000,
     "price": 23900,
     "dc": 30,
-    "stock": 90,
-    "sold": 82,
-    "endH": 11,
-    "reviews": 2438,
+    "stock": 100,
+    "sold": 68,
+    "endH": 61,
+    "reviews": 2439,
     "badge": "real",
-    "url": "https://naver.me/5imJjI7O"
+    "url": "https://naver.me/5imJjI7O",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-홀리데이코리아-홀리데이-캠핑-대형-블랙코팅-",
@@ -1571,12 +1611,13 @@
     "orig": 315000,
     "price": 315000,
     "dc": 0,
-    "stock": 40,
-    "sold": 29,
-    "endH": 32,
-    "reviews": 4744,
+    "stock": 70,
+    "sold": 62,
+    "endH": 56,
+    "reviews": 4750,
     "badge": "real",
-    "url": "https://naver.me/xJc5XRHW"
+    "url": "https://naver.me/xJc5XRHW",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-깃털-같은-착용감-rnrn-울트라-라이트-초",
@@ -1590,12 +1631,13 @@
     "orig": 49800,
     "price": 31700,
     "dc": 36,
-    "stock": 110,
-    "sold": 69,
-    "endH": 12,
-    "reviews": 14855,
+    "stock": 60,
+    "sold": 43,
+    "endH": 59,
+    "reviews": 14938,
     "badge": "real",
-    "url": "https://naver.me/G7NGMwAq"
+    "url": "https://naver.me/G7NGMwAq",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-K2-세이프티-X밴더-쿨토시-골프-팔토시-자",
@@ -1609,12 +1651,13 @@
     "orig": 11200,
     "price": 5900,
     "dc": 47,
-    "stock": 90,
-    "sold": 57,
-    "endH": 44,
-    "reviews": 35819,
+    "stock": 120,
+    "sold": 77,
+    "endH": 35,
+    "reviews": 35857,
     "badge": "real",
-    "url": "https://naver.me/GcA5Pen1"
+    "url": "https://naver.me/GcA5Pen1",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-엑사이더-실내자전거-CF-918B-접이식-기",
@@ -1628,12 +1671,13 @@
     "orig": 160000,
     "price": 109000,
     "dc": 32,
-    "stock": 50,
-    "sold": 32,
-    "endH": 26,
-    "reviews": 42162,
+    "stock": 130,
+    "sold": 103,
+    "endH": 50,
+    "reviews": 42175,
     "badge": "real",
-    "url": "https://naver.me/5bCcr6H6"
+    "url": "https://naver.me/5bCcr6H6",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-여성-골프웨어-긴팔티셔츠-반목-터틀넥",
@@ -1647,12 +1691,13 @@
     "orig": 15000,
     "price": 15000,
     "dc": 0,
-    "stock": 110,
-    "sold": 79,
-    "endH": 61,
+    "stock": 130,
+    "sold": 113,
+    "endH": 10,
     "reviews": 792,
     "badge": "real",
-    "url": "https://naver.me/x8kIcClU"
+    "url": "https://naver.me/x8kIcClU",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-마추픽추-에어텐트-에어오션-면텐트",
@@ -1666,12 +1711,13 @@
     "orig": 1990000,
     "price": 1390000,
     "dc": 30,
-    "stock": 50,
-    "sold": 27,
-    "endH": 39,
+    "stock": 120,
+    "sold": 74,
+    "endH": 60,
     "reviews": 903,
     "badge": "real",
-    "url": "https://naver.me/FHOvIEzE"
+    "url": "https://naver.me/FHOvIEzE",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-지벤-선풍기조끼-에어-쿨-여름-작업조끼-ZB",
@@ -1685,12 +1731,13 @@
     "orig": 117700,
     "price": 117700,
     "dc": 0,
-    "stock": 140,
-    "sold": 97,
-    "endH": 20,
-    "reviews": 99,
+    "stock": 150,
+    "sold": 139,
+    "endH": 46,
+    "reviews": 100,
     "badge": "real",
-    "url": "https://naver.me/FetIZmDY"
+    "url": "https://naver.me/FetIZmDY",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-OUFF-남자-실내-수영복-세트-수영장-강습",
@@ -1704,12 +1751,13 @@
     "orig": 56440,
     "price": 39500,
     "dc": 30,
-    "stock": 70,
-    "sold": 62,
-    "endH": 57,
-    "reviews": 3385,
+    "stock": 100,
+    "sold": 88,
+    "endH": 19,
+    "reviews": 3390,
     "badge": "real",
-    "url": "https://naver.me/5g4bNMQT"
+    "url": "https://naver.me/5g4bNMQT",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-크링키-UV자외선차단마스크-쿨-냉감-안면-페",
@@ -1723,12 +1771,13 @@
     "orig": 29000,
     "price": 15900,
     "dc": 45,
-    "stock": 140,
-    "sold": 116,
-    "endH": 37,
-    "reviews": 2508,
+    "stock": 130,
+    "sold": 97,
+    "endH": 15,
+    "reviews": 2542,
     "badge": "real",
-    "url": "https://naver.me/xsZ5kRXa"
+    "url": "https://naver.me/xsZ5kRXa",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-스티로폼박스-아이스박스-택배용-식품-대형-김",
@@ -1742,12 +1791,13 @@
     "orig": 49000,
     "price": 38100,
     "dc": 22,
-    "stock": 140,
-    "sold": 126,
-    "endH": 28,
-    "reviews": 25296,
+    "stock": 70,
+    "sold": 65,
+    "endH": 38,
+    "reviews": 25304,
     "badge": "real",
-    "url": "https://naver.me/FNtzfRmm"
+    "url": "https://naver.me/FNtzfRmm",
+    "lastChecked": "2026-07-10"
   },
   {
     "id": "real-볼빅-골프공-고반발-비거리-맥스고-3피스-스",
@@ -1766,7 +1816,8 @@
     "endH": 36,
     "reviews": 4364,
     "badge": "real",
-    "url": "https://naver.me/FCZh3mRr"
+    "url": "https://naver.me/FCZh3mRr",
+    "lastChecked": "2026-07-12"
   },
   {
     "id": "real-9FX-여자실내수영복-세미컷-탄탄이-원피스수",
@@ -1785,7 +1836,8 @@
     "endH": 32,
     "reviews": 150,
     "badge": "real",
-    "url": "https://naver.me/5MvNrJx3"
+    "url": "https://naver.me/5MvNrJx3",
+    "lastChecked": "2026-07-12"
   },
   {
     "id": "real-10-포인트-지급-ECCO-에코코리아-바이옴",
@@ -1804,7 +1856,8 @@
     "endH": 21,
     "reviews": 14,
     "badge": "real",
-    "url": "https://naver.me/5kP51eVr"
+    "url": "https://naver.me/5kP51eVr",
+    "lastChecked": "2026-07-12"
   },
   {
     "id": "real-아디다스골프-남성-보아-골프화",
@@ -1823,7 +1876,8 @@
     "endH": 12,
     "reviews": 4888,
     "badge": "real",
-    "url": "https://naver.me/xKy5MlaL"
+    "url": "https://naver.me/xKy5MlaL",
+    "lastChecked": "2026-07-12"
   },
   {
     "id": "real-르까프-다이얼-트레킹화-멀티트랙-등산화-경량",
@@ -1842,7 +1896,8 @@
     "endH": 12,
     "reviews": 703,
     "badge": "real",
-    "url": "https://naver.me/5UVa5m0T"
+    "url": "https://naver.me/5UVa5m0T",
+    "lastChecked": "2026-07-12"
   },
   {
     "id": "real-어반캠퍼-원터치-텐트-어반2",
