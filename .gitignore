@@ -1,11 +1,11 @@
 .DS_Store
 node_modules/
+# 토스쇼핑 API 인증 (절대 공개 금지)
+.env
+.toss-token.json
 # 로컬 자동화 도구 (공개 안 함)
-add-deal.js
-connect-link.jxa
-trends.js
-overnight-run.sh
-overnight.log
-keywords.txt
-keywords.backup.txt
-auto-progress.json
+toss-sync.js
+test-category.js
+sync.log
+# 발급받은 쉐어링크 캐시 — publisherId가 들어있고 배포에 불필요(로컬 전용)
+links.json

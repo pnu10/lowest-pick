@@ -378,7 +378,7 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;letter-spacin
 
   <!-- 오늘까지만 이 가격 -->
   <section class="sec" id="secRush">
-    <div class="sec-hd"><h3>🔥 할인율 높은 딜</h3></div>
+    <div class="sec-hd"><h3 id="rushTitle">🔥 할인율 높은 딜</h3></div>
     <div class="rush-wrap" id="rushWrap"></div>
   </section>
 
@@ -396,7 +396,7 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;letter-spacin
     <div class="grid" id="grid"></div>
   </section>
 
-  <div class="foot-note">최저가픽은 네이버 쇼핑 커넥트 활동을 포함하며, 일부 상품 구매 시 수수료를 제공받을 수 있습니다.</div>
+  <div class="foot-note">최저가픽은 토스쇼핑 쉐어링크 제휴 활동을 포함하며, 이를 통해 일정액의 수수료를 제공받을 수 있습니다.<br>가격·재고는 판매처 사정에 따라 실시간으로 변동될 수 있습니다.</div>
 </main>
 
 <main id="pageMy" class="hide"></main>
@@ -415,28 +415,28 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;letter-spacin
 
 <script>
 /* ══════════ 카탈로그 ══════════
-   real:true → shopick 실제 제휴 링크 상품
-   stock: 오늘 특가 물량, sold: 소진 수량 */
-const CATALOG=[]; // 실제 딜은 catalog.json에서 로드
+   딜 데이터는 toss-sync.js가 토스쇼핑 쉐어링크 API로 만든 catalog.json에서 로드한다.
+   url = 쉐어링크(추적 링크). 이 링크로 들어온 구매만 제휴 수익으로 집계된다.
+   endAt = 하루특가 종료 시각(있는 상품만) */
+const CATALOG=[];
 
 const CATS=["전체","생활리빙","식품","화장미용","디지털가전","출산육아","스포츠레저","패션","가구인테리어"];
 const CAT_ICON={"전체":"🛒","생활리빙":"🧽","식품":"🍎","화장미용":"💄","디지털가전":"🔌","출산육아":"🍼","스포츠레저":"⚽","패션":"👕","가구인테리어":"🛋️"};
 // 블로그 게시판(~픽)과 1:1: 생활리빙픽·식품픽·화장미용픽·디지털가전픽·출산육아픽·스포츠레저픽·패션픽·가구인테리어픽
-const CAT_ALIAS={"생활":"생활리빙","주방":"생활리빙","뷰티/헬스":"화장미용","디지털":"디지털가전","유아/반려":"출산육아","레저":"스포츠레저"};
-const CAT_SPECIAL={socks:"패션",tumbler:"가구인테리어",airfryer:"디지털가전"}; // 시드 개별 예외
-const BADGE_TXT={hot:"🔥 오늘핫딜",almost:"⚡️ 품절임박",best:"👍 검증픽",new:"✨ 신규특가",real:"✅ 실제딜"};
+// (카테고리 매핑은 toss-sync.js가 하고, 예외는 category-map.json에서 덮어쓴다)
 
 /* ── state ── */
 const LS="lowpick_v1";
 let state=JSON.parse(localStorage.getItem(LS)||'{"alerts":[],"liked":[]}');
 const save=()=>localStorage.setItem(LS,JSON.stringify(state));
 let curCat="전체",curSort="pop",curQ="";
-const NOW=Date.now();
-CATALOG.forEach(d=>{
-  d.cat=CAT_SPECIAL[d.id]||CAT_ALIAS[d.cat]||d.cat; // 구 카테고리 → 블로그 게시판명으로 정규화
-  d.endsAt=NOW+d.endH*3600*1000;
-  d.avg=Math.round((d.orig*0.55+d.price*0.45)/100)*100; // 최근 3개월 평균가(추정치)
-});
+
+// 카드 보조 정보: 리뷰 평점·수(쉐어링크 API가 내려줌), 없으면 절약액
+function reviewInfo(d){
+  if(d.reviews>0)return`⭐ ${d.score?d.score.toFixed(1)+" · ":""}리뷰 ${won(d.reviews)}개`;
+  const save=(d.orig||0)-(d.price||0);
+  return save>0?`💰 ${won(save)}원 아껴요`:`🛍️ 토스쇼핑`;
+}
 
 const $=s=>document.querySelector(s);
 const won=n=>n.toLocaleString("ko-KR");
@@ -455,7 +455,7 @@ function toast(msg){
 const HERO=[
  {bg:"linear-gradient(135deg,#FF4D2E,#FF8A3D)",cap:"오늘의 특가 브리핑",h:"할인율 높은 딜만<br>골라 담았어요",sub:"매일 새로 업데이트",e:"🏷️"},
  {bg:"linear-gradient(135deg,#3182F6,#6FA8FF)",cap:"정직한 딜",h:"과장 없이<br>진짜 할인율만",sub:"실제 정가·판매가 기준",e:"🧾"},
- {bg:"linear-gradient(135deg,#7C5CFF,#A78BFA)",cap:"리뷰로 검증",h:"리뷰 많은<br>믿을 만한 상품",sub:"실제 판매 링크 연동",e:"⭐"},
+ {bg:"linear-gradient(135deg,#7C5CFF,#A78BFA)",cap:"리뷰로 검증",h:"리뷰 많은<br>믿을 만한 상품",sub:"토스쇼핑 실시간 랭킹 기준",e:"⭐"},
 ];
 let heroIdx=0;
 function renderHero(){
@@ -472,16 +472,22 @@ function renderHero(){
   },3800);
 }
 
-/* ── rush (오늘 마감) ── */
+/* ── rush (하루특가 = 오늘 마감) ── */
 function renderRush(){
-  const rush=CATALOG.filter(d=>d.img).sort((a,b)=>b.dc-a.dc).slice(0,7);
+  // 하루특가(endAt 있음)를 먼저, 없으면 할인율 높은 딜로 채운다
+  const today=CATALOG.filter(d=>d.endAt&&isLive(d)).sort((a,b)=>a.endAt.localeCompare(b.endAt));
+  const rush=(today.length?today:CATALOG.filter(d=>isLive(d)&&d.dc>0).sort((a,b)=>b.dc-a.dc)).slice(0,7);
+  $("#secRush").classList.toggle("hide",!rush.length);
+  $("#rushTitle").textContent=today.length?"⏰ 오늘만 이 가격":"🔥 할인율 높은 딜";
   $("#rushWrap").innerHTML=rush.map(d=>`
     <div class="rush" onclick="openSheet('${d.id}')">
-      <div class="thumb" style="background:${d.bg}"><span class="dcbadge">${d.dc}%</span>${d.img?`<img src="${d.img}" alt="">`:d.emoji}</div>
+      <div class="thumb" style="background:${d.bg}"><span class="dcbadge">${d.dc}%</span>${d.img?`<img src="${d.img}" alt="">`:d.emoji}
+        ${d.endAt?`<span class="timer" data-end="${d.endAt}">--:--</span>`:""}</div>
       <div class="name">${d.name}</div>
       <div class="price"><span class="dc">${d.dc}%</span><span class="won">${won(d.price)}원</span></div>
-      <div class="left">⭐ 리뷰 ${won(d.reviews)}</div>
+      <div class="left">${reviewInfo(d)}</div>
     </div>`).join("");
+  tickTimers();
 }
 
 /* ── chips / grid ── */
@@ -501,7 +507,7 @@ function applySearch(q){
   curQ=q.trim();
   const searching=curQ.length>0;
   $("#hero").classList.toggle("hide",searching);       // 검색 중엔 배너 숨김
-  $("#secRush").classList.toggle("hide",searching);    // 검색 중엔 '오늘까지만' 숨김
+  if(searching)$("#secRush").classList.add("hide"); else renderRush(); // 검색 중엔 '오늘만' 숨김
   $("#chips").classList.toggle("hide",searching);      // 검색 중엔 카테고리 숨김
   $("#qClear").classList.toggle("hide",!searching);
   $("#secLabel").textContent=searching?`'${curQ}' 검색결과`:"오늘의 딜";
@@ -510,8 +516,12 @@ function applySearch(q){
 $("#q").addEventListener("input",e=>applySearch(e.target.value));
 $("#qClear").onclick=()=>{$("#q").value="";applySearch("");$("#q").focus();};
 
+// 하루특가는 endAt이 지나면 토스에서 특가가 끝난다. catalog.json은 동기화할 때만 갱신되므로
+// 만료된 딜이 남아 있을 수 있어, 화면에서는 클라이언트가 직접 걸러낸다(가격이 이미 달라져 있음).
+const isLive=d=>!d.endAt||new Date(d.endAt).getTime()>Date.now();
+
 function renderGrid(){
-  let list=CATALOG.filter(d=>d.img); // 사진 있는 실제 딜만
+  let list=CATALOG.filter(isLive); // 만료된 하루특가 제외
   if(curQ){
     const q=curQ.toLowerCase();
     list=list.filter(d=>((d.name||"")+" "+(d.brand||"")+" "+(d.cat||"")).toLowerCase().includes(q));
@@ -520,10 +530,12 @@ function renderGrid(){
   }
   if(curSort==="dc")list.sort((a,b)=>b.dc-a.dc);
   else if(curSort==="low")list.sort((a,b)=>a.price-b.price);
-  else list.sort((a,b)=>(b.reviews||0)-(a.reviews||0)); // 인기순 = 리뷰 많은 순(실제값)
+  else list.sort((a,b)=>(b.reviews||0)-(a.reviews||0)); // 인기순 = 리뷰 많은 순(쉐어링크 API 실제값)
   $("#dealCnt").textContent=list.length;
   if(!list.length){
-    $("#grid").innerHTML=`<div class="no-result">🔍 '${curQ||curCat}'에 맞는 딜이 없어요.<br>다른 검색어로 찾아보세요.</div>`;
+    $("#grid").innerHTML=CATALOG.length
+      ?`<div class="no-result">🔍 '${curQ||curCat}'에 맞는 딜이 없어요.<br>다른 검색어로 찾아보세요.</div>`
+      :`<div class="no-result">🛍️ 아직 등록된 딜이 없어요.<br>토스쇼핑 상품을 동기화하면 여기에 표시돼요.</div>`;
     return;
   }
   $("#grid").innerHTML=list.map((d,i)=>{
@@ -533,17 +545,17 @@ function renderGrid(){
     <div class="deal" style="animation-delay:${i*0.03}s" onclick="openSheet('${d.id}')">
       <div class="thumb" style="background:${d.bg}">
         ${d.img?`<img src="${d.img}" alt="" loading="lazy">`:d.emoji}
-        <span class="badge best">${d.dc}% 할인</span>
+        ${d.dc>0?`<span class="badge best">${d.dc}% 할인</span>`:""}
       </div>
       <button class="like" onclick="event.stopPropagation();toggleLike('${d.id}')">${liked?"❤️":"🤍"}</button>
       <div class="body">
         <div class="brand">${d.brand}</div>
         <div class="name">${d.name}</div>
         <div class="pricebox">
-          <div class="orig">${won(d.orig)}원</div>
-          <div class="now"><span class="dc">${d.dc}%</span><span class="won">${won(d.price)}</span><span class="unit">원</span></div>
+          ${d.dc>0?`<div class="orig">${won(d.orig)}원</div>`:""}
+          <div class="now">${d.dc>0?`<span class="dc">${d.dc}%</span>`:""}<span class="won">${won(d.price)}</span><span class="unit">원</span></div>
         </div>
-        <div class="rev-mini">⭐ 리뷰 ${won(d.reviews)}개${lo?` · <span class="lowtag">${lo}</span>`:""}</div>
+        <div class="rev-mini">${reviewInfo(d)}${lo?` · <span class="lowtag">${lo}</span>`:""}</div>
       </div>
     </div>`;
   }).join("");
@@ -566,13 +578,13 @@ function openSheet(id){
     <div class="sheet-body">
       <div class="brand">${d.brand} · ${d.cat}</div>
       <h2>${d.name}</h2>
-      <div class="rev">⭐ 리뷰 ${won(d.reviews)}개${d.real?" · ✅ 실제 판매 링크 연동":""}</div>
-      <div class="sheet-price"><span class="dc">${d.dc}%</span><span class="won">${won(d.price)}원</span><span class="orig">${won(d.orig)}원</span></div>
+      <div class="rev">${reviewInfo(d)}${d.endAt?` · ⏰ <span data-end="${d.endAt}">--:--</span> 후 종료`:""}</div>
+      <div class="sheet-price">${d.dc>0?`<span class="dc">${d.dc}%</span>`:""}<span class="won">${won(d.price)}원</span>${d.dc>0?`<span class="orig">${won(d.orig)}원</span>`:""}</div>
       <div class="histbox">
         <h4>💰 가격 정보</h4>
-        <div class="hrow"><span class="ic">🏬</span><span class="lbl">정가</span><span class="p strike">${won(d.orig)}원</span></div>
-        <div class="hrow low"><span class="ic">✓</span><span class="lbl">현재 딜가</span><span class="p">${won(d.price)}원</span></div>
-        <div class="saverow"><span class="dcpct">${d.dc}%</span>정가보다 <b>${dcAmt}원</b> 저렴해요</div>
+        ${d.dc>0?`<div class="hrow"><span class="ic">🏬</span><span class="lbl">정가</span><span class="p strike">${won(d.orig)}원</span></div>`:""}
+        <div class="hrow low"><span class="ic">✓</span><span class="lbl">현재 판매가</span><span class="p">${won(d.price)}원</span></div>
+        ${d.dc>0?`<div class="saverow"><span class="dcpct">${d.dc}%</span>정가보다 <b>${dcAmt}원</b> 저렴해요</div>`:""}
         ${priceTrackHtml(d)}
       </div>
     </div>
@@ -580,10 +592,10 @@ function openSheet(id){
       <button class="btn-sub" onclick="toggleLike('${d.id}');openSheet('${d.id}')">${state.liked.includes(d.id)?"❤️":"🤍"}</button>
       <button class="btn-sub" onclick="shareDeal()">📤</button>
       ${d.url
-        ?`<button class="btn-main reallink" onclick="goReal()">최저가로 바로 구매 →</button>`
+        ?`<button class="btn-main reallink" onclick="goReal()">토스쇼핑에서 구매하기 →</button>`
         :`<button class="btn-main" disabled style="opacity:.5">구매 링크 준비 중</button>`}
     </div>
-    <div class="sheet-note">이 딜은 네이버 쇼핑 커넥트 활동의 일환으로, 구매 발생 시 수수료를 제공받을 수 있어요.<br>가격·재고는 판매처 사정에 따라 실시간 변동될 수 있으며, 실제 결제·배송은 각 판매처가 진행해요.</div>`;
+    <div class="sheet-note">최저가픽은 토스쇼핑 쉐어링크 제휴 활동의 일환으로, 구매 발생 시 일정액의 수수료를 제공받을 수 있어요.<br>표시 가격은 마지막 확인 시점(${d.lastChecked||"-"}) 기준이며 실시간으로 변동될 수 있어요. 결제·배송·교환/반품은 토스쇼핑에서 진행돼요.</div>`;
   $("#dim").classList.add("on");
   $("#sheet").classList.add("on");
   tickTimers();
@@ -592,7 +604,7 @@ function closeSheet(){$("#dim").classList.remove("on");$("#sheet").classList.rem
 $("#dim").onclick=closeSheet;
 
 function goReal(){
-  toast("판매처로 이동해요 →");
+  toast("토스쇼핑으로 이동해요 →");
   setTimeout(()=>window.open(curDeal.url,"_blank"),400);
 }
 function shareDeal(){
@@ -648,12 +660,30 @@ $("#navMy").onclick=()=>{
 };
 
 /* ── 실제 가격 기록(price-history.json) 기반 최저가 ── */
-let PRICE_HISTORY={}; // { url: [{d:"2026-07-08", p:19200}, ...] }
-function tickTimers(){} // 타이머 제거됨(호환용 no-op)
+let PRICE_HISTORY={}; // { 딜id: [{d:"2026-08-05", p:19200}, ...] } — toss-sync.js가 매 실행마다 누적
+// 하루특가 종료 카운트다운 (endAt은 ISO 8601 한국시간)
+let ticking=false; // renderRush()가 tickTimers()를 다시 부르므로 재진입 방지
+function tickTimers(){
+  if(ticking)return;
+  const now=Date.now();
+  let justExpired=false;
+  document.querySelectorAll("[data-end]").forEach(el=>{
+    const left=new Date(el.dataset.end).getTime()-now;
+    el.textContent=fmtT(left);
+    if(left<=0&&!el.classList.contains("over")){el.classList.add("over");justExpired=true;}
+  });
+  // 특가가 끝나는 순간 화면에서 바로 내린다 (동기화 없이도 만료된 가격이 남지 않도록)
+  if(justExpired){
+    ticking=true;
+    try{renderRush();renderGrid();if(curDeal&&!isLive(curDeal))closeSheet();}
+    finally{ticking=false;}
+  }
+}
+setInterval(tickTimers,1000);
 
 // 날짜 중복 제거한 기록 배열
 function histOf(d){
-  const h=PRICE_HISTORY[d&&d.url]||[];
+  const h=(d&&PRICE_HISTORY[d.id])||[];
   const byDay={}; h.forEach(x=>{byDay[x.d]=x.p;});
   return Object.entries(byDay).map(([dt,p])=>({d:dt,p})).sort((a,b)=>a.d<b.d?-1:1);
 }
@@ -678,31 +708,32 @@ function priceTrackHtml(d){
 }
 async function loadPriceHistory(){
   try{
-    let r=await fetch("https://pnu10.github.io/lowest-pick/price-history.json",{cache:"no-store"}).catch(()=>null);
+    let r=IS_LOCAL?null:await fetch("https://pnu10.github.io/lowest-pick/price-history.json",{cache:"no-store"}).catch(()=>null);
     if(!r||!r.ok)r=await fetch("price-history.json",{cache:"no-store"}).catch(()=>null);
     if(r&&r.ok){PRICE_HISTORY=await r.json()||{};renderGrid();}
   }catch(e){/* 없으면 최저가 기능만 비활성, 앱은 정상 */}
 }
 
-/* ── catalog.json 병합 (add-deal.js로 추가한 실제 딜) ── */
+/* ── catalog.json 병합 (toss-sync.js가 토스쇼핑 API로 만든 딜) ── */
 // catalog.json 우선순위: 외부 URL(배포용, 재배포 없이 갱신) → 실패 시 같은 폴더 파일(로컬)
 const CATALOG_URL="https://pnu10.github.io/lowest-pick/catalog.json";
+// 로컬(개발)에서는 toss-sync.js가 방금 만든 같은 폴더 catalog.json을 먼저 본다
+const IS_LOCAL=/^(localhost|127\.0\.0\.1)$/.test(location.hostname)||location.protocol==="file:";
 async function loadExternalCatalog(){
   try{
-    let r=await fetch(CATALOG_URL,{cache:"no-store"}).catch(()=>null);
+    let r=IS_LOCAL?null:await fetch(CATALOG_URL,{cache:"no-store"}).catch(()=>null);
     if(!r||!r.ok)r=await fetch("catalog.json",{cache:"no-store"});
     if(!r.ok)return;
     const ext=await r.json();
     if(!Array.isArray(ext))return;
     [...ext].reverse().forEach(d=>{
       if(!d||!d.name||!d.price)return;
-      const i=CATALOG.findIndex(x=>(d.url&&x.url===d.url)||x.name===d.name);
+      const i=CATALOG.findIndex(x=>(d.id&&x.id===d.id)||x.name===d.name);
       if(i>=0)CATALOG.splice(i,1);
-      d.cat=CAT_SPECIAL[d.id]||CAT_ALIAS[d.cat]||d.cat; // 구 카테고리명도 게시판명으로 정규화
       CATALOG.unshift(d);
     });
     renderRush();renderGrid();
-  }catch(e){/* catalog.json 없으면 시드만 사용 */}
+  }catch(e){/* catalog.json 없으면 빈 화면 */}
 }
 
 /* ── init ── */
