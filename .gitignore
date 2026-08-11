@@ -1,11 +1,16 @@
 .DS_Store
 node_modules/
+# 앱인토스 빌드 산출물 (GitHub Pages에는 index.html 원본만 서빙)
+dist/
+*.ait
 # 토스쇼핑 API 인증 (절대 공개 금지)
 .env
 .toss-token.json
 # 로컬 자동화 도구 (공개 안 함)
-toss-sync.js
-test-category.js
+# package.json에 "type":"module"이 있어 CommonJS인 이 스크립트들은 .cjs여야 한다
+toss-sync.cjs
+test-category.cjs
+test-sim.cjs
 sync.log
 # 발급받은 쉐어링크 캐시 — publisherId가 들어있고 배포에 불필요(로컬 전용)
 links.json

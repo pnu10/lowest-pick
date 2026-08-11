@@ -19,7 +19,7 @@ cp .env.example .env   # TOSS_ACCESS_KEY / TOSS_SECRET_KEY / TOSS_PUBLISHER_ID �
 ## 동기화
 
 ```bash
-node toss-sync.js
+node toss-sync.cjs
 ```
 
 토큰 발급 → `/health` 연결 확인 → 상품 목록 조회 → 쉐어링크 발급 → `catalog.json` 저장.
@@ -32,12 +32,22 @@ node toss-sync.js
 | `--min-dc 20` | 할인율 20% 이상만 |
 | `--limit 60` | 최대 60건 |
 | `--no-link` | 쉐어링크 발급 생략(조회만) |
+| `--no-push` | GitHub Pages 배포(커밋·푸시) 생략 |
 | `--dry` | 저장하지 않고 결과만 출력 |
+
+### 배포는 동기화에 포함된다
+
+동기화가 끝나면 `catalog.json`·`price-history.json`을 커밋하고 `origin`에 푸시한다.
+**이 단계가 없으면 로컬만 최신이고 실제 앱은 옛날 딜을 계속 보여준다** — 앱이 배포 환경에서
+`https://pnu10.github.io/lowest-pick/catalog.json`을 읽기 때문이다.
+
+푸시에 실패해도 동기화 자체는 성공으로 처리한다(로컬 파일은 이미 정상이므로). 로그에 경고가 남으니
+`sync.log`를 보고 직접 푸시하면 된다.
 
 ## ⚠️ 링크는 반드시 발급받은 것만
 
 조회 API가 주는 `productUrl`은 **추적이 되지 않는 일반 링크**라 이 링크로 발생한 구매는 수익으로 집계되지 않는다.
-`toss-sync.js`는 `productUrl`을 아예 저장하지 않고, `POST /openapi/links`로 발급받은 `shortUrl`만 `url`에 담는다.
+`toss-sync.cjs`는 `productUrl`을 아예 저장하지 않고, `POST /openapi/links`로 발급받은 `shortUrl`만 `url`에 담는다.
 발급이 거절된 상품(셀러 정책 등)은 카탈로그에서 제외된다.
 
 발급받은 링크는 `links.json`에 캐시되어 재사용된다. 같은 `tacaItemId` + 같은 `publisherId`면 같은 링크가 나오지만,
@@ -51,7 +61,7 @@ node toss-sync.js
 
 ## 카테고리 분류 — 휴리스틱이다
 
-하루특가·베스트 API는 **카테고리를 내려주지 않는다.** 그래서 상품명 키워드로 추정한다(`toss-sync.js`의 `CAT_RULES`).
+하루특가·베스트 API는 **카테고리를 내려주지 않는다.** 그래서 상품명 키워드로 추정한다(`toss-sync.cjs`의 `CAT_RULES`).
 게시판 8종: 생활리빙 · 식품 · 화장미용 · 디지털가전 · 출산육아 · 스포츠레저 · 패션 · 가구인테리어
 
 `CAT_RULES`는 **배열 순서가 곧 우선순위**다. 실데이터로 확인한 함정들:
@@ -66,7 +76,7 @@ node toss-sync.js
 규칙을 고쳤으면 반드시 회귀 테스트를 돌린다:
 
 ```bash
-node test-category.js
+node test-category.cjs
 ```
 
 키워드 방식이라 장꼬리는 계속 남는다(현재 미분류는 생활리빙으로 떨어진다). 개별 상품을 바로잡으려면
@@ -98,7 +108,7 @@ python3 -m http.server 4334 --directory .
 
 ## 자동 동기화 (launchd)
 
-`com.lowestpick.tosssync` — **매일 07:00, 18:00**에 `toss-sync.js`를 돌린다.
+`com.lowestpick.tosssync` — **매일 07:00, 18:00**에 `toss-sync.cjs`를 돌린다.
 18시를 넣은 이유는 하루특가가 오후 5시에 끝나서, 그 직후 새 편성을 받기 위해서다.
 
 ```bash

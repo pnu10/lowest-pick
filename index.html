@@ -130,22 +130,18 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;letter-spacin
 .track-low{margin-top:5px;color:var(--green);font-size:11.5px;font-weight:800}
 
 /* ───── category chips ───── */
+/* 9개 카테고리를 3×3 그리드로 한 번에 노출 — 가로 스크롤로 잘려 보이던 문제 해결.
+   3줄이라 sticky로 두면 화면을 과하게 가려서 흐름에 맡긴다(상단 검색바만 sticky). */
 .chips{
-  position:sticky;top:54px;z-index:40;
-  display:flex;gap:8px;overflow-x:auto;padding:10px 20px;
-  background:rgba(244,245,247,.86);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
-  scrollbar-width:none;
-  -webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);
-  mask-image:linear-gradient(90deg,#000 92%,transparent);
+  display:grid;grid-template-columns:repeat(3,1fr);gap:7px;padding:10px 20px 12px;
 }
-.chips::-webkit-scrollbar{display:none}
 .chip{
-  flex:none;display:flex;align-items:center;gap:6px;
-  padding:9px 15px;border-radius:999px;font-size:14px;font-weight:600;
+  display:flex;align-items:center;justify-content:center;gap:5px;
+  min-height:40px;padding:8px 6px;border-radius:12px;font-size:13px;font-weight:600;
   background:var(--card);color:var(--ink2);box-shadow:var(--shadow);
   transition:.18s;white-space:nowrap;
 }
-.chip .ci{font-size:16px;line-height:1}
+.chip .ci{font-size:15px;line-height:1}
 .chip.on{background:var(--ink);color:#fff;font-weight:700}
 
 /* ───── sort row ───── */
@@ -230,6 +226,14 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;letter-spacin
   display:grid;place-items:center;font-size:64px;overflow:hidden;position:relative;
 }
 .sheet-hero img{width:100%;height:100%;object-fit:cover}
+.sheet-close{
+  position:absolute;top:8px;right:8px;z-index:2;
+  width:32px;height:32px;border-radius:50%;
+  background:rgba(23,24,29,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  color:#fff;font-size:16px;font-weight:700;line-height:1;
+  display:grid;place-items:center;transition:transform .15s,background .2s;
+}
+.sheet-close:active{transform:scale(.9);background:rgba(23,24,29,.65)}
 .sheet-body{padding:12px 22px 0}
 .sheet-body .brand{font-size:12.5px;font-weight:700;color:var(--ink3)}
 .sheet-body h2{font-size:17px;font-weight:800;line-height:1.3;margin-top:3px;word-break:keep-all;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
@@ -415,7 +419,7 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;letter-spacin
 
 <script>
 /* ══════════ 카탈로그 ══════════
-   딜 데이터는 toss-sync.js가 토스쇼핑 쉐어링크 API로 만든 catalog.json에서 로드한다.
+   딜 데이터는 toss-sync.cjs가 토스쇼핑 쉐어링크 API로 만든 catalog.json에서 로드한다.
    url = 쉐어링크(추적 링크). 이 링크로 들어온 구매만 제휴 수익으로 집계된다.
    endAt = 하루특가 종료 시각(있는 상품만) */
 const CATALOG=[];
@@ -423,7 +427,7 @@ const CATALOG=[];
 const CATS=["전체","생활리빙","식품","화장미용","디지털가전","출산육아","스포츠레저","패션","가구인테리어"];
 const CAT_ICON={"전체":"🛒","생활리빙":"🧽","식품":"🍎","화장미용":"💄","디지털가전":"🔌","출산육아":"🍼","스포츠레저":"⚽","패션":"👕","가구인테리어":"🛋️"};
 // 블로그 게시판(~픽)과 1:1: 생활리빙픽·식품픽·화장미용픽·디지털가전픽·출산육아픽·스포츠레저픽·패션픽·가구인테리어픽
-// (카테고리 매핑은 toss-sync.js가 하고, 예외는 category-map.json에서 덮어쓴다)
+// (카테고리 매핑은 toss-sync.cjs가 하고, 예외는 category-map.json에서 덮어쓴다)
 
 /* ── state ── */
 const LS="lowpick_v1";
@@ -574,7 +578,7 @@ function openSheet(id){
   const dcAmt=won(d.orig-d.price);
   $("#sheet").innerHTML=`
     <div class="grab"></div>
-    <div class="sheet-hero" style="background:${d.bg}">${d.img?`<img src="${d.img}" alt="">`:d.emoji}</div>
+    <div class="sheet-hero" style="background:${d.bg}">${d.img?`<img src="${d.img}" alt="">`:d.emoji}<button class="sheet-close" aria-label="닫기" onclick="closeSheet()">✕</button></div>
     <div class="sheet-body">
       <div class="brand">${d.brand} · ${d.cat}</div>
       <h2>${d.name}</h2>
@@ -602,10 +606,23 @@ function openSheet(id){
 }
 function closeSheet(){$("#dim").classList.remove("on");$("#sheet").classList.remove("on");curDeal=null;}
 $("#dim").onclick=closeSheet;
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&curDeal)closeSheet();});
+
+/* ── 외부 링크 열기 ──
+   토스 앱(앱인토스 WebView)에서는 window.open이 동작하지 않아 SDK의 openURL을 써야 한다.
+   SDK import는 toss-bridge.js가 맡고, 성공하면 window.__tossOpenURL에 실어준다.
+   (같은 index.html이 GitHub Pages에서도 서빙되므로 여기서는 bare import를 쓸 수 없다) */
+function openExternal(url){
+  if(!url)return;
+  if(typeof window.__tossOpenURL==="function"){window.__tossOpenURL(url);return;}
+  window.open(url,"_blank");
+}
 
 function goReal(){
+  if(!curDeal||!curDeal.url)return;
+  const url=curDeal.url;
   toast("토스쇼핑으로 이동해요 →");
-  setTimeout(()=>window.open(curDeal.url,"_blank"),400);
+  setTimeout(()=>openExternal(url),400);
 }
 function shareDeal(){
   if(!curDeal)return;
@@ -660,7 +677,7 @@ $("#navMy").onclick=()=>{
 };
 
 /* ── 실제 가격 기록(price-history.json) 기반 최저가 ── */
-let PRICE_HISTORY={}; // { 딜id: [{d:"2026-08-05", p:19200}, ...] } — toss-sync.js가 매 실행마다 누적
+let PRICE_HISTORY={}; // { 딜id: [{d:"2026-08-05", p:19200}, ...] } — toss-sync.cjs가 매 실행마다 누적
 // 하루특가 종료 카운트다운 (endAt은 ISO 8601 한국시간)
 let ticking=false; // renderRush()가 tickTimers()를 다시 부르므로 재진입 방지
 function tickTimers(){
@@ -714,10 +731,10 @@ async function loadPriceHistory(){
   }catch(e){/* 없으면 최저가 기능만 비활성, 앱은 정상 */}
 }
 
-/* ── catalog.json 병합 (toss-sync.js가 토스쇼핑 API로 만든 딜) ── */
+/* ── catalog.json 병합 (toss-sync.cjs가 토스쇼핑 API로 만든 딜) ── */
 // catalog.json 우선순위: 외부 URL(배포용, 재배포 없이 갱신) → 실패 시 같은 폴더 파일(로컬)
 const CATALOG_URL="https://pnu10.github.io/lowest-pick/catalog.json";
-// 로컬(개발)에서는 toss-sync.js가 방금 만든 같은 폴더 catalog.json을 먼저 본다
+// 로컬(개발)에서는 toss-sync.cjs가 방금 만든 같은 폴더 catalog.json을 먼저 본다
 const IS_LOCAL=/^(localhost|127\.0\.0\.1)$/.test(location.hostname)||location.protocol==="file:";
 async function loadExternalCatalog(){
   try{
@@ -741,5 +758,7 @@ renderHero();renderRush();renderChips();renderGrid();updateBdg();
 loadExternalCatalog();
 loadPriceHistory();
 </script>
+<!-- 앱인토스 SDK 브리지 (토스 앱 안에서만 로드 성공, 밖에서는 조용히 무시됨) -->
+<script type="module" src="./toss-bridge.js"></script>
 </body>
 </html>
