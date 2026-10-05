@@ -478,18 +478,22 @@ function renderHero(){
 
 /* ── rush (하루특가 = 오늘 마감) ── */
 function renderRush(){
-  // 하루특가(endAt 있음)를 먼저, 없으면 할인율 높은 딜로 채운다
+  // 하루특가(endAt 있음)가 있으면 그걸, 없는 날(토스가 편성을 안 하는 날이 있다 — 2026-10-04·05)엔
+  // 우리가 매일 적어 둔 실제 가격으로 "한 달 중 지금이 제일 싼" 상품을 보여준다.
+  // 할인율은 판매자가 적은 정가 기준이라 믿을 게 못 돼서 마지막 수단으로만 쓴다.
   const today=CATALOG.filter(d=>d.endAt&&isLive(d)).sort((a,b)=>a.endAt.localeCompare(b.endAt));
-  const rush=(today.length?today:CATALOG.filter(d=>isLive(d)&&d.dc>0).sort((a,b)=>b.dc-a.dc)).slice(0,7);
+  const low30=CATALOG.filter(d=>isLive(d)&&d.low30).sort((a,b)=>b.low30.drop-a.low30.drop);
+  const mode=today.length?"today":(low30.length?"low":"dc");
+  const rush=(mode==="today"?today:mode==="low"?low30:CATALOG.filter(d=>isLive(d)&&d.dc>0).sort((a,b)=>b.dc-a.dc)).slice(0,7);
   $("#secRush").classList.toggle("hide",!rush.length);
-  $("#rushTitle").textContent=today.length?"⏰ 오늘만 이 가격":"🔥 할인율 높은 딜";
+  $("#rushTitle").textContent=mode==="today"?"⏰ 오늘만 이 가격":mode==="low"?"📉 한 달 중 지금이 제일 싸요":"🔥 할인율 높은 딜";
   $("#rushWrap").innerHTML=rush.map(d=>`
     <div class="rush" onclick="openSheet('${d.id}')">
       <div class="thumb" style="background:${d.bg}"><span class="dcbadge">${d.dc}%</span>${d.img?`<img src="${d.img}" alt="">`:d.emoji}
         ${d.endAt?`<span class="timer" data-end="${d.endAt}">--:--</span>`:""}</div>
       <div class="name">${d.name}</div>
       <div class="price"><span class="dc">${d.dc}%</span><span class="won">${won(d.price)}원</span></div>
-      <div class="left">${reviewInfo(d)}</div>
+      <div class="left">${mode==="low"&&d.low30?`${won(d.low30.max)}원 → ${d.low30.drop}% 내림`:reviewInfo(d)}</div>
     </div>`).join("");
   tickTimers();
 }
@@ -548,7 +552,7 @@ function renderGrid(){
     return`
     <div class="deal" style="animation-delay:${i*0.03}s" onclick="openSheet('${d.id}')">
       <div class="thumb" style="background:${d.bg}">
-        ${d.img?`<img src="${d.img}" alt="" loading="lazy">`:d.emoji}
+        ${d.img?`<img src="${d.img}" alt="">`:d.emoji}
         ${d.dc>0?`<span class="badge best">${d.dc}% 할인</span>`:""}
       </div>
       <button class="like" onclick="event.stopPropagation();toggleLike('${d.id}')">${liked?"❤️":"🤍"}</button>
